@@ -3,25 +3,35 @@
     <btoolbar></btoolbar>
     <bcta></bcta>
     <binfosection></binfosection>
+    
+    <!-- Small section // Quote blurb -->
+    <v-container fluid class="quote-blurb fluid__container">
+        <h2 class="text-xs-center"><em>No valid plans for the future can be made by those who have no capacity for living now.
+        </em></h2><p class="text-xs-center">-- Alan Watts</p> 
+    </v-container>
+    <div class="fluid__container skills-section">
+        <bskillsection></bskillsection> 
+    </div>
 
-
-    <!--<div id="nav">
+    <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>-->
+    <router-view/>
   </div>
 </template>
 <script>
 import btoolbar from '@/components/0-Global/bToolbar'
 import bcta from '@/components/1-Section/bCta'
 import binfosection from '@/components/2-Section/bInfoSection'
+import bskillsection from '@/components/3-Section/bSkillSection'
 
 export default {
     components: {
         btoolbar,
         bcta,
-        binfosection
+        binfosection,
+        bskillsection
     }
 }
 </script>

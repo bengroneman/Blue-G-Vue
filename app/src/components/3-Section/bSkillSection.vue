@@ -24,7 +24,7 @@
 </template>
 <script>
 export default {
-	name: 'b-skill-section'
+	name: 'bskillsection'
 }
 </script>
 <style scoped>

@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-	name: 'b-content-column'
+	name: 'bcontentcolumn'
 }
 </script>
 <style>

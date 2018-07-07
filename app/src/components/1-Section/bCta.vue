@@ -1,7 +1,7 @@
 <template>
  <v-jumbotron
     :gradient="gradient"
-    src="/img/BenG-Portfolio.JPG"
+    src="@/assets/images/BenG-Portfolio.JPG"
     dark
   >
     <v-container fill-height>

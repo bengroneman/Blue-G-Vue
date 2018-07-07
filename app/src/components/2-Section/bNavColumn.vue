@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-	name: 'b-nav-column'
+	name: 'bnavcolumn'
 }
 </script>
 <style scoped>

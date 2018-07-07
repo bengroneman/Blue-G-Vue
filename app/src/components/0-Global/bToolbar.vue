@@ -11,7 +11,7 @@
 </template>
 <script>
 	export default {
-		name: 'b-toolbar'
+		name: 'btoolbar'
 	}
 </script>
 <style>

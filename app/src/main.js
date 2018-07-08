@@ -7,12 +7,13 @@ import 'vuetify/dist/vuetify.css'
 
 Vue.config.productionTip = false
 
-
-
-
 // Must have for Vuetify to work throughout the app
 window.Vuetify = require('vuetify')
-Vue.use(Vuetify)
+
+// Must use to instantiate vuetify
+Vue.use(Vuetify, {
+    iconfont: 'mdi'
+})
 
 new Vue({
   router,

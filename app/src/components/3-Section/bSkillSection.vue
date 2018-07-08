@@ -46,7 +46,9 @@ p {
     font-size: 0.85em;
 }
 .b-skill-section {
-    margin-top: 5em;
     margin-bottom: 5em;
+}
+.skill__header {
+    padding-top: 2em;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-<v-toolbar dark>
+<v-toolbar dark class="b-toolbar">
     <v-toolbar-title>Blue G</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
@@ -15,9 +15,11 @@
 	}
 </script>
 <style>
-.toolbar {
-  background-color: rgba(0, 0, 0, 0.5)!important;
-  position: fixed;
+
+.b-toolbar {
+  background-color: white!important;
+  opacity: 0.75;
+  position: fixed!important;
   top: 0;
   z-index: 100;
 }

@@ -9,6 +9,7 @@
         <h2 class="text-xs-center"><em>No valid plans for the future can be made by those who have no capacity for living now.
         </em></h2><p class="text-xs-center">-- Alan Watts</p> 
     </v-container>
+    <!-- Blue G Skill Section -->
     <div class="fluid__container skills-section">
         <bskillsection></bskillsection> 
     </div>
@@ -60,6 +61,21 @@ export default {
 }
 .child {
     margin: auto;
+}
+h1 {
+    font-family: 'Nunito', serif;
+}
+h2 {
+    font-size:2em!important;
+    font-family: 'Nunito', serif; 
+}
+p {
+    font-family: 'Quattrocento', sans-serif;
+    font-weight: 300;
+    font-size: 1.025em;
+}
+body, html {
+    font-family: 'Quattrocento', sans-serif;
 }
 .quote-blurb {
     background: #6e7f80;

@@ -1,14 +1,17 @@
+
 <template>
   <div class="ruggedwerxproject">
-    <h1>This is an about page</h1>
+      <bproject v-bind:imgsrc="img/ruggedwerx.png">
+        
+      </bproject>
   </div>
 </template>
 <script>
-import bprojectcomponent from '@/components/0-Global/bProjectComponent'
+import bproject from '@/components/0-Global/bProjectComponent'
 
 export default {
     components: {
-        bprojectcomponent
+        bproject
     }
 }
 </script>

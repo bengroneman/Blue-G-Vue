@@ -1,20 +1,17 @@
 <template>
-<div
-    id="project__container"
-    class="card"
-    @mouseenter="show = !show"
-    @mouseleave="show = !show"
-    >
-  <div class="card-image">
-    <figure class="image is-4by3">
-      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id="project-img">
-    </figure>
+<div id="project__container" class="card">
+  <div class="project__container">
+    <v-carousel hide-delimiters>
+        <v-carousel-item
+            v-for="(item,i) in items"
+            :key="i"
+            :src="item.src"
+            ></v-carousel-item>
+    </v-carousel>
+    <!-- Details about the project -->
+    <p><slot></slot></p>
+    <button id="project_btn" href="http://ruggedwerx.com">See Work</button>
   </div>
-<transition name="slide-fade">
-  <div v-if="show" v-bind:class="changeHiddentContentClass" id="reveal-content" class="reveal__container">
-      <p>This was a project build by a delightful team.</p>
-  </div>
-</transition>
 </div>
 </template>
 <script>
@@ -22,48 +19,28 @@
 // If we could have an imgsrc attribute for this, and then multiple slots
 // Then we could reuse this component in the future for more and more projects
 export default {
-    name: 'bprojectsection',
+    name: 'bproject', 
+        imgsrc: String,
+        siteurl: String 
+    },
     data () {
         return {
-            show: false
-        }
-    },
-    computed: {
-        changeHiddentContentClass() {
-            if(this.show) {
-                return 'active-content-class'
-            } else {
-                return 'inactive-content-class'
-            }
+            items: [
+                {
+                    src: this.imgsrc
+                }
+            ]
         }
     }
+
 }
 </script>
 <style>
 .reveal__container {
   width: 100%;
-  height: 25%;
+  height: 50vh;
   background-color: indigo;
   z-index: 10;
-}
-#project__container {
-    background-color: #36454f;
-    text-align: center;
-    box-shadow: -6px 7px 0px 0px #708090;
-    overflow: hidden;
-    transition: 0.5s box-shadow ease-in-out;
-}
-#project__container:hover {
-  box-shadow: -8px 9px 11px 0px #708090;
-}
-#reveal-content {
-  height: 100%;
-  width: 100%;
-  bottom: -100px;
-  position: absolute;
-  color: white;
-  background-color: rgb(54, 69, 79);
-  transition: 0.7s all ease-in-out;
 }
 .active-content-class {
     bottom: 0;
@@ -71,10 +48,8 @@ export default {
 .inactive-content-class {
     bottom: -1000px;
 }
-.mouse-hover:hover {
-    width: 1000px!important;
-}
-/* VUE JS TRANSITION -- SLIDE FADE */
+
+/* Can come back to this later as it might be useful VUE JS TRANSITION -- SLIDE FADE */
 .slide-fade-enter-active {
   transition: all .3s ease;
 }

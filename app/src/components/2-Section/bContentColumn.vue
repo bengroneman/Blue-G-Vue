@@ -23,6 +23,8 @@ h1 {
 .content-shallom {
 	font-weight: 900;
 }
+.b-content__column {
+}
 .b-content__column > p {
 	margin-bottom: 25px;
 }

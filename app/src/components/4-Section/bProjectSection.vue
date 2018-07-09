@@ -1,6 +1,6 @@
 <template>
-<div id="project__container" class="card">
-  <div class="project__container">
+<div id="project__wrapper columns" class="card">
+  <div class="project__container column is-three-fifths is-offset-one-fifth">
     <v-carousel hide-delimiters>
         <v-carousel-item
             v-for="(item,i) in items"
@@ -9,7 +9,9 @@
             ></v-carousel-item>
     </v-carousel>
     <!-- Details about the project -->
-    <p><slot></slot></p>
+    <div class="project__details">
+        <p><slot></slot></p>
+    </div>
     <button id="project_btn" href="http://ruggedwerx.com">See Work</button>
   </div>
 </div>
@@ -20,14 +22,23 @@
 // Then we could reuse this component in the future for more and more projects
 export default {
     name: 'bproject', 
-        imgsrc: String,
-        siteurl: String 
-    },
     data () {
         return {
             items: [
                 {
-                    src: this.imgsrc
+                    src: '/RuggedWerx/Ruggedwerx-snip-1.PNG'
+                },
+                {
+                    src: '/RuggedWerx/Ruggedwerx-snip-3.PNG'
+                },
+                {
+                    src: '/RuggedWerx/Ruggedwerx-snip-4.PNG'
+                },
+                {
+                    src: '/RuggedWerx/Ruggedwerx-snip-5.PNG'
+                },
+                {
+                    src: '/RuggedWerx/RuggedWerx-snip-6.PNG'
                 }
             ]
         }
@@ -36,19 +47,22 @@ export default {
 }
 </script>
 <style>
+#project__wrapper {
+    height: 50vh;
+    width: 75%;
+    margin: 100px;
+    color: white;
+    background: #6e7f80;
+}
+.project__details {
+    color: white!important;
+}
 .reveal__container {
   width: 100%;
-  height: 50vh;
+  height: 50%;
   background-color: indigo;
   z-index: 10;
 }
-.active-content-class {
-    bottom: 0;
-}
-.inactive-content-class {
-    bottom: -1000px;
-}
-
 /* Can come back to this later as it might be useful VUE JS TRANSITION -- SLIDE FADE */
 .slide-fade-enter-active {
   transition: all .3s ease;

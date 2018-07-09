@@ -11,13 +11,15 @@ export default {
 <style>
 .b-featureimg__wrapper {
    background-color: #36454f;
-   padding: 20px;
+   padding: 5px;
    border: 1px solid #708090;
-   box-shadow: -6px 7px 0px 0px #708090;
-   border-radius: 50%;
-   margin: auto;
+   box-shadow: -4px 5px 0px 0px #708090;
+   position: absolute;
+   bottom: 0;
+   left: 45px;
+   border-radius: 10%;
 }
 .b-featureimg__wrapper > img {
-    border-radius: 50%;
+    border-radius: 10%;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-<div class="b-nav__column">
-	<ul class="b-nav__menu">
+<div class="b-nav__column columns">
+	<ul class="b-nav__menu column">
 		<li><a>About</a></li>
 		<li><a>Skills</a></li>
 		<li><a>Work</a></li>

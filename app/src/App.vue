@@ -13,10 +13,11 @@
     <div class="fluid__container skills-section">
         <bskillsection></bskillsection> 
     </div>
-
+    <!-- Blue G Project Section -->
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/ruggedwerx">RuggedWerx</router-link>
+      <h1>See projects I have worked on</h1>
+      <router-link to="/">Projects </router-link>
+      <router-link to="/ruggedwerx"> RuggedWerx</router-link>
     </div>
     <router-view/>
   </div>
@@ -45,16 +46,23 @@ export default {
   color: #2c3e50;
 }
 #nav {
-  padding: 30px;
+  padding: 30px 30px 0 30px;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  font-size: 1.5em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  position: relative;
+  bottom: 15px;
+  border-bottom: 5px solid #74777b;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #6e7f80;
+  border-bottom: 5px solid #6e7f80;
 }
 .parent {
     display: flex;
@@ -62,8 +70,29 @@ export default {
 .child {
     margin: auto;
 }
+button {
+    background-color: #36454f!important;
+    padding: 25px;
+    transition: 0.7s all ease;
+}
+button > a {
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 3px solid #6e7f80;
+    font-weight: 900;
+    transition: 0.7s all ease;
+}
+button > a:hover {
+    color: white;
+}
+button:hover {
+    box-shadow: -6px 7px 0px 0px #6e7f80;
+}
 h1 {
     font-family: 'Nunito', serif;
+    font-size: 3em;
+	font-weight: 100;
+	margin-bottom: 0.75em;
 }
 h2 {
     font-size:2em!important;

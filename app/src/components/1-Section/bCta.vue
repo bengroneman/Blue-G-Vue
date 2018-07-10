@@ -4,7 +4,7 @@
       <v-layout align-center>
         <v-flex text-xs-center>
           <div class="cta-header__wrapper">
-            <bfeatureimg class="feature__image"></bfeatureimg>
+              <!-- <bfeatureimg class="feature__image"></bfeatureimg> -->
             <h3 class="display-3 b-cta__header">Ben Groneman | <span>Avid Developer</span></h3>
           </div>
         </v-flex>
@@ -31,6 +31,7 @@ components: {
   position: absolute;
   bottom: 0;
   left: 240px;
+  margin-left: 35px;
 }
 .b-cta__header > h3 {
   font-weight: 900;

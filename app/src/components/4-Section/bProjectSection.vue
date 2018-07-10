@@ -1,19 +1,23 @@
 <template>
 <div id="project__wrapper columns" class="card">
   <div class="project__container column is-three-fifths is-offset-one-fifth">
-    <v-carousel hide-delimiters>
+    <v-carousel
+        delimiter-icon="stop"
+        prev-icon="arrow_left"
+        next-icon="arrow_right"
+        >
         <v-carousel-item
             v-for="(item,i) in items"
             :key="i"
             :src="item.src"
             ></v-carousel-item>
     </v-carousel>
-    <!-- Details about the project -->
-    <div class="project__details">
-        <p><slot></slot></p>
+        <!-- Details about the project -->
+        <section class="project__details section-one">
+            <slot>HELLO WORLD</slot>
+            <button id="project_btn" href="http://ruggedwerx.com"><a>See Work</a></button>
+        </section>
     </div>
-    <button id="project_btn" href="http://ruggedwerx.com">See Work</button>
-  </div>
 </div>
 </template>
 <script>
@@ -55,7 +59,11 @@ export default {
     background: #6e7f80;
 }
 .project__details {
-    color: white!important;
+    padding: 45px;
+    width: 100%;
+    margin: auto;
+    border-radius: 0;
+    font-size: 1.15em;
 }
 .reveal__container {
   width: 100%;

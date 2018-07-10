@@ -31,7 +31,7 @@ export default {
 }
 .b-nav__column {
 	float: right;
-	margin-top: 6em;
+	margin-top: 8em;
 }
 a {
    color: white!important;

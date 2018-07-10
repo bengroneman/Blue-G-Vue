@@ -14,11 +14,12 @@ export default {
 	name: 'bcontentcolumn'
 }
 </script>
-<style>
+<style scoped>
 h1 {
 	font-size: 3em;
 	font-weight: 100;
 	margin-bottom: 0.75em;
+    text-align: left;
 }
 .content-shallom {
 	font-weight: 900;
@@ -27,5 +28,8 @@ h1 {
 }
 .b-content__column > p {
 	margin-bottom: 25px;
+    text-align: left;
+    margin-left: 2em;
+    margin-right: 4em;
 }
 </style>

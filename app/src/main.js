@@ -4,11 +4,19 @@ import router from './router'
 import Vuetify from 'vuetify'
 import store from './store'
 import 'vuetify/dist/vuetify.css'
+import jquery from 'jquery'
+import fullpage from 'fullpage.js'
+import vuefullpage from 'vue-fullpage.js'
 
 Vue.config.productionTip = false
 
 // Must have for Vuetify to work throughout the app
 window.Vuetify = require('vuetify')
+
+window.jquery = require('jquery')
+window.fullpage = require('fullpage.js')
+window.vuefullpage = require('vue-fullpage.js')
+
 
 // Must use to instantiate vuetify
 Vue.use(Vuetify, {

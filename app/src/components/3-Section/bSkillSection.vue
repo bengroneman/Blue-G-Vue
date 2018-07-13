@@ -47,6 +47,7 @@ p {
 }
 .b-skill-section {
     margin-bottom: 5em;
+    height: 80vh;
 }
 .skill__header {
     padding-top: 2em;

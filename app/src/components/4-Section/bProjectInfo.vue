@@ -12,3 +12,6 @@ export default {
   name: 'bprojectinfo'
 }
 </script>
+
+<style>
+</style>

@@ -20,6 +20,7 @@
       <router-link to="/ruggedwerx"> RuggedWerx</router-link>
     </div>
     <router-view/>
+    <bfooter></bfooter>
   </div>
 </template>
 <script>
@@ -27,13 +28,15 @@ import btoolbar from '@/components/0-Global/bToolbar'
 import bcta from '@/components/1-Section/bCta'
 import binfosection from '@/components/2-Section/bInfoSection'
 import bskillsection from '@/components/3-Section/bSkillSection'
+import bfooter from '@/components/Footer/bFooter.vue'
 
 export default {
     components: {
         btoolbar,
         bcta,
         binfosection,
-        bskillsection
+        bskillsection,
+        bfooter
     }
 }
 </script>

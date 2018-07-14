@@ -13,7 +13,7 @@
         <bskillsection></bskillsection> 
     </div>
     <!-- Blue G Project Section -->
-    <div id="nav" class="box">
+    <div id="nav">
       <h1>See projects I have worked on</h1>
       <router-link to="/">Projects </router-link>
       <router-link to="/ruggedwerx"> RuggedWerx</router-link>

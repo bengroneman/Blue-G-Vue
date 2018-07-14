@@ -1,11 +1,10 @@
 <template>
 <div class="b-nav__column columns">
 	<ul class="b-nav__menu column">
-		<li><a>About</a></li>
-		<li><a>Skills</a></li>
-		<li><a>Work</a></li>
-		<li><a>Blog</a></li>
-		<li><a>Contact</a></li>
+		<li><a href="#skills">Skills</a></li>
+		<li><a href="#projects">Projects</a></li>
+		<li><a href="#blog">Blog (Coming Soon)</a></li>
+		<li><a href="#footer">Contact</a></li>
 	</ul>
 </div>
 </template>

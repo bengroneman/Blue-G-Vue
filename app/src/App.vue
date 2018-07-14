@@ -2,8 +2,7 @@
   <div id="app">
     <btoolbar></btoolbar>
     <bcta></bcta>
-    <binfosection></binfosection>
-    
+    <binfosection></binfosection>    
     <!-- Small section // Quote blurb -->
     <v-container fluid class="quote-blurb fluid__container">
         <h2 class="text-xs-center"><em>No valid plans for the future can be made by those who have no capacity for living now.
@@ -14,7 +13,7 @@
         <bskillsection></bskillsection> 
     </div>
     <!-- Blue G Project Section -->
-    <div id="nav">
+    <div id="nav" class="box">
       <h1>See projects I have worked on</h1>
       <router-link to="/">Projects </router-link>
       <router-link to="/ruggedwerx"> RuggedWerx</router-link>
@@ -60,7 +59,6 @@ export default {
   letter-spacing: 0.125em;
   position: relative;
   bottom: 15px;
-  border-bottom: 5px solid #74777b;
 }
 
 #nav a.router-link-exact-active {
@@ -110,7 +108,7 @@ body, html {
     font-family: 'Quattrocento', sans-serif;
 }
 .quote-blurb {
-    background: #6e7f80;
+    background: #424242;
     font-weight: 900;
     margin: auto;
 }
@@ -118,7 +116,7 @@ body, html {
     font-size: 2em;
 }
 .skills-section {
-    background: #36454f;
+    background: #202f3e;
 }
 .fluid__container {
     margin: 0;

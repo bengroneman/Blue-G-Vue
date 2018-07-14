@@ -58,13 +58,13 @@ export default {
   left: calc(0.7em * 1.2);
   right: calc(0.7em * 1.2);
   height: 3px;
-  background: #f26522;
+  background: #44a8c5;
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
   transform-origin: left;
 }
 .portfolio-experiment .line {
   position: absolute;
-  background: #f26522;
+  background: #44a8c5;
 }
 .portfolio-experiment .line.-right, .portfolio-experiment .line.-left {
   width: 3px;

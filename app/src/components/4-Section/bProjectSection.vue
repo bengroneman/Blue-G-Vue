@@ -15,17 +15,23 @@
         <!-- Details about the project -->
         <section class="project__details section-one">
             <slot>HELLO WORLD</slot>
-            <button id="project_btn" href="http://ruggedwerx.com"><a>See Work</a></button>
+            <bbutton externalLink="http://ruggedwerx.com" btnText="See Website"></bbutton>
         </section>
     </div>
 </div>
 </template>
 <script>
+import bbutton from '@/components/0-Global/bButton'
 // Should implement some data for reactivity
 // If we could have an imgsrc attribute for this, and then multiple slots
 // Then we could reuse this component in the future for more and more projects
 export default {
-    name: 'bproject', 
+    name: 'bproject',
+
+    components: {
+      bbutton
+    },
+    
     data () {
         return {
             items: [

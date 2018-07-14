@@ -29,7 +29,7 @@ export default {
 </script>
 <style scoped>
 .container {
-	background: #36454f;
+	background: #202f3e;
 }
 .svg__wrapper {
 	height: 100%;
@@ -40,7 +40,7 @@ export default {
 }
 .material-icons {
     font-size: 10em;
-    color: #67c0ff;
+    color: #54d0ba;
 }
 p {
     font-size: 0.85em;

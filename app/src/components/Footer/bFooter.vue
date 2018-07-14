@@ -7,7 +7,7 @@
   <v-card
     flat
     tile
-    class="indigo lighten-1 white--text text-xs-center"
+    class="b__footer white--text text-xs-center"
   >
   <v-card-text>
  </v-card-text>
@@ -26,7 +26,7 @@
     <v-divider></v-divider>
 
     <v-card-text class="white--text">
-    &copy;2018 — <strong>Blue G Dev</strong>
+    &copy;2018 — <em>Blue G Dev</em>
     </v-card-text>
   </v-card>
 </v-footer>
@@ -34,16 +34,21 @@
 
 <script>
 import bsocialicons from '@/components/2-Section/bSocialIcons'
+import bcontactform from '@/components/Footer/bContactForm.vue'
 
 export default {
   name: 'bfooter',
   components: {
-    bsocialicons
+    bsocialicons,
+    bcontactform
   }
 }
 </script>
 <style>
 .b-footer {
   margin-top: 70px;
+}
+.b__footer {
+  background: #01060f;
 }
 </style>

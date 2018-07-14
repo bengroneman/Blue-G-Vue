@@ -131,9 +131,6 @@ body, html {
 }
 .section-one {
     background: white;
-    border: 1px solid gainsboro;
-    box-shadow: 0px 2px 13px 0px gainsboro;
-    border-radius: 2em;
-    margin: 60px;
+    margin: 75px;
 }
 </style>

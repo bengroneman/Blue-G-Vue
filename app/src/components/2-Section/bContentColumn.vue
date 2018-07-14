@@ -19,17 +19,17 @@ h1 {
 	font-size: 3em;
 	font-weight: 100;
 	margin-bottom: 0.75em;
-    text-align: left;
+  text-align: left;
 }
 .content-shallom {
 	font-weight: 900;
 }
-.b-content__column {
-}
 .b-content__column > p {
 	margin-bottom: 25px;
-    text-align: left;
-    margin-left: 2em;
-    margin-right: 4em;
+  text-align: left;
+  margin-right: 4em;
+}
+.b-content__column {
+  height: 75vh;
 }
 </style>

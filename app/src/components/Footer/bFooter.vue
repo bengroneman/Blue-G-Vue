@@ -10,15 +10,10 @@
     class="indigo lighten-1 white--text text-xs-center"
   >
   <v-card-text>
-  <v-btn
-    v-for="icon in icons"
-    :key="icon"
-    class="mx-3 white--text"
-    icon
-    >
-    <v-icon size="24px">{{ icon }}</v-icon>
-    </v-btn>
-    </v-card-text>
+ </v-card-text>
+  <div class="social-icons__footer">
+      <bsocialicons></bsocialicons>
+  </div>
     
     <div class="columns">
         <div class="column is-three-fifths is-offset-one-fifth">
@@ -31,15 +26,20 @@
     <v-divider></v-divider>
 
     <v-card-text class="white--text">
-    &copy;2018 — <strong>Vuetify</strong>
+    &copy;2018 — <strong>Blue G Dev</strong>
     </v-card-text>
   </v-card>
 </v-footer>
 </template>
 
 <script>
+import bsocialicons from '@/components/2-Section/bSocialIcons'
+
 export default {
-  name: 'bfooter'
+  name: 'bfooter',
+  components: {
+    bsocialicons
+  }
 }
 </script>
 <style>

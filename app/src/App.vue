@@ -59,10 +59,10 @@ pre {
  border: none;
 }
 .full-height {
-  height: 100vh;
+  height: 100%;
 }
 .b-brand-dark {
-  color: #01060f!important;
+  color: !important;
 }
 #nav a {
   font-weight: bold;
@@ -103,25 +103,25 @@ button:hover {
     box-shadow: -6px 7px 0px 0px #6e7f80;
 }
 h1 {
-    font-family: 'Nunito', serif;
-    font-size: 3em;
+  font-family: 'Nunito', serif;
+  font-size: 3em;
 	font-weight: 100;
-	margin-bottom: 0.75em;
+	margin-bottom: 0.35em;
 }
 h2 {
     font-size:2em!important;
     font-family: 'Nunito', serif; 
 }
 p {
-    font-family: 'Quattrocento', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 300;
     font-size: 1.025em;
 }
 body, html {
-    font-family: 'Quattrocento', sans-serif;
+  font-family: 'Playfair Display', serif!important;
 }
 .quote-blurb {
-    background: #424242;
+    background: #01060f;
     font-weight: 900;
     margin: auto;
 }

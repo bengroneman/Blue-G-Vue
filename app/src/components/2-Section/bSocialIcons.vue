@@ -4,8 +4,9 @@
     <span class="group pa-2">
       <div class="btn__wrapper">
         <section class="portfolio-experiment">
-          <bbutton externalLink="https://github.com/strangenectar" btnIcon="fingerprint" btnText=""></bbutton> 
-          <bbutton externalLink="https://www.linkedin.com/in/ben-groneman-62174370/" btnIcon="link" btnText=""></bbutton> 
+          <bbutton externalLink="https://github.com/strangenectar" btnIcon="fingerprint" btnText="github"></bbutton> 
+          <bbutton externalLink="https://www.linkedin.com/in/ben-groneman-62174370/" btnIcon="link" btnText="linkedin"></bbutton>
+          <bbutton externalLink="mailto:bluegroneman10@gmail.com" btnIcon="mail" btnText="email me"></bbutton>
         </section>
       </div>
     </span>

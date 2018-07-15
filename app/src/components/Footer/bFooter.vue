@@ -3,7 +3,7 @@
   dark
   height="auto"
   class="b-footer"
-  href="footer"
+  id="footer"
 >
   <v-card
     flat

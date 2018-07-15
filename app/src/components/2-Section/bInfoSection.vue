@@ -1,5 +1,5 @@
 <template>
-  <div class="columns full-height">
+  <div id="about" class="columns full-height">
     <div class="column section-one is-8 is-offset-2">
       <div class="columns">
         <div class="column child is-6">

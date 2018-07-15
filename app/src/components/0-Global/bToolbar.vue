@@ -1,11 +1,12 @@
 <template>
-<v-toolbar dark flat class="invert-colors transparent b-toolbar">
-    <v-toolbar-title class="b-brand-dark">Blue G</v-toolbar-title>
+<v-toolbar flat class="invert-colors transparent b-toolbar">
+    <v-toolbar-title class="is-size-3 b-green-ish">Blue G</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn flat class="b-brand-dark b-toolbar-link">Projects</v-btn>
-      <v-btn flat class="b-brand-dark b-toolbar-link">Contact Me</v-btn>
-      <v-btn flat class="b-brand-dark b-toolbar-link">My Other Work</v-btn>
+      <v-btn flat ripple href="#about" class="is-size-4 b-green-ish b-toolbar-link">About</v-btn>
+      <v-btn flat ripple href="#skills" class="is-size-4 b-green-ish b-toolbar-link">Skills</v-btn>
+      <v-btn flat ripple href="#projects" class="is-size-4 b-green-ish b-toolbar-link">Projects</v-btn>
+      <v-btn flat ripple href="#footer" class="is-size-4 b-green-ish b-toolbar-link">Contact</v-btn>
     </v-toolbar-items>
 </v-toolbar>
 </template>

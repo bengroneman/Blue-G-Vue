@@ -2,8 +2,8 @@
 <div id="skills" class="b-skill-section">
 	<h1 class="text-xs-center skill__header">Skills</h1>
 	<v-container grid-list-md class="text-xs-center">
-		<v-layout row wrap>
-			<v-flex xs4 class="">
+		<v-layout row wrap class="skills-section__wrapper">
+			<v-flex xs4 class="column">
         <i class="material-icons">code</i>
         <h2>Technical Skills</h2>
         <p><em>Javascript, Vue, Laravel, Hubspot, Wordpress, Linux, Java, and more</em></p>
@@ -38,6 +38,9 @@ export default {
 	border-radius: 50%;
 	z-index: 10;
 }
+.skills-section__wrapper {
+  margin-bottom: 65px;
+}
 .material-icons {
     font-size: 10em;
     color: #54d0ba;
@@ -47,7 +50,6 @@ p {
 }
 .b-skill-section {
     margin-bottom: 5em;
-    height: 80vh;
 }
 .skill__header {
     padding-top: 2em;

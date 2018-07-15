@@ -49,7 +49,18 @@ export default {
 #nav {
   padding: 30px 30px 0 30px;
 }
-
+code {
+  box-shadow: none!important;
+  -webkit-box-shadow: none!important;
+  color: white!important;
+}
+pre {
+ background-color: transparent;
+ border: none;
+}
+.b-brand-dark {
+  color: #01060f!important;
+}
 #nav a {
   font-weight: bold;
   font-size: 1.5em;

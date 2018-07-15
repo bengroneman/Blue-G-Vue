@@ -1,55 +1,47 @@
 <template>
- <v-jumbotron :gradient="gradient" src="img/BenG-Portfolio.JPG" dark>
-    <v-container fill-height>
-      <v-layout align-center>
-        <v-flex text-xs-center>
-          <div class="cta-header__wrapper">
-              <!-- <bfeatureimg class="feature__image"></bfeatureimg> -->
-            <h3 class="display-3 b-cta__header">Ben Groneman | <span>Avid Developer</span></h3>
-          </div>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </v-jumbotron>
+<v-jumbotron color="primary" dark class="b-jumbotron">
+  <v-container fill-height>
+    <v-layout align-center>
+      <v-flex text-xs-center>
+<!-- COOOODDEE -->
+<pre><code class="display-2 text-xs-left">
+<span class="b-tan">function</span> <span class="b-blue-ish">displayInitialGreeting</span> (<span class="b-blue-ish">name</span>) {
+  <span class="b-tan">document</span>.<span class="b-purple">write</span>(<span class="b-green-ish">'Shallom, '</span> + <span class="b-tan">this</span>.<span class="b-purple">name</span>);
+  <span class="b-tan">document</span>.<span class="b-purple">write</span>(<span class="b-green-ish">'Benjamin Blue Groneman'</span>);
+}
+</code></pre>
+      </v-flex>
+    </v-layout>
+  </v-container>
+</v-jumbotron>
 </template>
 <script>
 import bfeatureimg from '@/components/0-Global/bFeatureImg'
 
 export default {
-    name: 'b-cta',
-data: () => ({
-  gradient: 'to top right, rgba(0, 0, 0, .7), rgba(128,128,128, .7)'
-}),
-
-components: {
+  name: 'b-cta',
+  components: {
     bfeatureimg
-}
+  }
 }
 </script>
 <style>
-.b-cta__header {
-  position: absolute;
-  bottom: 0;
-  left: 240px;
-  margin-left: 35px;
+.primary {
+  background-color: #195a92;
 }
-.b-cta__header > h3 {
-  font-weight: 900;
+.b-jumbotron {
+  height: 100vh!important;
 }
-.b-cta__header > span {
-  font-size: 0.65em;
-  font-weight: 100;
+.b-tan {
+  color: #ddca7e!important;
 }
-.cta-header__wrapper {
-    width: 100%;
-    height: 200px;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
+.b-blue-ish {
+  color: #809bbd!important; 
 }
-.feature__image {
-    height: 175px;
-    width: 175px;
+.b-purple {
+  color: #9a8297!important;
+}
+.b-green-ish {
+ color: #96b38a!important; 
 }
 </style>

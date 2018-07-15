@@ -113,6 +113,12 @@ body, html {
 }
 .quote-blurb > h2 {
     font-size: 2em;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.quote-blurb > p {
+  font-size: 1.5em;
+  font-weight: 500;
 }
 .skills-section {
     background: #202f3e;

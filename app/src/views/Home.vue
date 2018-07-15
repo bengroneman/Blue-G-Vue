@@ -1,19 +1,18 @@
 <template>
   <div class="home">
-    <img src="../assets/logo.png">
-    <bprojectinfo></bprojectinfo>
+    <bprojectsection></bprojectsection>
   </div>
 </template>
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-import bprojectinfo from '@/components/4-Section/bProjectInfo.vue'
+import bprojectsection from '@/components/4-Section/bProjectSection.vue'
 
 export default {
   name: 'home',
   components: {
     HelloWorld,
-    bprojectinfo
+    bprojectsection
   }
 }
 </script>

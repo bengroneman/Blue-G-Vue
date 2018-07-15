@@ -13,12 +13,8 @@
         <bskillsection></bskillsection> 
     </div>
     <!-- Blue G Project Section -->
-    <!--<div id="nav">
-      <h1>See projects I have worked on</h1>
-      <router-link to="/">Projects </router-link>
-      <router-link to="/ruggedwerx"> RuggedWerx</router-link>
-    </div>
-    <router-view/> -->
+    <bprojectsection></bprojectsection>
+    <!-- Blue G Footer-->
     <bfooter></bfooter>
   </div>
 </template>
@@ -28,6 +24,7 @@ import bcta from '@/components/1-Section/bCta'
 import binfosection from '@/components/2-Section/bInfoSection'
 import bskillsection from '@/components/3-Section/bSkillSection'
 import bfooter from '@/components/Footer/bFooter.vue'
+import bprojectsection from '@/components/4-Section/bProjectSection'
 
 export default {
     components: {
@@ -35,7 +32,8 @@ export default {
         bcta,
         binfosection,
         bskillsection,
-        bfooter
+        bfooter,
+        bprojectsection
     }
 }
 </script>

@@ -1,24 +1,20 @@
 <template>
-<div id="project__wrapper columns" class="card">
-  <div class="project__container column is-three-fifths is-offset-one-fifth">
-    <v-carousel
-        delimiter-icon="stop"
-        prev-icon="arrow_left"
-        next-icon="arrow_right"
-        >
-        <v-carousel-item
-            v-for="(item,i) in items"
-            :key="i"
-            :src="item.src"
-            ></v-carousel-item>
-    </v-carousel>
-        <!-- Details about the project -->
-        <section class="project__details section-one">
-            <slot>HELLO WORLD</slot>
-            <bbutton externalLink="http://ruggedwerx.com" btnText="See Website"></bbutton>
-        </section>
-    </div>
-</div>
+    <section class="b-project-section">
+        <v-jumbotron color="b-brand-black" dark class="b-jumbotron">
+            <v-container fill-height>
+                <v-layout align-center>
+                    <v-flex text-xs-center>
+                        <!-- Open Source Advocate Section  -->
+                        <div class="b-project-content__wrapper">
+                            <h2 class="is-size-1">I am a big advocate for open source</h2>
+                            <h3 class="is-size-2">Find me @strangenectar on github</h3>
+                            <bbutton externalLink="https://github.com/strangenectar" btnIcon="code" btnText="Open Source"></bbutton>
+                        </div>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+        </v-jumbotron>
+    </section>
 </template>
 <script>
 import bbutton from '@/components/0-Global/bButton'
@@ -30,63 +26,19 @@ export default {
 
     components: {
       bbutton
-    },
-    
-    data () {
-        return {
-            items: [
-                {
-                    src: '/RuggedWerx/Ruggedwerx-snip-1.PNG'
-                },
-                {
-                    src: '/RuggedWerx/Ruggedwerx-snip-3.PNG'
-                },
-                {
-                    src: '/RuggedWerx/Ruggedwerx-snip-4.PNG'
-                },
-                {
-                    src: '/RuggedWerx/Ruggedwerx-snip-5.PNG'
-                },
-                {
-                    src: '/RuggedWerx/RuggedWerx-snip-6.PNG'
-                }
-            ]
-        }
     }
-
 }
 </script>
 <style>
-#project__wrapper {
-    height: 50vh;
-    width: 75%;
-    margin: 100px;
-    color: white;
-    background: #6e7f80;
-}
-.project__details {
-    padding: 45px;
-    width: 100%;
+.b-project-content__wrapper {
+    height: 550px;
+    width: 550px;
+    border: 5px solid white;
     margin: auto;
-    border-radius: 0;
-    font-size: 1.15em;
+    text-align: center;
+    padding: 25px;
 }
-.reveal__container {
-  width: 100%;
-  height: 50%;
-  background-color: indigo;
-  z-index: 10;
-}
-/* Can come back to this later as it might be useful VUE JS TRANSITION -- SLIDE FADE */
-.slide-fade-enter-active {
-  transition: all .3s ease;
-}
-.slide-fade-leave-active {
-  transition: all .6s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateY(50px);
-  opacity: 0;
+.b-brand-black {
+    background-color: #01060f;
 }
 </style>

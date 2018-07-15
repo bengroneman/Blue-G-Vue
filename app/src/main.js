@@ -4,9 +4,6 @@ import router from './router'
 import Vuetify from 'vuetify'
 import store from './store'
 import 'vuetify/dist/vuetify.css'
-import jquery from 'jquery'
-import fullpage from 'fullpage.js'
-import vuefullpage from 'vue-fullpage.js'
 
 Vue.config.productionTip = false
 

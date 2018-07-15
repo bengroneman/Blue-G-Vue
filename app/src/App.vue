@@ -9,16 +9,16 @@
         </em></h2><p class="text-xs-center">-- Alan Watts</p> 
     </v-container>
     <!-- Blue G Skill Section -->
-    <div class="fluid__container skills-section">
+    <div class="fluid__container full-height skills-section">
         <bskillsection></bskillsection> 
     </div>
     <!-- Blue G Project Section -->
-    <div id="nav">
+    <!--<div id="nav">
       <h1>See projects I have worked on</h1>
       <router-link to="/">Projects </router-link>
       <router-link to="/ruggedwerx"> RuggedWerx</router-link>
     </div>
-    <router-view/>
+    <router-view/> -->
     <bfooter></bfooter>
   </div>
 </template>
@@ -57,6 +57,9 @@ code {
 pre {
  background-color: transparent;
  border: none;
+}
+.full-height {
+  height: 100vh;
 }
 .b-brand-dark {
   color: #01060f!important;

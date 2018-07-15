@@ -5,10 +5,12 @@
       <v-flex text-xs-center>
 <!-- COOOODDEE -->
 <pre><code class="display-2 text-xs-left">
+<span id="jumbotron-content__wrapper">
 <span class="b-tan">function</span> <span class="b-blue-ish">displayInitialGreeting</span> (<span class="b-blue-ish">name</span>) {
   <span class="b-tan">document</span>.<span class="b-purple">write</span>(<span class="b-green-ish">'Shallom, '</span> + <span class="b-tan">this</span>.<span class="b-purple">name</span>);
   <span class="b-tan">document</span>.<span class="b-purple">write</span>(<span class="b-green-ish">'Benjamin Blue Groneman'</span>);
 }
+</span>
 </code></pre>
       </v-flex>
     </v-layout>
@@ -26,6 +28,11 @@ export default {
 }
 </script>
 <style>
+#jumbotron-content__wrapper {
+ font-family: 'Quattrocento', sans-serif;
+ font-weight: 600;
+ letter-spacing: 0.025em;
+}
 .primary {
   background-color: #195a92;
 }

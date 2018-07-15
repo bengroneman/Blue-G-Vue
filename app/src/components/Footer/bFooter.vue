@@ -46,9 +46,6 @@ export default {
 }
 </script>
 <style>
-.b-footer {
-  margin-top: 70px;
-}
 .b__footer {
   background: #01060f;
 }

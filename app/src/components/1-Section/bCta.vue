@@ -27,7 +27,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 #jumbotron-content__wrapper {
  font-family: 'Quattrocento', sans-serif;
  font-weight: 600;

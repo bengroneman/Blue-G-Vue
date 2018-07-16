@@ -134,6 +134,7 @@ body, html {
 }
 .skills-section {
     background: #202f3e;
+    height: 100%!important;
 }
 .fluid__container {
     margin: 0;

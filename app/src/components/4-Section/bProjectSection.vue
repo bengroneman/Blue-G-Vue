@@ -41,4 +41,7 @@ export default {
 .b-brand-black {
     background-color: #01060f;
 }
+.b-project-section {
+  height: 100%;
+}
 </style>

@@ -5,18 +5,18 @@
 		<v-layout row wrap class="skills-section__wrapper">
 			<v-flex xs4 class="column">
         <i class="material-icons">code</i>
-        <h2>Technical Skills</h2>
-        <p><em>Javascript, Vue, Laravel, Hubspot, Wordpress, Linux, Java, and more</em></p>
+        <h2 class="title is-size-1">Technical Skills</h2>
+        <p class="is-size-5"><em>Javascript, Vue, Laravel, Hubspot, Wordpress, Linux, Java, and more</em></p>
 			</v-flex>
 			<v-flex xs4 class="column">
         <i class="material-icons">chat</i>
-        <h2>Soft Skills</h2>
-        <p>Communication, content management, spreadsheets, and more</p>
+        <h2 class="title is-size-1">Soft Skills</h2>
+        <p class="is-size-5">Communication, content management, spreadsheets, and more</p>
 			</v-flex>
 			<v-flex xs4 class="column">
         <i class="material-icons">map</i>
-        <h2>Interests</h2>
-        <p>Hiking, biking, reading, and more</p>
+        <h2 class="title is-size-1">Interests</h2>
+        <p class="is-size-5">Hiking, biking, reading, and more</p>
 			</v-flex>
 		</v-layout>
 	</v-container>
@@ -30,6 +30,10 @@ export default {
 <style scoped>
 .container {
 	background: #202f3e;
+}
+.title {
+  text-transform: uppercase;
+  color: white;
 }
 .svg__wrapper {
 	height: 100%;

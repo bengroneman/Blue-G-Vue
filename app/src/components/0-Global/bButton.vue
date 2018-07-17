@@ -14,6 +14,9 @@ export default {
 }
 </script>
 <style>
+i {
+  margin-right: 7px;
+}
 .portfolio-experiment, .scene {
     overflow: hidden;
     display: flex;
@@ -22,7 +25,6 @@ export default {
     -webkit-display: flex;
     -webkit-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -33,8 +35,6 @@ export default {
     -webkit-align-items: center;
 }
 
-.portfolio-experiment {
-}
 .portfolio-experiment a {
   color: white;
   padding: 0.7em calc(0.7em * 1.2);
@@ -46,7 +46,6 @@ export default {
   letter-spacing: 0.07em;
 }
 .portfolio-experiment a .text {
-  font-family: proxima-nova, monospace;
   transform: translate3d(0, 0.7em, 0);
   display: block;
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
@@ -58,13 +57,13 @@ export default {
   left: calc(0.7em * 1.2);
   right: calc(0.7em * 1.2);
   height: 3px;
-  background: #44a8c5;
+  background: #54d0ba;
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
   transform-origin: left;
 }
 .portfolio-experiment .line {
   position: absolute;
-  background: #44a8c5;
+  background: #54d0ba;
 }
 .portfolio-experiment .line.-right, .portfolio-experiment .line.-left {
   width: 3px;

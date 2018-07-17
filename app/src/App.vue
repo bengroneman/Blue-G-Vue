@@ -100,7 +100,7 @@ button > a:hover {
 button:hover {
     box-shadow: -6px 7px 0px 0px #6e7f80;
 }
-h1 {
+h1, h2, h3, h4 {
   font-family: 'Nunito', serif;
   font-size: 3em;
 	font-weight: 100;
@@ -108,15 +108,14 @@ h1 {
 }
 h2 {
     font-size:2em!important;
-    font-family: 'Nunito', serif; 
 }
-p {
-    font-family: 'Playfair Display', serif;
+p, a, h5, h6 {
+    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 1.025em;
 }
 body, html {
-  font-family: 'Playfair Display', serif!important;
+  font-family: 'Nunito', serif;
 }
 .quote-blurb {
     background: #01060f;
@@ -131,6 +130,7 @@ body, html {
 .quote-blurb > p {
   font-size: 1.5em;
   font-weight: 500;
+  color: #54d0ba;
 }
 .skills-section {
     background: #202f3e;

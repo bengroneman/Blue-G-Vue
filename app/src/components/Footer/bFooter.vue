@@ -47,6 +47,6 @@ export default {
 </script>
 <style>
 .b__footer {
-  background: #01060f;
+  background-color: rgb(1, 6, 15)!important;
 }
 </style>

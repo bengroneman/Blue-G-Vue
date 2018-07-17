@@ -8,7 +8,9 @@
                 <div class="b-project-content__wrapper">
                     <h2 class="is-size-1">I am a big advocate for open source</h2>
                     <h3 class="is-size-2">Find me @strangenectar on github</h3>
-                    <bbutton externalLink="https://github.com/strangenectar" btnIcon="code" btnText="Open Source"></bbutton>
+                    <div class="portfolio-experiment">
+                      <bbutton externalLink="https://github.com/strangenectar" btnIcon="code" btnText="Open Source"></bbutton>
+                    </div>
                 </div>
             </v-flex>
         </v-layout>
@@ -49,7 +51,7 @@ export default {
     color: white;
 }
 .b-project__wrapper {
- background: linear-gradient(rgba(68, 168, 197, 0.85), rgba(1, 6, 5, 0.85));
+ background: linear-gradient(rgba(16,90,146, 0.85), rgba(1, 6, 5, 0.85));
  height: 100%;
  width: 100%;
 

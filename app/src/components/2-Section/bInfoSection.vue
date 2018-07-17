@@ -16,7 +16,7 @@
         </div>
         <!-- Icon Column -->
         <div class="column child is-6 info-icon__section">
-            <span>{ }</span>
+            <span class="curly-brackets">{ }</span>
         </div>
       </div>
     </div>
@@ -52,5 +52,8 @@ export default {
 }
 .content-shallom {
   font-weight: 900;
+}
+.curly-brackets {
+  font-family: 'Quattrocento', serif;
 }
 </style>

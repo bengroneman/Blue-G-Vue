@@ -38,6 +38,7 @@ export default {
 }
 .b-jumbotron {
   height: 100vh!important;
+  background: black;
 }
 .b-tan {
   color: #ddca7e!important;

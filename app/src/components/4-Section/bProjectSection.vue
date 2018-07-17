@@ -1,20 +1,20 @@
 <template>
-    <section class="b-project-section">
-        <v-jumbotron color="b-brand-black" dark class="b-jumbotron">
-            <v-container fill-height>
-                <v-layout align-center>
-                    <v-flex text-xs-center>
-                        <!-- Open Source Advocate Section  -->
-                        <div class="b-project-content__wrapper">
-                            <h2 class="is-size-1">I am a big advocate for open source</h2>
-                            <h3 class="is-size-2">Find me @strangenectar on github</h3>
-                            <bbutton externalLink="https://github.com/strangenectar" btnIcon="code" btnText="Open Source"></bbutton>
-                        </div>
-                    </v-flex>
-                </v-layout>
-            </v-container>
-        </v-jumbotron>
-    </section>
+<section class="b-project-section">
+  <div class="b-project__wrapper">
+    <v-container color="b-brand-black" class="b-jumbotron" fill-height>
+        <v-layout align-center>
+            <v-flex text-xs-center>
+                <!-- Open Source Advocate Section  -->
+                <div class="b-project-content__wrapper">
+                    <h2 class="is-size-1">I am a big advocate for open source</h2>
+                    <h3 class="is-size-2">Find me @strangenectar on github</h3>
+                    <bbutton externalLink="https://github.com/strangenectar" btnIcon="code" btnText="Open Source"></bbutton>
+                </div>
+            </v-flex>
+        </v-layout>
+    </v-container>
+  </div>
+</section>
 </template>
 <script>
 import bbutton from '@/components/0-Global/bButton'
@@ -31,8 +31,8 @@ export default {
 </script>
 <style>
 .b-project-content__wrapper {
-    height: 550px;
-    width: 550px;
+    max-height: 550px;
+    max-width: 550px;
     border: 5px solid white;
     margin: auto;
     text-align: center;
@@ -41,7 +41,17 @@ export default {
 .b-brand-black {
     background-color: #01060f;
 }
+.b-jumbotron {
+  height: 100vh!important;
+}
 .b-project-section {
   height: 100%;
+    color: white;
+}
+.b-project__wrapper {
+ background: linear-gradient(rgba(68, 168, 197, 0.85), rgba(1, 6, 5, 0.85));
+ height: 100%;
+ width: 100%;
+
 }
 </style>

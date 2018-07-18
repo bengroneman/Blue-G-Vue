@@ -12,6 +12,7 @@
               My journey with web development began in the wonderful world of Wordpress and PHP, since then I have branched out using Javascript frameworks.
               I am quite fond of the Vuejs framework (which is what is what the site you are looking at now is built on). Have fun and enjoy the website.
             </p>
+            <bline></bline>
           </div>
         </div>
         <!-- Icon Column -->
@@ -25,13 +26,15 @@
 <script>
 import bnavcolumn from '@/components/2-Section/bNavColumn'
 import bcontentcolumn from '@/components/2-Section/bContentColumn'
+import bline from '@/components/0-Global/bLine.vue'
 
 export default {
     name: 'binfosection',
 
     components: {
         bnavcolumn,
-        bcontentcolumn
+        bcontentcolumn,
+        bline
     }
 }
 </script>

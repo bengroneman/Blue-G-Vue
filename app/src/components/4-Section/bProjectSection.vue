@@ -51,8 +51,10 @@ export default {
     color: white;
 }
 .b-project__wrapper {
- background: linear-gradient(rgba(16,90,146, 0.85), rgba(1, 6, 5, 0.85));
- height: 100%;
+  background: linear-gradient(217deg, rgba(84,208,186,.8), rgba(68,168,197,0) 70.71%),
+              linear-gradient(127deg, rgba(16,90,146,.8), rgba(32,47,62,0) 70.71%),
+              linear-gradient(336deg, rgba(1,6,15,.8), rgba(0,0,0,0) 70.71%);
+  height: 100%;
  width: 100%;
 
 }

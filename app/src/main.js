@@ -4,6 +4,14 @@ import router from './router'
 import Vuetify from 'vuetify'
 import store from './store'
 import 'vuetify/dist/vuetify.css'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+
+// Add in vue fontawesome
+library.add(faCoffee)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 

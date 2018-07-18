@@ -118,7 +118,7 @@ body, html {
   font-family: 'Nunito', serif;
 }
 .quote-blurb {
-    background: #01060f;
+    background: rgb(1, 6, 15);
     font-weight: 900;
     margin: auto;
 }

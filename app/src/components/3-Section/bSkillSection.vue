@@ -34,16 +34,16 @@
         <h2 class="title is-size-1">Soft Skills</h2>
       <div class="skill-icon-list__wrapper">
             <div class="communication__wrapper skill-icon__wrapper">
-              <i class="fas fa-universal-access is-size-4"></i>
+              <!--<i class="fas fa-universal-access is-size-4"></i> -->
               <p class="is-size-4">Communication</p>
             </div>
             <div class="project-management__wrapper skill-icon__wrapper">
-              <i class="fas fa-project-diagram is-size-4"></i>
-              <p class="is-size-4">Project Management</p>
+              <!-- <i class="fas fa-project-diagram is-size-4"></i> -->
+              <p class="is-size-4">Projects</p>
             </div>
             <div class="content-management__wrapper skill-icon__wrapper">
-              <i class="fas fa-book is-size-4"></i>
-              <p class="is-size-4">Content Management</p>
+              <!-- <i class="fas fa-book is-size-4"></i> -->
+              <p class="is-size-4">Content</p>
             </div>
         </div>
 
@@ -82,9 +82,6 @@ export default {
 }
 .skills-section__wrapper {
   margin-bottom: 65px;
-}
-.skill-icon__wrapper {
-  color: #54d0ba;
 }
 .skill-icon__wrapper > p {
   margin: 5px;

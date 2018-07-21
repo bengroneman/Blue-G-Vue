@@ -25,7 +25,6 @@ import binfosection from '@/components/2-Section/bInfoSection'
 import bskillsection from '@/components/3-Section/bSkillSection'
 import bfooter from '@/components/Footer/bFooter.vue'
 import bprojectsection from '@/components/4-Section/bProjectSection'
-
 export default {
     components: {
         btoolbar,
@@ -34,6 +33,14 @@ export default {
         bskillsection,
         bfooter,
         bprojectsection
+    },
+
+    data() {
+      return {
+        options: {
+          paddingTop: '30px'
+        },
+      }
     }
 }
 </script>

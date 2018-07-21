@@ -10,17 +10,16 @@
     tile
     class="b__footer white--text text-xs-center"
   >
-  <v-card-text>
- </v-card-text>
+  <v-card-text class="display-2">
+    CONNECT WITH ME
+  </v-card-text>
   <div class="social-icons__footer">
       <bsocialicons></bsocialicons>
   </div>
     
     <div class="columns">
         <div class="column is-three-fifths is-offset-one-fifth">
-          <v-card-text class="white--text pt-0">
-            Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </v-card-text>
+          <bcontactform></bcontactform>  
         </div>
     </div>
 
@@ -48,5 +47,7 @@ export default {
 <style>
 .b__footer {
   background-color: rgb(1, 6, 15)!important;
+  width: 100%;
+  padding-top: 45px;
 }
 </style>

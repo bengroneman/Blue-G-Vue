@@ -9,6 +9,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 
+
 // Add in vue fontawesome
 library.add(faCoffee)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
@@ -19,9 +20,6 @@ Vue.config.productionTip = false
 window.Vuetify = require('vuetify')
 
 window.jquery = require('jquery')
-window.fullpage = require('fullpage.js')
-window.vuefullpage = require('vue-fullpage.js')
-
 
 // Must use to instantiate vuetify
 Vue.use(Vuetify, {

@@ -1,55 +1,35 @@
 <template>
-<div id="skills" class="b-skill-section">
+<section id="skills" class="b-skill-section">
 	<h1 class="text-xs-center skill__header">What I Bring to the Table</h1>
-	<v-container grid-list-md class="text-xs-center">
-		<v-layout row wrap class="skills-section__wrapper">
-			<v-flex xs4 class="column">
-        <i class="material-icons">code</i>
-        <h2 class="title is-size-1">Technical Skills</h2>
-        <div class="skill-icon-list__wrapper">
-          <div class="vuejs__wrapper skill-icon__wrapper">
-            <p class="is-size-4">VueJs</p>
-          </div>
-          <div class="js__wrapper skill-icon__wrapper">
-            <p class="is-size-4">Javascript</p>
-          </div>
-          <div class="laravel__wrapper skill-icon__wrapper">
-            <p class="is-size-4">Laravel</p>
-          </div>
-          <div class="java__wrapper skill-icon__wrapper">
-            <p class="is-size-4">Java</p>
-          </div>
-          <div class="php__wrapper skill-icon__wrapper">
-            <p class="is-size-4">PHP</p>
-          </div>
-      </div>
-			</v-flex>
-			<v-flex xs4 class="column">
-        <i class="material-icons">chat</i>
-        <h2 class="title is-size-1">Soft Skills</h2>
+  <!-- B Skills Section Wrapper -->
+  <div class="columns">
+    <!-- B Technical Skills Column -->
+    <div class="column">
+      <i class="material-icons">code</i>
+      <h2 class="title is-size-1">Technical Skills</h2>
       <div class="skill-icon-list__wrapper">
-          <div class="communication__wrapper skill-icon__wrapper">
-            <!--<i class="fas fa-universal-access is-size-4"></i> -->
-            <p class="is-size-4">Communication</p>
-            </div>
-            <div class="project-management__wrapper skill-icon__wrapper">
-              <!-- <i class="fas fa-project-diagram is-size-4"></i> -->
-              <p class="is-size-4">Projects</p>
-            </div>
-            <div class="content-management__wrapper skill-icon__wrapper">
-              <!-- <i class="fas fa-book is-size-4"></i> -->
-              <p class="is-size-4">Content</p>
-            </div>
-        </div>
-
-      </v-flex>
-			<v-flex xs4 class="column">
-        <i class="material-icons">map</i>
-        <h2 class="title is-size-1">Interests</h2>
-        <p class="is-size-5">Hiking, biking, reading, and more</p>
-			</v-flex>
-		</v-layout>
-	</v-container>
+        <p class="is-size-4">Javascript(VueJS), PHP(Laravel), Java, Content Management, and Wordpress</p>
+      </div>
+    </div>
+    <!-- End Technical Skills Column -->
+    <!-- B Soft Skills Column -->
+    <div class="column">
+      <i class="material-icons">chat</i>
+      <h2 class="title is-size-1">Soft Skills</h2>
+      <div class="skill-icon-list__wrapper">
+        <p class="is-size-4">Communication, Organization, and the Google Suite</p>
+      </div>
+    </div>
+    <!-- End Soft Skills Column -->
+    <!-- B Interests Column -->
+    <div class="column">
+      <i class="material-icons">map</i>
+      <h2 class="title is-size-1">Interests</h2>
+      <div class="skill-icon-list__wrapper">
+        <p class="is-size-4">Hiking, biking, reading</p>
+      </div>
+    </div>
+  </div>
   <!-- Programming icons -->
   <div class="skill-icon-list__wrapper">
     <div class="vuejs__wrapper skill-icon__wrapper">
@@ -67,8 +47,9 @@
     <div class="php__wrapper skill-icon__wrapper">
       <i class="fab fa-php is-size-4"></i>
     </div>
+    <!-- End Skills Section Wrapper -->
   </div>
-</div>
+</section>
 </template>
 <script>
 export default {

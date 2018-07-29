@@ -16,7 +16,10 @@ pre {
  background-color: transparent;
  border: none;
 }
-.full-height {
+.full-view-height {
+  height: 100vh;
+}
+.full-column-height {
   height: 100%;
 }
 .b-brand-dark {

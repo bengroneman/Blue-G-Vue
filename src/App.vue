@@ -19,6 +19,8 @@
     </div>
     <!-- Blue G Project Section -->
     <bprojectsection></bprojectsection>
+    <!-- Project Grid and Description -->
+    <bprojectrow></bprojectrow>
     <!-- Blue G Footer-->
     <bfooter></bfooter>
   </div>
@@ -30,6 +32,7 @@ import binfosection from '@/components/2-Section/bInfoSection'
 import bskillsection from '@/components/3-Section/bSkillSection'
 import bfooter from '@/components/Footer/bFooter.vue'
 import bprojectsection from '@/components/4-Section/bProjectSection'
+import bprojectrow from '@/components/5-Section/bProjectRow'
 
 export default {
     components: {
@@ -38,7 +41,8 @@ export default {
         binfosection,
         bskillsection,
         bfooter,
-        bprojectsection
+        bprojectsection,
+        bprojectrow
     }
 }
 </script>

@@ -8,9 +8,7 @@
                 <div class="b-project-content__wrapper">
                     <h2 class="is-size-1">I am a big advocate for open source</h2>
                     <h3 class="is-size-2">Find me @strangenectar on github</h3>
-                    <div class="portfolio-experiment">
                       <bbutton externalLink="https://github.com/strangenectar" btnIcon="code" btnText="Open Source"></bbutton>
-                    </div>
                 </div>
             </v-flex>
         </v-layout>

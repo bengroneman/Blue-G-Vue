@@ -3,6 +3,7 @@
     <bprojecttemplate
       projectHeader="Ruggedwerx"
       projectSubHeader="A Wyoming Inc Project"
+      projectLink="ruggedwerx.com"
     >
       This was a project built through Wyoming Inc. There was a lot of design work
       that has gone into this project, from the wonderful people at Wyoming Inc.

@@ -5,7 +5,7 @@
       <bprojectarray></bprojectarray>   
     </div>
     <!-- Project details // in depth answer -->
-    <div class="column full-column-height">
+    <div class="column parent project-section-col-2">
       <router-view></router-view> 
     </div>
   </div>
@@ -27,6 +27,10 @@ export default {
   height: 100%;
 }
 .project-section-col {
+  margin-bottom: 100px;
+}
+.project-section-col-2 {
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 </style>

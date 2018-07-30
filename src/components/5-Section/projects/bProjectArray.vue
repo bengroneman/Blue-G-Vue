@@ -1,19 +1,39 @@
 <template>
   <aside class="child project-grid">
     <!-- Project Array Header -->
+    <h1>Project Array</h1>
     <v-container grid-list-md text-xs-center>
-      <v-layout row wrap class="full-column-height b-project-grid__wrapper">
-        <!-- BProject First Row -->
-        <v-flex v-for="i in 2" :key="`2${i}`" xs6>
-          <v-card dark color="secondary" class="child b-project-grid__container">
-            <bproject></bproject>
+      <v-layout row wrap class="b-project-grid__wrapper">
+        <!-- BProject First Column -->
+        <v-flex xs6>
+          <v-card dark color="secondary" class="child b-project-grid__container">   
+            <router-link to="ruggedwerx">
+              <bproject projectImgUrl="/img/ruggedwerx.png"></bproject>
+            </router-link>
           </v-card>
         </v-flex>
-        
-        <!-- BProject Second Row -->
-        <v-flex class="full-column-height" v-for="i in 2" :key="`2${i}`" xs6>
+        <!-- Second Column -->
+        <v-flex xs6>
           <v-card dark color="secondary" class="child b-project-grid__container">
-            <bproject></bproject>
+            <router-link to="bluegdev">
+              <bproject projectImgUrl=""></bproject>
+            </router-link>
+          </v-card>
+        </v-flex>
+        <!--Second Row First Column -->
+        <v-flex xs6>
+          <v-card dark color="secondary" class="child b-project-grid__container">   
+            <router-link to="bonnevillebuilders">
+              <bproject></bproject>
+            </router-link>
+          </v-card>
+        </v-flex>
+       <!-- BProject Second Row -->
+        <v-flex xs6>
+          <v-card dark color="secondary" class="child b-project-grid__container">
+            <router-link to="comingsoon">
+              <bproject></bproject>
+            </router-link>
           </v-card>
         </v-flex>
       </v-layout>
@@ -22,12 +42,21 @@
 </template>
 <script>
 import bproject from '@/components/5-Section/projects/bProject'
+import bprojecttabwrapper from '@/components/5-Section/projectTabWrapper' 
 
 export default {
   name: 'bprojectarray',
 
   components: {
-    bproject
+    bproject,
+    bprojecttabwrapper
+  },
+
+  data: () => ({
+    projectImgList: [] 
+  }),
+  
+  methods: {
   }
 }
 </script>
@@ -49,6 +78,11 @@ export default {
   height: 200px;
 }
 .b-project-grid__container {
-  height: 200px;
+  max-height: 200px;
+}
+.project-grid {
+  max-height: 100%;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 </style>

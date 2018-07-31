@@ -6,35 +6,35 @@
       <v-layout row wrap class="b-project-grid__wrapper">
         <!-- BProject First Column -->
         <v-flex xs6>
-          <v-card dark color="secondary" class="child b-project-grid__container">   
+          <div class="b-project-section__container">
             <router-link to="ruggedwerx">
               <bproject projectImgUrl="/img/ruggedwerx.png"></bproject>
             </router-link>
-          </v-card>
+          </div>
         </v-flex>
         <!-- Second Column -->
         <v-flex xs6>
-          <v-card dark color="secondary" class="child b-project-grid__container">
+          <div class="b-project-section__container">
             <router-link to="bluegdev">
-              <bproject projectImgUrl=""></bproject>
+              <bproject projectImgUrl="/img/bluegdev.png"></bproject>
             </router-link>
-          </v-card>
+          </div>
         </v-flex>
         <!--Second Row First Column -->
         <v-flex xs6>
-          <v-card dark color="secondary" class="child b-project-grid__container">   
+          <div class="b-project-section__container">
             <router-link to="bonnevillebuilders">
-              <bproject></bproject>
+              <bproject projectImgUrl="/img/bonnevillebuilders.png"></bproject>
             </router-link>
-          </v-card>
+          </div>
         </v-flex>
        <!-- BProject Second Row -->
         <v-flex xs6>
-          <v-card dark color="secondary" class="child b-project-grid__container">
+          <div class="b-project-section__container">
             <router-link to="comingsoon">
               <bproject></bproject>
             </router-link>
-          </v-card>
+          </div>
         </v-flex>
       </v-layout>
     </v-container>
@@ -62,8 +62,8 @@ export default {
 </script>
 <style>
 .half-height {
-  max-height: 200px;
-  max-width: 150px;
+  max-height: 300px;
+  max-width: 200px;
 }
 .b-project-row {
   width: 25%;
@@ -74,11 +74,14 @@ export default {
 .b-project-grid__wrapper {
   max-width: 500px;
   width: 500px;
-  max-height: 200px;
-  height: 200px;
+  max-height: 300px;
+  height: 300px;
 }
 .b-project-grid__container {
-  max-height: 200px;
+  max-height: 300px;
+  height: 300px;
+  width: 300px;
+  max-width: 300px;
 }
 .project-grid {
   max-height: 100%;

@@ -3,7 +3,7 @@
   <div class="column">
     <div class="card">
       <div class="card-image">
-        <figure class="image is-4by3">
+        <figure class="image is-5by3">
           <img :src="projectImgUrl" alt="Placeholder image">
         </figure>
       </div>
@@ -17,4 +17,8 @@ export default {
   props: ['projectImgUrl']
 }
 </script>
-
+<style>
+.image > img {
+  object-fit: contain;
+}
+</style>

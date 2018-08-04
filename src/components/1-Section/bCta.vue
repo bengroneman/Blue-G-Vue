@@ -29,9 +29,11 @@ export default {
 </script>
 <style scoped>
 #jumbotron-content__wrapper {
- font-family: 'Quattrocento', sans-serif;
- font-weight: 600;
- letter-spacing: 0.025em;
+   font-family: 'Quattrocento', sans-serif;
+   font-weight: 100;
+   letter-spacing: 0.025em;
+   font-size: 0.85em;
+
 }
 .primary {
   background-color: #195a92;
@@ -39,6 +41,7 @@ export default {
 .b-jumbotron {
   height: 100vh!important;
   background: black;
+  font-size: 0.85em;
 }
 .b-tan {
   color: #ddca7e!important;

@@ -23,6 +23,7 @@
     <bprojectrow></bprojectrow>
     <!-- Blue G Footer-->
     <bfooter></bfooter>
+    <!-- B Tree -->
   </div>
 </template>
 <script>
@@ -33,6 +34,7 @@ import bskillsection from '@/components/3-Section/bSkillSection'
 import bfooter from '@/components/Footer/bFooter.vue'
 import bprojectsection from '@/components/4-Section/bProjectSection'
 import bprojectrow from '@/components/5-Section/bProjectRow'
+import btree from '@/components/0-Global/bTree'
 
 export default {
     components: {
@@ -42,7 +44,8 @@ export default {
         bskillsection,
         bfooter,
         bprojectsection,
-        bprojectrow
+        bprojectrow,
+        btree
     }
 }
 </script>

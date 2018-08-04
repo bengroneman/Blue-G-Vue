@@ -6,27 +6,27 @@
     <!-- B Technical Skills Column -->
     <div class="column">
       <i class="material-icons">code</i>
-      <h2 class="title is-size-1">Technical Skills</h2>
+      <h1 class="title is-size-1">Technical Skills</h1>
       <div class="skill-icon-list__wrapper">
-        <p class="is-size-4">Javascript(VueJS), PHP(Laravel), Java, Content Management, and Wordpress</p>
+        <h5 class="is-size-4">Javascript(VueJS), PHP(Laravel), Java, Content Management, and Wordpress</h5>
       </div>
     </div>
     <!-- End Technical Skills Column -->
     <!-- B Soft Skills Column -->
     <div class="column">
       <i class="material-icons">chat</i>
-      <h2 class="title is-size-1">Soft Skills</h2>
+      <h1 class="title is-size-1">Soft Skills</h1>
       <div class="skill-icon-list__wrapper">
-        <p class="is-size-4">Communication, Organization, and the Google Suite</p>
+        <h5 class="is-size-4">Communication, Organization, and the Google Suite</h5>
       </div>
     </div>
     <!-- End Soft Skills Column -->
     <!-- B Interests Column -->
     <div class="column">
       <i class="material-icons">map</i>
-      <h2 class="title is-size-1">Interests</h2>
+      <h1 class="title is-size-1">Interests</h1>
       <div class="skill-icon-list__wrapper">
-        <p class="is-size-4">Hiking, biking, reading</p>
+        <h5 class="is-size-4">Hiking, biking, reading</h5>
       </div>
     </div>
   </div>

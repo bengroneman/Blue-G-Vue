@@ -10,7 +10,7 @@
         <bbutton
          :externalLink="projectLink" 
          btnText="Check it Out"
-         class="button-black"
+         class="button-black button-left"
        ></bbutton>
        </div>
     </div>
@@ -42,5 +42,8 @@ export default {
 .b-project-template__wrapper {
   margin: 45px;
   text-align: left;
+}
+.button-left {
+  float: left;
 }
 </style>

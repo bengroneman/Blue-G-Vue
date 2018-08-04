@@ -67,22 +67,22 @@ button:hover {
     box-shadow: -6px 7px 0px 0px #6e7f80;
 }
 h1, h2, h3, h4 {
-  font-family: 'Nunito', serif;
   font-size: 3em;
 	font-weight: 100;
 	margin-bottom: 0.35em;
 }
-h2 {
-    font-size:2em!important;
-}
-p, a, h5, h6 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 1.025em;
-}
-body, html {
-  font-family: 'Nunito', serif;
-}
+
+/**
+ *  Font Styling!!!!!!!!!!!!!!!!!!!!!!!
+ */
+h1 { font-family: 'Raleway', sans-serif; }
+h2 { font-family: 'Oswald', sans-serif; }
+h3 { font-family: 'Raleway', sans-serif; }
+h4 { font-family: 'Oswald', sans-serif; }
+h5 { font-family: 'Raleway', sans-serif; }
+h6 { font-family: 'Oswald', sans-serif; }
+p { font-family: 'Oswald', sans-serif; }
+
 .quote-blurb {
     background: rgb(1, 6, 15);
     font-weight: 900;

@@ -7,7 +7,7 @@ import 'vuetify/dist/vuetify.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
+import VueFormGenerator from "vue-form-generator";
 
 
 // Add in vue fontawesome
@@ -25,6 +25,8 @@ window.jquery = require('jquery')
 Vue.use(Vuetify, {
     iconfont: 'mdi'
 })
+
+Vue.use(VueFormGenerator);
 
 new Vue({
   router,

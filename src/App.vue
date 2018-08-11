@@ -8,7 +8,7 @@
     <binfosection></binfosection>    
     <!-- Small section // Quote blurb -->
     <v-container fluid class="quote-blurb fluid__container">
-        <h2 class="text-xs-center"><em>No valid plans for the future can be made by those who have no capacity for living now.
+        <h2 class="text-xs-center"><em>" No valid plans for the future can be made by those who have no capacity for living now. "
         </em></h2><p class="text-xs-center">-- Alan Watts</p> 
     </v-container>
     <!-- Blue G Skill Section -->
@@ -19,8 +19,9 @@
     </div>
     <!-- Blue G Project Section -->
     <bprojectsection></bprojectsection>
-    <!-- Project Grid and Description -->
+    <!-- Project Grid and Description
     <bprojectrow></bprojectrow>
+    -->
     <!-- Blue G Footer-->
     <bfooter></bfooter>
     <!-- B Tree -->

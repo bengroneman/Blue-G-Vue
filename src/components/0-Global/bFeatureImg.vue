@@ -1,6 +1,6 @@
 <template>
-    <div class="b-featureimg__wrapper level">
-        <img alt="bbg fly fishing" height="150" width="150" class="level-item" src="img/BBG-Fly-Fising-WINDRIVER.JPG">
+    <div class="b-featureimg__wrapper">
+        <img alt="bbg fly fishing" height="150" width="150" src="img/BBG-Fly-Fising-WINDRIVER.JPG">
     </div>
 </template>
 <script>

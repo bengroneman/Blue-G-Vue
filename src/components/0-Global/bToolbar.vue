@@ -1,14 +1,38 @@
 <template>
-<v-toolbar class="invert-colors b-toolbar">
-    <v-toolbar-title class="is-size-3 b-brand-green">Blue G</v-toolbar-title>
-    <v-spacer></v-spacer>
-    <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn flat ripple href="#about" class="is-size-4 b-brand-green b-toolbar-link">About</v-btn>
-      <v-btn flat ripple href="#skills" class="is-size-4 b-brand-green b-toolbar-link">Skills</v-btn>
-      <v-btn flat ripple href="#projects" class="is-size-4 b-brand-green b-toolbar-link">Projects</v-btn>
-      <v-btn flat ripple href="#footer" class="is-size-4 b-brand-green b-toolbar-link">Contact</v-btn>
-    </v-toolbar-items>
-</v-toolbar>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Blue G Development</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+			<li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+			<li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Contact Me</a>
+          <a class="dropdown-item" href="#">Coming Soon</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Coming Soon</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 </template>
 <script>
 	export default {

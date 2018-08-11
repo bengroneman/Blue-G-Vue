@@ -1,47 +1,49 @@
 <template>
-<v-jumbotron color="primary" dark class="b-jumbotron">
-  <v-container fill-height>
-    <v-layout align-center>
-      <v-flex text-xs-center>
+<section class="container-fluid b-jumbotron__wrapper">
+    <div class="row b-jumbotron text-center align-items-center">
 <!-- COOOODDEE -->
-<pre><code class="display-2 text-xs-left">
+<pre><code class="display-2 text-left">
 <span id="jumbotron-content__wrapper">
 <span class="b-tan">function</span> <span class="b-blue-ish">displayInitialGreeting</span> (<span class="b-blue-ish">name</span>) {
   <span class="b-tan">document</span>.<span class="b-purple">write</span>(<span class="b-green-ish">'Shallom, '</span> + <span class="b-purple">name</span>);
   <span class="b-tan">document</span>.<span class="b-purple">write</span>(<span class="b-green-ish">'Benjamin Blue Groneman'</span>);
 }
 </span>
-</code></pre>
-      </v-flex>
-    </v-layout>
-  </v-container>
-</v-jumbotron>
+</code></pre>        
+    </div>
+    <!-- CTA Button -->
+    </section>
 </template>
 <script>
 import bfeatureimg from '@/components/0-Global/bFeatureImg'
+import bbutton from '@/components/0-Global/bButton'
 
 export default {
   name: 'b-cta',
   components: {
-    bfeatureimg
+    bfeatureimg,
+    bbutton
   }
 }
 </script>
 <style scoped>
-#jumbotron-content__wrapper {
-   font-family: 'Quattrocento', sans-serif;
-   font-weight: 100;
-   letter-spacing: 0.025em;
-   font-size: 0.85em;
-
-}
-.primary {
-  background-color: #195a92;
+.b-jumbotron__wrapper {
+    height: 100%;
 }
 .b-jumbotron {
-  height: 100vh!important;
   background: black;
-  font-size: 0.85em;
+}
+.b-jumbotron pre, code {
+    background-color: black!important;
+}
+.b-jumbotron code {
+    margin-top: 2em;
+}
+.b-jumbotron pre { 
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: none;
 }
 .b-tan {
   color: #ddca7e!important;

@@ -1,54 +1,51 @@
 <template>
-<section id="skills" class="b-skill-section">
-	<h1 class="text-xs-center skill__header">What I Bring to the Table</h1>
-  <!-- B Skills Section Wrapper -->
-  <div class="columns">
-    <!-- B Technical Skills Column -->
-    <div class="column">
-      <i class="material-icons">code</i>
-      <h1 class="title is-size-1">Technical Skills</h1>
+<section class="container b-skill__container">
+    <h1 class="text-center skill__header">What I Bring to the Table</h1>
+    <div class="row">
+        <div class="col">
+            <!-- Hard Skills -->
+            <i class="material-icons">code</i>
+            <h1 class="title is-size-1">Technical Skills</h1>
+            <div class="skill-icon-list__wrapper">
+                <h5 class="is-size-4">Javascript(VueJS), PHP(Laravel), Java, Content Management, and Wordpress</h5>
+            </div>
+        </div>
+        <div class="col">
+            <!-- Soft Skills -->
+            <i class="material-icons">chat</i>
+            <h1 class="title is-size-1">Soft Skills</h1>
+            <div class="skill-icon-list__wrapper">
+                <h5 class="is-size-4">Communication, Organization, and the Google Suite</h5>
+            </div>
+        </div>
+        <div class="col">
+            <!-- Interests -->
+            <i class="material-icons">map</i>
+            <h1 class="title is-size-1">Interests</h1>
+            <div class="skill-icon-list__wrapper">
+                <h5 class="is-size-4">Hiking, biking, reading</h5>
+            </div>
+        </div>
+    </div> 
+    <!-- Programming icons -->
       <div class="skill-icon-list__wrapper">
-        <h5 class="is-size-4">Javascript(VueJS), PHP(Laravel), Java, Content Management, and Wordpress</h5>
+        <div class="vuejs__wrapper skill-icon__wrapper">
+          <i class="fab fa-vuejs is-size-4"></i>
+        </div>
+        <div class="js__wrapper skill-icon__wrapper">
+          <i class="fab fa-js is-size-4"></i>
+        </div>
+        <div class="laravel__wrapper skill-icon__wrapper">
+          <i class="fab fa-laravel is-size-4"></i>
+        </div>
+        <div class="java__wrapper skill-icon__wrapper">
+          <i class="fab fa-java is-size-4"></i>
+        </div>
+        <div class="php__wrapper skill-icon__wrapper">
+          <i class="fab fa-php is-size-4"></i>
+        </div>
+        <!-- End Skills Section Wrapper -->
       </div>
-    </div>
-    <!-- End Technical Skills Column -->
-    <!-- B Soft Skills Column -->
-    <div class="column">
-      <i class="material-icons">chat</i>
-      <h1 class="title is-size-1">Soft Skills</h1>
-      <div class="skill-icon-list__wrapper">
-        <h5 class="is-size-4">Communication, Organization, and the Google Suite</h5>
-      </div>
-    </div>
-    <!-- End Soft Skills Column -->
-    <!-- B Interests Column -->
-    <div class="column">
-      <i class="material-icons">map</i>
-      <h1 class="title is-size-1">Interests</h1>
-      <div class="skill-icon-list__wrapper">
-        <h5 class="is-size-4">Hiking, biking, reading</h5>
-      </div>
-    </div>
-  </div>
-  <!-- Programming icons -->
-  <div class="skill-icon-list__wrapper">
-    <div class="vuejs__wrapper skill-icon__wrapper">
-      <i class="fab fa-vuejs is-size-4"></i>
-    </div>
-    <div class="js__wrapper skill-icon__wrapper">
-      <i class="fab fa-js is-size-4"></i>
-    </div>
-    <div class="laravel__wrapper skill-icon__wrapper">
-      <i class="fab fa-laravel is-size-4"></i>
-    </div>
-    <div class="java__wrapper skill-icon__wrapper">
-      <i class="fab fa-java is-size-4"></i>
-    </div>
-    <div class="php__wrapper skill-icon__wrapper">
-      <i class="fab fa-php is-size-4"></i>
-    </div>
-    <!-- End Skills Section Wrapper -->
-  </div>
 </section>
 </template>
 <script>
@@ -57,12 +54,11 @@ export default {
 }
 </script>
 <style scoped>
+.b-skills__container {
+    
+}
 .container {
 	background: #202f3e;
-}
-.title {
-  text-transform: uppercase;
-  color: white;
 }
 .svg__wrapper {
 	height: 100%;

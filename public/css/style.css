@@ -84,9 +84,10 @@ h6 { font-family: 'Oswald', sans-serif; }
 p { font-family: 'Oswald', sans-serif; }
 
 .quote-blurb {
-    background: rgb(1, 6, 15);
+    background: linear-gradient(#000000, #202f3e);
     font-weight: 900;
     margin: auto;
+    height: 300px!important;
 }
 .quote-blurb > h2 {
     font-size: 2em;

@@ -1,7 +1,8 @@
 <template>
-<section class="container b-skill__container">
+<section class="container-fluid b-skill__container">
     <h1 class="text-center skill__header">What I Bring to the Table</h1>
     <div class="row">
+        <div class="col"></div>
         <div class="col">
             <!-- Hard Skills -->
             <i class="material-icons">code</i>
@@ -26,7 +27,9 @@
                 <h5 class="is-size-4">Hiking, biking, reading</h5>
             </div>
         </div>
+        <div class="col"></div>
     </div> 
+
     <!-- Programming icons -->
       <div class="skill-icon-list__wrapper">
         <div class="vuejs__wrapper skill-icon__wrapper">
@@ -89,8 +92,12 @@ export default {
 p {
     font-size: 0.85em;
 }
-.b-skill-section {
+.b-skill__container {
     margin-bottom: 5em;
+    height: 100vh;
+}
+.b-about__row {
+    height: 100%;
 }
 .skill__header {
     padding-top: 2em;

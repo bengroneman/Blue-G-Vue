@@ -12,11 +12,7 @@
         </em></h2><p class="text-xs-center">-- Alan Watts</p> 
     </v-container>
     <!-- Blue G Skill Section -->
-    <div class="fluid__container full-height skills-section columns">
-      <div class="column child is-three-fifths">
-        <bskillsection></bskillsection>
-      </div>
-    </div>
+    <bskillsection></bskillsection>
     <!-- Blue G Project Section -->
     <bprojectsection></bprojectsection>
     <!-- Project Grid and Description

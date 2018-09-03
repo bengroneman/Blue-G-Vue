@@ -1,0 +1,240 @@
+pp {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px 30px 0 30px;
+}
+code {
+  box-shadow: none!important;
+  -webkit-box-shadow: none!important;
+  color: white!important;
+}
+pre {
+ background-color: transparent;
+ border: none;
+}
+.full-view-height {
+  height: 100vh;
+}
+.full-column-height {
+  height: 100%;
+}
+.b-brand-dark {
+  color: !important;
+}
+#nav a {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+  position: relative;
+  bottom: 15px;
+}
+
+#nav a.router-link-exact-active {
+  color: #6e7f80;
+  border-bottom: 5px solid #6e7f80;
+}
+.parent {
+    display: flex;
+}
+.child {
+    margin: auto;
+}
+.button-black .text {
+  color: black!important;
+}
+button {
+    background-color: #36454f!important;
+    padding: 25px;
+    transition: 0.7s all ease;
+}
+button > a {
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 3px solid #6e7f80;
+    font-weight: 900;
+    transition: 0.7s all ease;
+}
+button > a:hover {
+    color: white;
+}
+button:hover {
+    box-shadow: -6px 7px 0px 0px #6e7f80;
+}
+h1, h2, h3, h4 {
+  font-size: 3em;
+	font-weight: 100;
+	margin-bottom: 0.35em;
+}
+
+/**
+ *  Font Styling!!!!!!!!!!!!!!!!!!!!!!!
+ */
+h1 { font-family: 'Raleway', sans-serif; }
+h2 { font-family: 'Raleway', sans-serif; }
+h3 { font-family: 'Raleway', sans-serif; }
+h4 { font-family: 'Oswald', sans-serif; }
+h5 { font-family: 'Raleway', sans-serif; }
+h6 { font-family: 'Oswald', sans-serif; }
+p { font-family: 'Oswald', sans-serif; }
+
+.quote-blurb {
+    background: linear-gradient(#000000, #202f3e);
+    font-weight: 900;
+    margin: auto;
+    height: 300px!important;
+}
+.quote-blurb > h2 {
+    font-size: 2em;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.quote-blurb > p {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #54d0ba;
+}
+.skills-section {
+    background: #202f3e;
+    height: 100%!important;
+}
+.fluid__container {
+    margin: 0;
+    width: 100%!important;
+    color: white;
+}
+.b-project-section {
+    background: radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #7a7a7a 10px, rgba(96, 16, 48, 0) 11px) 0px 10px, radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, #7a7a7a 10px, rgba(96, 16, 48, 0) 11px), #0a0a0a; 
+    background-size: 20px 20px;
+    width: 100%;
+    height: 100%;
+}
+.section-one {
+    background: white;
+    margin: 75px;
+}
+i {
+  margin-right: 7px;
+}
+.portfolio-experiment, .scene {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-display: flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+
+.portfolio-experiment a {
+  color: white;
+  padding: 0.7em calc(0.7em * 1.2);
+  display: inline-block;
+  border: 3px solid transparent;
+  position: relative;
+  font-size: 1.5em;
+  cursor: pointer;
+  letter-spacing: 0.07em;
+}
+.portfolio-experiment a .text {
+  transform: translate3d(0, 0.7em, 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+.portfolio-experiment a:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: calc(0.7em * 1.2);
+  right: calc(0.7em * 1.2);
+  height: 3px;
+  background: #54d0ba;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transform-origin: left;
+}
+.portfolio-experiment .line {
+  position: absolute;
+  background: #54d0ba;
+}
+.portfolio-experiment .line.-right, .portfolio-experiment .line.-left {
+  width: 3px;
+  bottom: -3px;
+  top: -3px;
+  transform: scale3d(1, 0, 1);
+}
+.portfolio-experiment .line.-top, .portfolio-experiment .line.-bottom {
+  height: 3px;
+  left: -3px;
+  right: -3px;
+  transform: scale3d(0, 1, 1);
+}
+.portfolio-experiment .line.-right {
+  right: -3px;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transform-origin: top;
+}
+.portfolio-experiment .line.-top {
+  top: -3px;
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
+}
+.portfolio-experiment .line.-left {
+  left: -3px;
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
+}
+.portfolio-experiment .line.-bottom {
+  bottom: -3px;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transform-origin: right;
+}
+.portfolio-experiment a:hover .text,
+.portfolio-experiment a:active .text {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+.portfolio-experiment a:hover:after,
+.portfolio-experiment a:active:after {
+  transform: scale3d(0, 1, 1);
+  right: -3px;
+  left: -3px;
+  transform-origin: right;
+  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+}
+.portfolio-experiment a:hover .line,
+.portfolio-experiment a:active .line {
+  transform: scale3d(1, 1, 1);
+}
+.portfolio-experiment a:hover .line.-right,
+.portfolio-experiment a:active .line.-right {
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transform-origin: bottom;
+}
+.portfolio-experiment a:hover .line.-top,
+.portfolio-experiment a:active .line.-top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+.portfolio-experiment a:hover .line.-left,
+.portfolio-experiment a:active .line.-left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+.portfolio-experiment a:hover .line.-bottom,
+.portfolio-experiment a:active .line.-bottom {
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transform-origin: left;
+}

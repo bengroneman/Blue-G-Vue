@@ -1,18 +1,32 @@
 <template>
-<section class="container-fluid b-jumbotron__wrapper">
-    <div class="row b-jumbotron text-center align-items-center">
-<!-- COOOODDEE -->
-<pre><code class="display-2 text-left">
-<span id="jumbotron-content__wrapper">
-<span class="b-tan">function</span> <span class="b-blue-ish">displayInitialGreeting</span> (<span class="b-blue-ish">name</span>) {
-  <span class="b-tan">document</span>.<span class="b-purple">write</span>(<span class="b-green-ish">'Shallom, '</span> + <span class="b-purple">name</span>);
-  <span class="b-tan">document</span>.<span class="b-purple">write</span>(<span class="b-green-ish">'Benjamin Blue Groneman'</span>);
-}
-</span>
-</code></pre>        
+<section class="vue-particles-bb">
+
+    <div class="b-cta__content">
+        <div class="b-cta__content-wrapper">
+            <h1>Benjamin Blue Groneman</h1>
+            <h2>Web Developer</h2>
+        </div>
     </div>
-    <!-- CTA Button -->
-    </section>
+
+    <!-- Instantiate the particle system -->
+    <vue-particles
+			color="#dedede"
+			:particleOpacity="0.7"
+			:particlesNumber="80"
+			shapeType="circle"
+			:particleSize="4"
+			linesColor="#dedede"
+			:linesWidth="1"
+			:lineLinked="true"
+			:lineOpacity="0.4"
+			:linesDistance="150"
+			:moveSpeed="3"
+			:hoverEffect="true"
+			hoverMode="grab"
+			:clickEffect="true"
+			clickMode="push"
+        ></vue-particles>
+</section>
 </template>
 <script>
 import bfeatureimg from '@/components/0-Global/bFeatureImg'
@@ -27,34 +41,31 @@ export default {
 }
 </script>
 <style scoped>
-.b-jumbotron__wrapper {
-    height: 100%;
+.vue-particles-bb {
+    height: 100vh;
+    width: 100vw;
+    background: url('/public/img/BenG-Portfolio.JPG');
+	background-image: linear-gradient(rgb(0, 0, 0), rgb(32, 47, 62));
 }
-.b-jumbotron {
-  background: black;
+
+.b-cta__content {
+   display: flex;
+   position: relative;
+   width: 100%;
 }
-.b-jumbotron pre, code {
-    background-color: black!important;
-}
-.b-jumbotron code {
-    margin-top: 2em;
-}
-.b-jumbotron pre { 
-    height: 100%;
+
+.b-cta__content-wrapper {
+    margin: 15% auto;
+    position: absolute;
     width: 100%;
-    overflow: hidden;
-    border: none;
 }
-.b-tan {
-  color: #ddca7e!important;
+.b-cta__content-wrapper > h2 {
+	color: #54d0ba;
 }
-.b-blue-ish {
-  color: #809bbd!important; 
-}
-.b-purple {
-  color: #9a8297!important;
-}
-.b-green-ish {
- color: #96b38a!important; 
+
+.b-cta__content-wrapper > h1 {
+	color: white;
+	margin: 1.15em auto;
 }
 </style>
+

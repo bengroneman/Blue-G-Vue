@@ -25,6 +25,9 @@ pre {
 .b-brand-dark {
   color: !important;
 }
+#particle-js {
+    background-image: url('public/img/CodenStuff.PNG');
+}
 #nav a {
   font-weight: bold;
   font-size: 1.5em;
@@ -76,7 +79,7 @@ h1, h2, h3, h4 {
  *  Font Styling!!!!!!!!!!!!!!!!!!!!!!!
  */
 h1 { font-family: 'Raleway', sans-serif; }
-h2 { font-family: 'Raleway', sans-serif; }
+h2 { font-family: 'Oswald', sans-serif; }
 h3 { font-family: 'Raleway', sans-serif; }
 h4 { font-family: 'Oswald', sans-serif; }
 h5 { font-family: 'Raleway', sans-serif; }

@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="col"></div>
-    </div> 
+    </div>
 
     <!-- Programming icons -->
       <div class="skill-icon-list__wrapper">
@@ -58,7 +58,7 @@ export default {
 </script>
 <style scoped>
 .b-skills__container {
-    
+
 }
 .container {
 	background: #202f3e;

@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar fixed-top navbar-expand-lg b-toolbar">
   <a class="navbar-brand" href="#">Blue G Development</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,22 @@
   z-index: 100;
   font-family: 'Nunito', serif;
   font-weight: bold;
-  background-color: rgba(1, 6, 15, 0.75);
+  background-color: rgb(32, 47, 62);
+}
+.navbar {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.025em;
+}
+.navbar > a {
+  color: #54d0ba;
+  text-transform: uppercase;
+}
+.nav-item .active {
+  background-color: black;
+}
+.nav-item > a {
+  color: #54d0ba;
+  text-transform: uppercase;
 }
 .b-toolbar-link {
   font-size: 1.35em;

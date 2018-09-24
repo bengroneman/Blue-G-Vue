@@ -13,7 +13,8 @@
     <h5 class="text-is-left card-title">{{ cardtitle }}</h5>
     <h6 class="text-is-left card-sub-title">{{ cardsubtitle }}</h6>
     <p class="text-is-left card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary b-btn">Visit Site</a>
+    <a href="#" class="btn btn-secondary b-btn">Read More</a>
   </div>
 </div>
 </template>
@@ -56,6 +57,10 @@ export default {
 	border-radius: 3px;
 	margin-right: 5px;
 	margin-bottom: 15px;
+}
+.b-btn {
+  padding: 5px; 
+  margin: 10px;
 }
 .b-skill {
 	margin-right: 3px;

@@ -9,8 +9,8 @@
 					cardtitle="Blue G Portfolio Project"
 					cardsubtitle="A portfolio for Ben Groneman"
 					cardcontent="This project was built by Ben Groneman, with VueJS"
-					skillisVUE=true
-					skillisJS=true
+					skillisVUE
+					skillisJS
 				></bcard>
 				<!-- grid item 2 -->
 				<bcard
@@ -18,9 +18,9 @@
 					cardtitle="Ruggedwerx Project"
 					cardsubtitle="Welding/Fabrication company"
 					cardcontent="I built out the front end of this project under the regime of Wyoming inc"
-					skillisWP=true
-					skillisPHP=true
-					skillisJS=true
+					skillisWP
+					skillisPHP
+					skillisJS
 				></bcard>
 				<!-- grid item 3 -->
 				<bcard
@@ -28,9 +28,9 @@
 					cardtitle="Bonneville Builders Project"
 					cardsubtitle="Contactors of many sorts"
 					cardcontent="This project was built for you!"
-					skillisWP=true
-					skillisPHP=true
-					skillisJS=true
+					skillisWP
+					skillisPHP
+					skillisJS
 
 				></bcard>
 				<!-- grid item 4 -->
@@ -39,13 +39,18 @@
 					cardtitle="Museum of the American West Project"
 					cardsubtitle="Museum based in Lander Wy"
 					cardcontent="This project was built soley by yours truley"
-					skillisWP=true
-					skillisPHP=true
-					skillisJS=true
+					skillisWP
+					skillisPHP
+					skillisJS
 				></bcard>
       </div>
       <div class="col-6 b-project__info child">
-        <h1>h3llo </h1>
+        <h1 class="text-is-left">Project Description </h1>
+        <bline></bline>
+        <div class="text-is-left b-project-info__content">
+          <p>Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p> 
+          <p>Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p> 
+        </div>
       </div>
     </div>
   </section>
@@ -53,11 +58,13 @@
 
 <script>
 import bcard from '@/components/0-Global/bCard'
+import bline from '@/components/0-Global/bLine'
 
 export default {
   name: 'projects',
 	components: {
-		bcard
+		bcard,
+    bline
 	}
 }
 </script>
@@ -68,12 +75,17 @@ export default {
 	margin: 50px;
 	padding: 50px;
 }
+.b-project-info__content {
+  margin-top: 3em;
+  font-family: 'Nunito', serif;
+}
 .b-grid__row {
   height: 100%;
 }
 .b-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 
 </style>

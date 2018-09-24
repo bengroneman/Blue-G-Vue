@@ -9,36 +9,15 @@
         <!-- Skill Description Column -->
         <h1>Skill</h1> 
         <div class="col-sm b-skill-icon__column b-skill-description__column">
-                <p>{{ getIconList }}</p>
+                <p></p>
         </div>
     </div>
 </section>
 </template>
 <script>
-export default {
-	name: 'bskillsection',
-    data: () => ({
-        iconList: [] 
-    }),
 
-    computed: {
-        getIcons: function() {
-            return iconList;
-        }
-    },
-  
-    methods: {
-        putIconsInArray() {
-            this.iconList = iconList.push(
-                'Java',
-                'Python',
-                'VueJs')
-        }
-    },
-    
-    mounted: {
-        putIconsInArray()
-    }
+export default {
+	name: 'bskillsection'
 }
 </script>
 <style scoped>

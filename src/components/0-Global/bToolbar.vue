@@ -53,7 +53,7 @@
   letter-spacing: 0.025em;
 }
 .navbar > a {
-  color: #54d0ba;
+  color: white;
   text-transform: uppercase;
 }
 .nav-item .active {

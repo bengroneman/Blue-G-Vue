@@ -19,6 +19,9 @@ pre {
 .full-view-height {
   height: 100vh;
 }
+.text-is-left {
+	text-align: left;
+}
 .full-column-height {
   height: 100%;
 }

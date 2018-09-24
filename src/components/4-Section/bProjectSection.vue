@@ -9,6 +9,7 @@
                     <h2 class="is-size-1">I am a big advocate for open source</h2>
                     <h3 class="is-size-2">Find me @strangenectar on github</h3>
                       <bbutton externalLink="https://github.com/strangenectar" btnIcon="code" btnText="Open Source"></bbutton>
+                      <router-link to="/projects"><h2 class="see-my-work">See my work</h2></router-link>
                 </div>
             </v-flex>
         </v-layout>
@@ -30,6 +31,12 @@ export default {
 }
 </script>
 <style>
+.see-my-work {
+  color: white;
+}
+.see-my-work:hover {
+ text-decoration: underline; 
+}
 .b-project-content__wrapper {
     max-height: 550px;
     max-width: 550px;

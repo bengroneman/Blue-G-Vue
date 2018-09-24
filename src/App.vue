@@ -2,22 +2,9 @@
   <div id="app">
     <!-- B Global Toolbar -->
     <btoolbar></btoolbar>
-    <!-- Main Header CTA -->
-    <bcta></bcta>
-    <!-- B Info/Bio Section -->
-    <binfosection></binfosection>
-    <!-- Small section // Quote blurb -->
-    <v-container fluid class="quote-blurb fluid__container">
-        <h2 class="text-xs-center"><em>" No valid plans for the future can be made by those who have no capacity for living now. "
-        </em></h2><p class="text-xs-center">-- Alan Watts</p>
-    </v-container>
-    <!-- Blue G Skill Section -->
-    <bskillsection></bskillsection>
-    <!-- Blue G Project Section -->
-    <bprojectsection></bprojectsection>
-    <!-- Project Grid and Description
-    <bprojectrow></bprojectrow>
-    -->
+    
+    <router-view></router-view> 
+
     <!-- Blue G Footer-->
     <bfooter></bfooter>
     <!-- B Tree -->
@@ -25,24 +12,12 @@
 </template>
 <script>
 import btoolbar from '@/components/0-Global/bToolbar'
-import bcta from '@/components/1-Section/bCta'
-import binfosection from '@/components/2-Section/bInfoSection'
-import bskillsection from '@/components/3-Section/bSkillSection'
-import bfooter from '@/components/Footer/bFooter.vue'
-import bprojectsection from '@/components/4-Section/bProjectSection'
-import bprojectrow from '@/components/5-Section/bProjectRow'
-import btree from '@/components/0-Global/bTree'
+import bfooter from '@/components/Footer/bFooter'
 
 export default {
     components: {
         btoolbar,
-        bcta,
-        binfosection,
-        bskillsection,
-        bfooter,
-        bprojectsection,
-        bprojectrow,
-        btree
+        bfooter
     }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
 <nav class="navbar fixed-top navbar-expand-lg b-toolbar">
-  <a class="navbar-brand" href="#">Blue G Development</a>
+  <router-link class="navbar-brand" to="/">Blue G Development</router-link>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,16 +8,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <router-link class="nav-link" to="/"> Home </router-link><span class="sr-only">(current)</span>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
+        <router-link class="nav-link" to="/about">About </router-link>
       </li>
 			<li class="nav-item">
-        <a class="nav-link" href="#skills">Skills</a>
+        <router-link class="nav-link" to="/contact">Skills</router-link>
       </li>
 			<li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
+        <router-link class="nav-link" to="/projects">Projects</router-link>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

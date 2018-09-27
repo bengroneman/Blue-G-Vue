@@ -1,19 +1,13 @@
 <template>
 <section class="b-project-section">
-  <div class="b-project__wrapper">
-    <v-container color="b-brand-black" class="b-jumbotron" fill-height>
-        <v-layout align-center>
-            <v-flex text-xs-center>
-                <!-- Open Source Advocate Section  -->
-                <div class="b-project-content__wrapper">
-                    <h2 class="is-size-1">I am a big advocate for open source</h2>
-                    <h3 class="is-size-2">Find me @strangenectar on github</h3>
-                      <bbutton externalLink="https://github.com/strangenectar" btnIcon="code" btnText="Open Source"></bbutton>
-                      <router-link to="/projects"><h2 class="see-my-work">See my work</h2></router-link>
-                </div>
-            </v-flex>
-        </v-layout>
-    </v-container>
+  <div class="b-project__wrapper parent">
+    <!-- Open Source Advocate Section  -->
+    <div class="b-project-content__wrapper child">
+      <h2>I am a big advocate for open source</h2>
+      <h3>Find me @strangenectar on github</h3>
+        <bbutton externalLink="https://github.com/strangenectar" btnIcon="code" btnText="Open Source"></bbutton>
+        <router-link to="/projects"><h2 class="see-my-work">See my work</h2></router-link>
+    </div>
   </div>
 </section>
 </template>
@@ -52,8 +46,8 @@ export default {
   height: 100vh!important;
 }
 .b-project-section {
-  height: 100%;
-    color: white;
+  height: 100vh;
+  color: white;
 }
 .b-project__wrapper {
   background: linear-gradient(217deg, rgba(84,208,186,.8), rgba(68,168,197,0) 70.71%),

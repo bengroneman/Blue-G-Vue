@@ -5,17 +5,19 @@
     <!-- B Info/Bio Section -->
     <binfosection></binfosection>
     <!-- Small section // Quote blurb -->
-    <v-container fluid class="quote-blurb fluid__container">
+    <div class="quote-blurb fluid__container">
         <h2 class="text-xs-center"><em>" No valid plans for the future can be made by those who have no capacity for living now. "
         </em></h2><p class="text-xs-center">-- Alan Watts</p>
-    </v-container>
+    </div>
     <!-- Blue G Skill Section -->
     <bskillsection></bskillsection>
     <!-- Blue G Project Section -->
     <bprojectsection></bprojectsection>
   </div>
 </template>
+
 <script>
+
 // @ is an alias to /src
 import bprojectsection from '@/components/4-Section/bProjectSection.vue'
 import bcta from '@/components/1-Section/bCta'

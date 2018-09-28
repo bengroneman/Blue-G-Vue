@@ -5,7 +5,7 @@
     <div class="b-project-content__wrapper child">
       <h2>I am a big advocate for open source</h2>
       <h3>Find me @strangenectar on github</h3>
-        <bbutton externalLink="https://github.com/strangenectar" btnIcon="code" btnText="Open Source"></bbutton>
+        <bbutton externalLink="https://github.com/strangenectar" btnIcon="fa-code-fork" btnText="Open Source"></bbutton>
         <router-link to="/projects"><h2 class="see-my-work">See my work</h2></router-link>
     </div>
   </div>

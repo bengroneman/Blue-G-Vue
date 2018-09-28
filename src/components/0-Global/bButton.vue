@@ -1,7 +1,7 @@
 <template>
 <div class="portfolio-experiment">
    <a id="b__btn" :href="externalLink">
-     <span class="text"><i class="fas fa-code-branch"></i>i>{{btnIcon}}</i>{{btnText}}</span>
+     <span class="text"><i class="fas {!! btnIcon !!}"></i>{{btnText}}</span>
      <span class="line -right"></span>
      <span class="line -top"></span>
      <span class="line -left"></span>

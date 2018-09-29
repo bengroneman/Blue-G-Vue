@@ -1,31 +1,32 @@
 <template>
 <section class="vue-particles-bb">
-
+  <div class="b-dark--overlay">
     <div class="b-cta__content">
-        <div class="b-cta__content-wrapper">
-            <h1>Benjamin Blue Groneman</h1>
-            <h2>Web Developer</h2>
-        </div>
+      <div class="b-cta__content-wrapper">
+        <h1>Benjamin Blue Groneman</h1>
+        <h2>Web Developer</h2>
+      </div>
     </div>
 
     <!-- Instantiate the particle system -->
     <vue-particles
-			color="#dedede"
-			:particleOpacity="0.7"
-			:particlesNumber="80"
-			shapeType="circle"
-			:particleSize="4"
-			linesColor="#dedede"
-			:linesWidth="1"
-			:lineLinked="true"
-			:lineOpacity="0.4"
-			:linesDistance="150"
-			:moveSpeed="3"
-			:hoverEffect="true"
-			hoverMode="grab"
-			:clickEffect="true"
-			clickMode="push"
-        ></vue-particles>
+      color="#54d0ba"
+      :particleOpacity="0.7"
+      :particlesNumber="80"
+      shapeType="circle"
+      :particleSize="4"
+      linesColor="#dedede"
+      :linesWidth="1"
+      :lineLinked="false"
+      :lineOpacity="0.4"
+      :linesDistance="150"
+      :moveSpeed="2"
+      :hoverEffect="true"
+      hoverMode="grab"
+      :clickEffect="true"
+      clickMode="push"
+    ></vue-particles>
+  </div>
 </section>
 </template>
 <script>
@@ -44,14 +45,20 @@ export default {
 .vue-particles-bb {
     height: 100vh;
     width: 100vw;
-    background: url('/public/img/BenG-Portfolio.JPG');
-	background-image: linear-gradient(rgb(0, 0, 0), rgb(32, 47, 62));
+    z-index: 2;
+    background-size: cover;
+    background-image: url('/img/b-cta__background.PNG');
+}
+.b-dark--overlay {
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .b-cta__content {
    display: flex;
    position: relative;
    width: 100%;
+   z-index: 5;
 }
 
 .b-cta__content-wrapper {

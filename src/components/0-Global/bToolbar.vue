@@ -46,7 +46,7 @@
   z-index: 100;
   font-family: 'Nunito', serif;
   font-weight: bold;
-  background-color: rgb(32, 47, 62);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 .navbar {
   font-family: 'Raleway', sans-serif;

@@ -22,6 +22,9 @@ pre {
 .text-is-left {
 	text-align: left;
 }
+.text-is-center {
+  text-align: center;
+}
 .full-column-height {
   height: 100%;
 }

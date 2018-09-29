@@ -30,13 +30,11 @@
 </section>
 </template>
 <script>
-import bfeatureimg from '@/components/0-Global/bFeatureImg'
 import bbutton from '@/components/0-Global/bButton'
 
 export default {
   name: 'b-cta',
   components: {
-    bfeatureimg,
     bbutton
   }
 }

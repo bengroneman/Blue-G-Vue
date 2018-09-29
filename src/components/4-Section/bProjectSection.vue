@@ -11,6 +11,7 @@
   </div>
 </section>
 </template>
+
 <script>
 import bbutton from '@/components/0-Global/bButton'
 // Should implement some data for reactivity
@@ -24,26 +25,24 @@ export default {
     }
 }
 </script>
+
 <style>
 .see-my-work {
   color: white;
 }
 .see-my-work:hover {
- text-decoration: underline; 
+   text-decoration: underline; 
 }
 .b-project-content__wrapper {
-    max-height: 550px;
-    max-width: 550px;
-    border: 5px solid white;
-    margin: auto;
-    text-align: center;
-    padding: 25px;
+  max-height: 550px;
+  max-width: 550px;
+  border: 5px solid white;
+  margin: auto;
+  text-align: center;
+  padding: 25px;
 }
 .b-brand-black {
     background-color: #01060f;
-}
-.b-jumbotron {
-  height: 100vh!important;
 }
 .b-project-section {
   height: 100vh;
@@ -54,7 +53,7 @@ export default {
               linear-gradient(127deg, rgba(16,90,146,.8), rgba(32,47,62,0) 70.71%),
               linear-gradient(336deg, rgba(1,6,15,.8), rgba(0,0,0,0) 70.71%);
   height: 100%;
- width: 100%;
+  width: 100%;
 
 }
 </style>

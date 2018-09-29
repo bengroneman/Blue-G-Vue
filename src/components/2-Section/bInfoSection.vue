@@ -51,13 +51,11 @@ export default {
     font-size: 5em;
 }
 .b-about__container {
-	height: 100vh;
-}
-.b-about__wrapper {
-	height: 100%;
+  max-height: 100vh;
 }
 .b-about__row {
 	height: 100%;
+  margin: 125px auto 125px auto;
 }
 .curly-brackets {
     font-size: 15em;

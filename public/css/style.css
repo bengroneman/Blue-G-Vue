@@ -4,6 +4,11 @@
   text-align: center;
   color: #2c3e50;
 }
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
 #nav {
   padding: 30px 30px 0 30px;
 }
@@ -95,13 +100,12 @@ p { font-family: 'Oswald', sans-serif; }
 .quote-blurb {
     background: linear-gradient(#000000, #202f3e);
     font-weight: 900;
-    margin: auto;
     height: 300px!important;
+    display: inline-block;
 }
 .quote-blurb > h2 {
     font-size: 2em;
-    margin-top: 45px;
-    margin-bottom: 45px;
+    margin: 75px auto 45px auto;
 }
 .quote-blurb > p {
   font-size: 1.5em;

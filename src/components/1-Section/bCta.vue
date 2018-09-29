@@ -43,8 +43,8 @@ export default {
 </script>
 <style scoped>
 .vue-particles-bb {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     z-index: 2;
     background-size: cover;
     background-image: url('/img/b-cta__background.PNG');

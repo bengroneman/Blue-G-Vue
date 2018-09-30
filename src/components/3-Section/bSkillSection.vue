@@ -7,36 +7,29 @@
           <h1 class="text-is-center">Skill Icon Array</h1>
           
           <!-- B First Skll -->
-          <p class="text-is-left">Javascript</p>
-          <div id="is-90" class="b-skill__item"></div>
+          <div id="is-90" class="b-skill__item"><p class="text-is-left">Javascript</p></div>
 
           <!-- B Second Skill -->
-          <p class="text-is-left">PHP</p>
-          <div id="is-70" class="b-skill__item"></div>
+          <div id="is-70" class="b-skill__item"><p class="text-is-left">PHP</p></div>
 
           <!-- B third Skill -->
-          <p class="text-is-left">CSS</p>
-          <div id="is-75" class="b-skill__item"></div>
+          <div id="is-75" class="b-skill__item"><p class="text-is-left">CSS</p></div>
 
           <!-- B Fourth Skill -->
-          <p class="text-is-left">Hubspot</p>
-          <div id="is-75" class="b-skill__item"></div>
+          <div id="is-75" class="b-skill__item"><p class="text-is-left">Hubspot</p></div>
 
           <!-- B Fifth Skill -->
-          <p class="text-is-left">Wordpress</p>
-          <div id="is-70" class="b-skill__item"></div>
+          <div id="is-70" class="b-skill__item"><p class="text-is-left">Wordpress</p></div>
 
           <!-- B Sixth Skill -->
-          <p class="text-is-left">Communication</p>
-          <div id="is-90" class="b-skill__item"></div>
+          <div id="is-90" class="b-skill__item"><p class="text-is-left">Communication</p></div>
 
           <!-- B Seventh Skill -->
-          <p class="text-is-left">User Experience</p>
-          <div id="is-65" class="b-skill__item"></div>
+          <div id="is-65" class="b-skill__item"><p class="text-is-left">User Experience</p></div>
 
           <div class="b-skill__content">
-            <p>Shown above is just a glimpse of what I have to offer as a web developer</p>
-            <p>If you are looking for a more indepth analysis, then feel free to browse my project page</p>
+            <h4>Shown above is just a glimpse of what I have to offer as a web developer</h4>
+            <h4>If you are looking for a more indepth analysis, then feel free to browse my project page</h4>
             <bbutton externalLink="/projects" btnText="Projects"></bbutton>
           </div>
         </div>
@@ -68,16 +61,36 @@ export default {
   width: 65%;
 }
 .b-skill__container {
-    height: 100vh;
+    height: 100%;
     background-color: #ccc;
 }
 .b-skill-icon__column {
     margin: auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.b-skill-icon__column > p {
+  margin-bottom: 10px;
+}
+.b-skill-icon__column h1 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .b-skill__item {
   width: 100%;
-  height: 25px;
+  height: 30px;
   background-color: rgba(84,208,186,.8);
   border-radius: 15px;
+  margin: 25px;
 }
+.b-skill__item > p {
+  margin: 2px auto 2px 20px;
+}
+.b-skill__content {
+  margin: 45px;
+}
+.b-skill__content h4:first-child {
+  margin-bottom: 20px;
+}
+
 </style>

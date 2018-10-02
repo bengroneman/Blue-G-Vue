@@ -4,7 +4,7 @@
         <!-- Skill Icon Column -->
         <div class="col-8 b-skill-icon__column">
           <!-- Section Header-->
-          <h1 class="text-is-center">Skill Icon Array</h1>
+          <h1 class="text-is-center">Skill Array</h1>
           
           <!-- B First Skll -->
           <div id="is-90" class="b-skill__item"><p class="text-is-left">Javascript</p></div>
@@ -30,7 +30,8 @@
           <div class="b-skill__content">
             <h4>Shown above is just a glimpse of what I have to offer as a web developer</h4>
             <h4>If you are looking for a more indepth analysis, then feel free to browse my project page</h4>
-            <bbutton externalLink="/projects" btnText="Projects"></bbutton>
+            <!--<bbutton externalLink="/projects" btnText="Projects"></bbutton> -->
+            <button id="b-btn" href="/projects" type="button" class="btn btn-outline-primary">Projects</button>
           </div>
         </div>
 
@@ -74,7 +75,7 @@ export default {
 }
 .b-skill-icon__column h1 {
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 .b-skill__item {
   width: 100%;

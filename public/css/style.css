@@ -62,23 +62,17 @@ pre {
 .button-black .text {
   color: black!important;
 }
-button {
-    background-color: #36454f!important;
-    padding: 25px;
-    transition: 0.7s all ease;
+#b-btn {
+  color: rgb(84,208,186)!important;
+  background: rgb(44, 62, 80)!important;
+  text-transform: uppercase;
+  padding: 10px 20px 10px 20px;
+  margin: 20px;
+  border: 1px solid rgb(84, 208, 186);
 }
-button > a {
-    color: white;
-    text-transform: uppercase;
-    border-bottom: 3px solid #6e7f80;
-    font-weight: 900;
-    transition: 0.7s all ease;
-}
-button > a:hover {
-    color: white;
-}
-button:hover {
+#b-btn:hover {
     box-shadow: -6px 7px 0px 0px #6e7f80;
+    transform: scaleX(1.025) scaleY(1.025);
 }
 h1, h2, h3, h4 {
   font-size: 3em;

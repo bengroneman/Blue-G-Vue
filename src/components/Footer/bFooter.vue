@@ -5,10 +5,9 @@
     <div class="social-icons__footer">
       <bsocialicons></bsocialicons>
     </div>
-    
 
     <div class="bbg-copyright">
-      &copy;2018 — <em>Blue G Dev</em>
+      &copy;2018 — <em>Blue G Development</em>
     </div>
   </div>
 </div>

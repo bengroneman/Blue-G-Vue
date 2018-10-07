@@ -1,5 +1,5 @@
 <template>
-  <div class="test">
+  <div class="b-about-page__wrapper">
     <h1>hello there</h1>
     <bskillchart></bskillchart>
   </div>
@@ -14,3 +14,8 @@ export default {
   }
 }
 </script>
+<style>
+.b-about-page__wrapper > h1{
+  margin-top: 75px;
+}
+</style>

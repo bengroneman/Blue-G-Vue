@@ -25,7 +25,7 @@ export default {
 </script>
 <style>
 .b__footer {
-  background-color: rgb(1, 6, 15)!important;
+  background-color: rgb(167, 242, 233)!important;
   width: 100%;
   padding-top: 45px;
 }

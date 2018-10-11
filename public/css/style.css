@@ -83,13 +83,13 @@ h1, h2, h3, h4 {
 /**
  *  Font Styling!!!!!!!!!!!!!!!!!!!!!!!
  */
-h1 { font-family: 'Raleway', sans-serif; }
-h2 { font-family: 'Oswald', sans-serif; }
-h3 { font-family: 'Raleway', sans-serif; }
-h4 { font-family: 'Oswald', sans-serif; }
-h5 { font-family: 'Raleway', sans-serif; }
-h6 { font-family: 'Oswald', sans-serif; }
-p { font-family: 'Oswald', sans-serif; }
+h1 { font-family: 'Source Code Pro', monospace!important; }
+h2 { font-family: 'Source Code Pro', monospace!important; }
+h3 { font-family: 'Source Code Pro', monospace!important; }
+h4 { font-family: 'Source Code Pro', monospace!important; }
+h5 { font-family: 'Open Sans', sans-serif!important; }
+h6 { font-family: 'Open Sans', sans-serif!important; }
+p { font-family: 'Open Sans', sans-serif!important; }
 
 .quote-blurb {
     background: linear-gradient(#000000, #202f3e);

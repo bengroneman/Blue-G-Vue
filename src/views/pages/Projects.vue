@@ -22,7 +22,6 @@
 					skillisWP
 					skillisPHP
 					skillisJS
-
 				></bcard>
 				<!-- grid item 4 -->
 				<bcard

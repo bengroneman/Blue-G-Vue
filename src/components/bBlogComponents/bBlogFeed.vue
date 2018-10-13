@@ -39,7 +39,7 @@ import { scrollTo, kebabify, prettyDate } from '../../helpers/helpers.js'
 export default {
   name: 'blogfeed',
   resource: 'BlogFeed', // TODO: look into what resources are
-  props: { filters: Object }
+  props: { filters: Object },
 
   data: () => {
     return { posts: [] } 
@@ -72,7 +72,7 @@ export default {
     }
   },
 
-  methods: { scrollTo, kebabify, prettyDate }.
+  methods: { scrollTo, kebabify, prettyDate },
   beforeMount() { this.$getResource('feed') }
 
 }

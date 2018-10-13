@@ -6,8 +6,8 @@
 
   <div class="collapse navbar-collapse navbar--parent--wrapper" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto navbar-grid">
-      <li class="nav-item active">
-        <router-link class="nav-link" to="/"> Home </router-link><span class="sr-only">(current)</span>
+      <li class="nav-item">
+        <router-link class="nav-link" to="/"> Home </router-link>
       </li>
       <li class="nav-item">
         <router-link class="nav-link" to="/about">About </router-link>
@@ -20,10 +20,10 @@
           Dropdown
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <router-link class="dropdown-item" to="/blog">Blog</router-link>
           <a class="dropdown-item" href="#">Contact Me</a>
-          <a class="dropdown-item" href="#">Coming Soon</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Coming Soon</a>
+          <a class="dropdown-item" href="#">Processing Projects</a>
         </div>
       </li>
     </ul>
@@ -56,10 +56,8 @@
   text-align: center;
   margin: auto;
 }
-.nav-item .active {
-  background-color: black;
-}
 .active {
+  background-color: black;
   border-bottom: 2px solid #54d0ba;
   color: white!important; 
 }

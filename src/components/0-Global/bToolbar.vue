@@ -1,12 +1,11 @@
 <template>
 <nav class="navbar fixed-top navbar-expand-lg b-toolbar">
-  <router-link class="navbar-brand" to="/">Blue G Development</router-link>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="collapse navbar-collapse navbar--parent--wrapper" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto navbar-grid">
       <li class="nav-item active">
         <router-link class="nav-link" to="/"> Home </router-link><span class="sr-only">(current)</span>
       </li>
@@ -41,17 +40,20 @@
   position: fixed!important;
   top: 0;
   z-index: 100;
-  font-family: 'Nunito', serif;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(25, 37, 48, 0.85);
 }
 .navbar {
-  font-family: 'Raleway', sans-serif;
   letter-spacing: 0.025em;
 }
 .navbar > a {
   color: white;
   text-transform: uppercase;
+}
+.navbar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
 }
 .nav-item .active {
   background-color: black;
@@ -71,6 +73,5 @@
 .b-brand-green {
  color: #54d0ba!important;
  font-weight: 900;
- font-family: 'Nunito-Bold', sans-serif;
 }
 </style>

@@ -1,20 +1,11 @@
 <template>
   <section class="container-fluid b-project__section">
     <div class="row b-grid__row">
-      <div class="col-6 b-grid child">
+      <div class="col-8 b-grid child">
 
-        <!-- grid item 1 -->
-				<bcard
-					imgsrc="https://bulma.io/images/placeholders/640x320.png"
-					cardtitle="Blue G Portfolio Project"
-					cardsubtitle="A portfolio for Ben Groneman"
-					cardcontent="This project was built by Ben Groneman, with VueJS"
-					skillisVUE
-					skillisJS
-				></bcard>
 				<!-- grid item 2 -->
 				<bcard
-					imgsrc="https://bulma.io/images/placeholders/640x320.png"
+					imgsrc="/img/ruggedwerx.png"
 					cardtitle="Ruggedwerx Project"
 					cardsubtitle="Welding/Fabrication company"
 					cardcontent="I built out the front end of this project under the regime of Wyoming inc"
@@ -24,7 +15,7 @@
 				></bcard>
 				<!-- grid item 3 -->
 				<bcard
-					imgsrc="https://bulma.io/images/placeholders/640x320.png"
+					imgsrc="/img/bonnevillebuilders.png"
 					cardtitle="Bonneville Builders Project"
 					cardsubtitle="Contactors of many sorts"
 					cardcontent="This project was built for you!"
@@ -43,14 +34,6 @@
 					skillisPHP
 					skillisJS
 				></bcard>
-      </div>
-      <div class="col-6 b-project__info child">
-        <h1 class="text-is-left">Project Description </h1>
-        <bline></bline>
-        <div class="text-is-left b-project-info__content">
-          <p>Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p> 
-          <p>Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p> 
-        </div>
       </div>
     </div>
   </section>
@@ -72,12 +55,12 @@ export default {
 <style>
 .b-project__section {
 	height: 100%;
-	margin: 50px;
+	margin: auto;
 	padding: 50px;
+  background-color: #151f29; 
 }
 .b-project-info__content {
   margin-top: 3em;
-  font-family: 'Nunito', serif;
 }
 .b-grid__row {
   height: 100%;
@@ -86,6 +69,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
+  margin: 100px auto 100px auto;
 }
 
 </style>

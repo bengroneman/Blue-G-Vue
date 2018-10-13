@@ -54,9 +54,14 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
+  margin: auto;
 }
 .nav-item .active {
   background-color: black;
+}
+.active {
+  border-bottom: 2px solid #54d0ba;
+  color: white!important; 
 }
 .nav-item > a {
   color: #54d0ba;

@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar fixed-top navbar-expand-lg b-toolbar">
+<nav id="b-navigation-bar" class="navbar fixed-top navbar-expand-lg b-toolbar">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -32,7 +32,12 @@
 </template>
 <script>
 	export default {
-		name: 'btoolbar'
+		name: 'btoolbar',
+    methods: {
+      slideNavBar () {
+        
+      }
+    }
 	}
 </script>
 <style>
@@ -76,5 +81,10 @@
 .b-brand-green {
  color: #54d0ba!important;
  font-weight: 900;
+}
+/*Once we scroll more than 200 px we will change the navigation bar styling*/
+.navbar-slide {
+  background: white!important;
+
 }
 </style>

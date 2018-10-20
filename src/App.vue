@@ -4,9 +4,6 @@
     <btoolbar></btoolbar>
     
     <router-view></router-view> 
-    <div class="test">
-      <blogo></blogo>
-    </div>
 
     <!-- Blue G Footer-->
     <bfooter></bfooter>

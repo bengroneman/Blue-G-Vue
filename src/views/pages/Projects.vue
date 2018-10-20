@@ -25,7 +25,6 @@
 				></bcard>
 				<!-- grid item 4 -->
 				<bcard
-					imgsrc="https://bulma.io/images/placeholders/640x320.png"
 					cardtitle="Museum of the American West Project"
 					cardsubtitle="Museum based in Lander Wy"
 					cardcontent="This project was built soley by yours truley"

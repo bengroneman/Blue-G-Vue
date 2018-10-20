@@ -1,7 +1,7 @@
 <template>
   <div class="b-about-page__wrapper">
     <h1>hello there</h1>
-    <bskillchart></bskillchart>
+      <bskillchart></bskillchart>
   </div>
 </template>
 <script>

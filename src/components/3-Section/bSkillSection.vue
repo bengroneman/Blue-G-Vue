@@ -1,74 +1,65 @@
 <template>
 <section class="container-fluid b-skill__container">
-    <div class="row">
-        <!-- Skill Icon Column -->
-        <div class="col-8 b-skill-icon__column">
-          <!-- Section Header-->
-          <h1 class="text-is-center">Skill Array</h1>
-          
-          <!-- B First Skll -->
-          <div id="is-90" class="b-skill__item"><p class="text-is-left">Javascript</p></div>
+  <!-- Section Header-->
+  <h1 class="text-is-center">Skill Array</h1>
 
-          <!-- B Second Skill -->
-          <div id="is-70" class="b-skill__item"><p class="text-is-left">PHP</p></div>
+  <div class="row">
+    <!-- Skill Icon Column -->
+    <div class="col-8 b-skill-icon__column">
+      
+      <!-- START B Skll -->
+      <bskillcardsmall tagLine="sometagline" skillName="Javascript"></bskillcardsmall>
 
-          <!-- B third Skill -->
-          <div id="is-75" class="b-skill__item"><p class="text-is-left">CSS</p></div>
+      <bskillcardsmall tagLine="sometagline" skillName="Hubspot"></bskillcardsmall>
 
-          <!-- B Fourth Skill -->
-          <div id="is-75" class="b-skill__item"><p class="text-is-left">Hubspot</p></div>
+      <bskillcardsmall tagLine="sometagline" skillName="Linux"></bskillcardsmall>
 
-          <!-- B Fifth Skill -->
-          <div id="is-70" class="b-skill__item"><p class="text-is-left">Wordpress</p></div>
-
-          <!-- B Sixth Skill -->
-          <div id="is-90" class="b-skill__item"><p class="text-is-left">Communication</p></div>
-
-          <!-- B Seventh Skill -->
-          <div id="is-65" class="b-skill__item"><p class="text-is-left">User Experience</p></div>
-
-          <div class="b-skill__content">
-            <h4>Shown above is just a glimpse of what I have to offer as a web developer</h4>
-            <h4>If you are looking for a more indepth analysis, then feel free to browse my project page</h4>
-            <!--<bbutton externalLink="/projects" btnText="Projects"></bbutton> -->
-            <button id="b-btn" href="/projects" type="button" class="btn btn-outline-primary">Projects</button>
-          </div>
-        </div>
-
+      <bskillcardsmall tagLine="sometagline" skillName="HTML / CSS"></bskillcardsmall>
+      <!-- END B Skills -->
+      <!-- END B Skills -->
     </div>
+
+    <div class="b-skill__content">
+      <div>
+        <h2>Shown above is just a glimpse of what I have to offer as a web developer</h2>
+        <h5>If you are looking for a more indepth analysis, then feel free to browse my project page</h5>
+        <!--<bbutton externalLink="/projects" btnText="Projects"></bbutton> -->
+        <button id="b-btn" href="/projects" type="button" class="btn btn-outline-primary">Projects</button>
+      </div>
+    </div>
+  </div>
 </section>
+
 </template>
 <script>
 import bbutton from '@/components/0-Global/bButton'
+import bskillcardsmall from '@/components/3-Section/bSkillCardSmall'
 
 export default {
 	name: 'bskillsection',
   components: {
-    bbutton
+    bbutton,
+    bskillcardsmall
   }
 }
 </script>
-<style scoped>
-#is-90 {
-  width: 90%;
-}
-#is-70 {
-  width: 70%;
-}
-#is-75 {
-  width: 75%;
-}
-#is-65 {
-  width: 65%;
-}
+<style>
 .b-skill__container {
     height: 100%;
     background-color: #ccc;
+}
+.b-skill__container > h1 {
+  padding: 45px;
 }
 .b-skill-icon__column {
     margin: auto;
     padding-top: 45px;
     padding-bottom: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.b-skill-icon__column .b-skill__item:nth-child(even) {
+  background: black;
 }
 .b-skill-icon__column > p {
   margin-bottom: 10px;
@@ -81,17 +72,28 @@ export default {
   width: 100%;
   height: 30px;
   background-color: rgba(84,208,186,.8);
-  border-radius: 15px;
-  margin: 25px;
 }
 .b-skill__item > p {
   margin: 2px auto 2px 20px;
 }
 .b-skill__content {
   margin: 45px;
+  width: 100%;
+  display: flex;
 }
-.b-skill__content h4:first-child {
-  margin-bottom: 20px;
+.b-skill__content > div {
+  margin: auto;
+  max-width: 768px;
+}
+.hover-text {
+  display: none;
+}
+.b-skill__item:hover .hover-text {
+  display: inline; 
+}
+
+.b-skill__content h5 {
+  margin: 45px auto;
 }
 
 </style>

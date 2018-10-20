@@ -1,6 +1,6 @@
 <template>
 <div class="card b-grid-child__item">
-  <img class="card-img-top" :src="imgsrc" :alt="imgsrc">
+  <img v-if="imgSrc !== undefined" class="card-img-top" :src="imgsrc" :alt="imgsrc"/>
   <div class="card-body">
   <div class="card-skills">
     <span v-if="skillisJS" class="b-skill b-skill-is-js">Javascript</span>

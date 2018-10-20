@@ -8,6 +8,7 @@
 
     <div class="bbg-copyright">
       &copy;2018 — <em>Blue G Development</em>
+      <blogo></blogo>
     </div>
   </div>
 </div>
@@ -15,11 +16,13 @@
 
 <script>
 import bsocialicons from '@/components/2-Section/bSocialIcons'
+import blogo from '@/components/0-Global/bLogo'
 
 export default {
   name: 'bfooter',
   components: {
-    bsocialicons
+    bsocialicons,
+    blogo
   }
 }
 </script>

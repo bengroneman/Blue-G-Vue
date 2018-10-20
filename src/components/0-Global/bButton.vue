@@ -9,7 +9,11 @@
 // TODO: Validate our props -> this is a best practice
 export default {
   name: 'bbutton',
-  props: ['externalLink', 'btnIcon', 'btnText']
+  props: {
+    btnIcon: String,
+    externalLink: String,   // TODO: add regex validator here
+    btnText: String
+  }
 }
 </script>
 <style>

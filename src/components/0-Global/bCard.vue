@@ -1,6 +1,6 @@
 <template>
 <div class="card b-grid-child__item">
-  <img v-if="imgSrc !== undefined" class="card-img-top" :src="imgsrc" :alt="imgsrc"/>
+  <img class="card-img-top" :src="imgsrc" :alt="imgsrc"/>
   <div class="card-body">
   <div class="card-skills">
     <span v-if="skillisJS" class="b-skill b-skill-is-js">Javascript</span>
@@ -13,8 +13,9 @@
     <h5 class="text-is-left card-title">{{ cardtitle }}</h5>
     <h6 class="text-is-left card-sub-title">{{ cardsubtitle }}</h6>
     <p class="text-is-left card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary b-btn">Visit Site</a>
-    <a href="#" class="btn btn-secondary b-btn">Read More</a>
+    <a v-if="siteURL" :href="siteURL" class="btn btn-primary b-btn">Visit Site</a>
+
+    <a v-if="readMoreLink" :href="readMoreLink" class="btn btn-secondary b-btn">Read More</a>
   </div>
 </div>
 </template>
@@ -32,7 +33,9 @@ export default {
 		skillisWP: Boolean,
 		skillisHS: Boolean,
 		skillisPY: Boolean,
-		skillisPHP: Boolean
+		skillisPHP: Boolean,
+    readMoreLink: String,
+    siteURL: String
 	}
 }
 </script>

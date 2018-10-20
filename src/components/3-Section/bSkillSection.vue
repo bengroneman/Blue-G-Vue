@@ -1,4 +1,4 @@
-<template>
+  <template>
 <section class="container-fluid b-skill__container">
   <!-- Section Header-->
   <h1 class="text-is-center">Skill Array</h1>
@@ -8,14 +8,37 @@
     <div class="col-8 b-skill-icon__column">
       
       <!-- START B Skll -->
-      <bskillcardsmall tagLine="sometagline" skillName="Javascript"></bskillcardsmall>
+      <bcard 
+        cardtitle="This Project"
+        cardsubtitle="Something"
+        skillisJS
+        skillisVUE
+        readMoreLink="google.com"
+      ></bcard>
 
-      <bskillcardsmall tagLine="sometagline" skillName="Hubspot"></bskillcardsmall>
+      <bcard 
+        cardtitle="This Project"
+        cardsubtitle="Something"
+        skillisJS
+        skillisVUE
+        readMoreLink="google.com"
+      ></bcard>
 
-      <bskillcardsmall tagLine="sometagline" skillName="Linux"></bskillcardsmall>
+      <bcard 
+        cardtitle="This Project"
+        cardsubtitle="Something"
+        skillisJS
+        skillisVUE
+        readMoreLink="google.com"
+      ></bcard>
+      <bcard 
+        cardtitle="This Project"
+        cardsubtitle="Something"
+        skillisJS
+        skillisVUE
+        readMoreLink="google.com"
+      ></bcard>
 
-      <bskillcardsmall tagLine="sometagline" skillName="HTML / CSS"></bskillcardsmall>
-      <!-- END B Skills -->
       <!-- END B Skills -->
     </div>
 
@@ -33,15 +56,15 @@
 </template>
 <script>
 import bbutton from '@/components/0-Global/bButton'
-import bskillcardsmall from '@/components/3-Section/bSkillCardSmall'
+import bcard from '@/components/0-Global/bCard'
 
 export default {
 	name: 'bskillsection',
   components: {
     bbutton,
-    bskillcardsmall
+    bcard
   }
-}
+  }
 </script>
 <style>
 .b-skill__container {
@@ -56,6 +79,7 @@ export default {
     padding-top: 45px;
     padding-bottom: 45px;
     display: grid;
+    grid-gap: 25px;
     grid-template-columns: repeat(4, 1fr);
 }
 .b-skill-icon__column .b-skill__item:nth-child(even) {

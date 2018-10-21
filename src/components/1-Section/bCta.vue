@@ -49,7 +49,7 @@ export default {
 }
 .b-dark--overlay {
   z-index: 3;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .b-cta__content {

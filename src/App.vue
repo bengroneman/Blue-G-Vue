@@ -13,13 +13,11 @@
 <script>
 import btoolbar from '@/components/0-Global/bToolbar'
 import bfooter from '@/components/Footer/bFooter'
-import blogo from '@/components/0-Global/bLogo'
 
 export default {
     components: {
         btoolbar,
-        bfooter,
-        blogo
+        bfooter
     }
 }
 </script>

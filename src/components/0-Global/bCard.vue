@@ -12,7 +12,7 @@
   </div>
     <h5 class="text-is-left card-title">{{ cardtitle }}</h5>
     <h6 class="text-is-left card-sub-title">{{ cardsubtitle }}</h6>
-    <p class="text-is-left card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p class="text-is-left card-text">{{ cardcontent }}</p>
     <a v-if="siteURL" :href="siteURL" class="btn btn-primary b-btn">Visit Site</a>
 
     <a v-if="readMoreLink" :href="readMoreLink" class="btn btn-secondary b-btn">Read More</a>

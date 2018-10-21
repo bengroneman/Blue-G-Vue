@@ -9,34 +9,33 @@
       
       <!-- START B Skll -->
       <bcard 
-        cardtitle="This Project"
-        cardsubtitle="Something"
+        cardtitle="Ruggedwerx"
+        cardsubtitle="Welding/Fabrication Company"
         skillisJS
-        skillisVUE
-        readMoreLink="google.com"
+        skillisWP
+        skillisPHP
+        cardcontent="A project built during my time at Wyoming Inc (Lander). I was responsible for building out the front end of this website on the wordpress platform."
+        readMoreLink="ruggedwerx.com"
       ></bcard>
 
       <bcard 
-        cardtitle="This Project"
-        cardsubtitle="Something"
+        cardtitle="Museum of the American West"
+        cardsubtitle="Lander WY Museum"
         skillisJS
-        skillisVUE
-        readMoreLink="google.com"
+        skillisWP
+        skillisPHP
+        readMoreLink="museumoftheamericanwest.com"
+        cardcontent="A project built by yours truly. This project was a Wordpress redesign of a local Lander museums website."
       ></bcard>
 
       <bcard 
-        cardtitle="This Project"
-        cardsubtitle="Something"
+        cardtitle="Github Repositories"
+        cardsubtitle="Code"
         skillisJS
         skillisVUE
-        readMoreLink="google.com"
-      ></bcard>
-      <bcard 
-        cardtitle="This Project"
-        cardsubtitle="Something"
-        skillisJS
-        skillisVUE
-        readMoreLink="google.com"
+        skillisPY
+        readMoreLink="https://github.com/strangenectar/"
+        cardcontent="Browse through open source code that I have written, during my time as an avid developer."
       ></bcard>
 
       <!-- END B Skills -->
@@ -80,7 +79,7 @@ export default {
     padding-bottom: 45px;
     display: grid;
     grid-gap: 25px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 .b-skill-icon__column .b-skill__item:nth-child(even) {
   background: black;

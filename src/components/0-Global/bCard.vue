@@ -9,6 +9,7 @@
 		<span v-if="skillisHS" class="b-skill b-skill-is-hs">Hubspot</span>
 		<span v-if="skillisPY" class="b-skill b-skill-is-py">Python</span>
 		<span v-if="skillisPHP" class="b-skill b-skill-is-php">PHP</span>
+    <span v-if="skillisCSS" class="b-skill b-skill-is-css">CSS</span>
   </div>
     <h5 class="text-is-left card-title">{{ cardtitle }}</h5>
     <h6 class="text-is-left card-sub-title">{{ cardsubtitle }}</h6>
@@ -29,6 +30,7 @@ export default {
 		cardsubtitle: String,
 		cardcontent: String,
 		skillisJS: Boolean,
+    skillisCSS: Boolean,
 		skillisVUE: Boolean,
 		skillisWP: Boolean,
 		skillisHS: Boolean,
@@ -88,9 +90,14 @@ export default {
 }
 .b-skill-is-py {
 	background: #2b5b84;
+  color: #cee7f1;
 }
 .b-skill-is-php {
 	background: #8892BF; 
+}
+.b-skill-is-css {
+  background: #264de4;
+  color: #cee7f1;
 }
 
 </style>

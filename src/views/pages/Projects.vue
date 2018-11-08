@@ -3,7 +3,7 @@
     <div class="row b-grid__row">
       <div class="col-8 b-grid child">
 
-				<!-- grid item 2 -->
+				<!-- grid item 1 -->
 				<bcard
 					imgsrc="/img/ruggedwerx.png"
 					cardtitle="Ruggedwerx Project"
@@ -13,7 +13,7 @@
 					skillisPHP
 					skillisJS
 				></bcard>
-				<!-- grid item 3 -->
+				<!-- grid item 2 -->
 				<bcard
 					imgsrc="/img/bonnevillebuilders.png"
 					cardtitle="Bonneville Builders Project"
@@ -23,7 +23,7 @@
 					skillisPHP
 					skillisJS
 				></bcard>
-				<!-- grid item 4 -->
+				<!-- grid item 3 -->
 				<bcard
 					cardtitle="Museum of the American West Project"
 					cardsubtitle="Museum based in Lander Wy"
@@ -31,6 +31,13 @@
 					skillisWP
 					skillisPHP
 					skillisJS
+				></bcard>
+        <bcard
+					cardtitle="Grow With Google Scholar"
+					cardsubtitle="Browse through the code I wrote for this program"
+					cardcontent="I was selected for the Grow With Google scholarship program through Udacity. With this in mind, I was able to tranform a non mobile friendly, unresponsive, website into a PWA, that will store restaurant data offline."
+					skillisJS
+          skillisCSS
 				></bcard>
       </div>
     </div>

@@ -7,7 +7,7 @@
 
     <!-- Blue G Footer-->
     <bfooter></bfooter>
-    <!-- B Tree -->
+    <!-- START B sidbar -->
   </div>
 </template>
 <script>

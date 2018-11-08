@@ -15,25 +15,3 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
-window.addEventListener('scroll', function() {
-  slideNavbar();
-});
-
-function slideNavbar() {
-  let top_of_page = 0;
-  let navbar = document.getElementById("b-navigation-bar");
-  let current_pos_on_page = navbar.scrollTop; 
-  
-  if(current_pos_on_page >= 200) {
-    navbar.classList.add("navbar-slide");
-  } else {
-    navbar.classList.remove("navbar-slide");
-  }
-}
-
-
-
-
-
-
-

@@ -32,12 +32,7 @@
 </template>
 <script>
 	export default {
-		name: 'btoolbar',
-    methods: {
-      slideNavBar () {
-        
-      }
-    }
+		name: 'btoolbar'
 	}
 </script>
 <style>

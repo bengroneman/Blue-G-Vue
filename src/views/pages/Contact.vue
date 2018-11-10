@@ -14,7 +14,7 @@
             <span>Leave me a message, and I will get right back to you!</span>
           </p>
         </div>
-        <form>
+        <form id="b-contact--form">
 
           <!-- Name Input -->
           <div class="form-group b-form-name">
@@ -37,16 +37,21 @@
       <!-- END B Contact Content Column -->
       <!-- START B Contact list info column --> 
       <div class="b-contact--info col-4">
-				<span class="b-divider"></span>
-        <p>Email Address:</p>
-        <a href="mailto:ben_groneman@bluegdev.com">ben_groneman@bluegdev.com</a>
-				<span class="b-divider"></span>
-        <p>Twitter:</p>
-        <a href="https://twitter.com/strangenctar">@strangenectar</a>
-				<span class="b-divider"></span>
-        <p>Github</p>
-        <a href="https://github.com/strangenectar">strangenectar</a>
-				<span class="b-divider"></span>
+        <div class="b-info--wrapper">
+          <p>Email Address:</p>
+          <a href="mailto:ben_groneman@bluegdev.com">ben_groneman@bluegdev.com</a>
+        </div>
+        </br>
+        <div class="b-info--wrapper">
+          <p>Twitter:</p>
+          <a href="https://twitter.com/strangenctar">@strangenectar</a>
+        </div>
+        </br>
+        <div class="b-info--wrapper">
+          <p>Github</p>
+          <a href="https://github.com/strangenectar">strangenectar</a>
+        </div>
+        </br>
       </div>
       <!-- END B Contact list info column --> 
     </div>
@@ -83,11 +88,38 @@
 .b-contact--info {
   padding: 20px;
   text-align: right;
+  margin: auto;
 }
-.b-contact--info > hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+.b-contact-intro--content {
+  text-align: left;
 }
+.b-contact-intro--content h1 {
+  text-transform: uppercase;
+  margin: 1rem auto 1rem auto;
+}
+.b-contact-intro--content span {
+  border-bottom: 2px solid #54d0ba;
+}
+.b-info--wrapper {
+  padding: 10px;
+  width: 100%;
+  height: fit-content;
+  border-right: 2px solid rgba(84, 208, 186, 0.24);
+}
+/* START Form Styles */
+
+#b-contact--form label {
+  text-align: left; 
+  display: block;
+}
+.form-group > input {
+  background-color: #151f29;
+  color: white;
+}
+.form-group > textarea {
+  background-color: #151f29;
+  color: white;
+}
+
+/* END Form Styles */
 </style>

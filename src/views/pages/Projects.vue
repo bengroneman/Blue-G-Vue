@@ -13,6 +13,8 @@
 					skillisPHP
 					skillisJS
 				></bcard>
+        
+
 				<!-- grid item 2 -->
 				<bcard
 					imgsrc="/img/bonnevillebuilders.png"
@@ -47,12 +49,14 @@
 <script>
 import bcard from '@/components/0-Global/bCard'
 import bline from '@/components/0-Global/bLine'
+import bmodal from '@/components/0-Global/bModal'
 
 export default {
   name: 'projects',
 	components: {
 		bcard,
-    bline
+    bline,
+    bmodal
 	}
 }
 </script>

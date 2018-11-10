@@ -17,14 +17,16 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          More
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <router-link class="dropdown-item" to="/blog">Blog</router-link>
-          <a class="dropdown-item" href="#">Contact Me</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Processing Projects</a>
-        </div>
+        <transition name="fall">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <router-link class="dropdown-item" to="/blog">Blog</router-link>
+            <a class="dropdown-item" href="#">Contact Me</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Processing Projects</a>
+          </div>
+        </transition>
       </li>
     </ul>
   </div>
@@ -40,7 +42,7 @@
   position: fixed!important;
   top: 0;
   z-index: 100;
-  font-weight: bold;
+  font-weight: regular;
   background-color: rgba(25, 37, 48, 0.85);
 }
 .navbar {
@@ -60,10 +62,12 @@
   background-color: black;
   border-bottom: 2px solid #54d0ba;
   color: white!important; 
+  border-radius: 5px;
 }
 .nav-item > a {
   color: #54d0ba;
   text-transform: uppercase;
+  margin: auto 20px auto 20px;
 }
 .b-toolbar-link {
   font-size: 1.35em;
@@ -82,4 +86,28 @@
   background: white!important;
 
 }
+
+/*Animations yo!*/
+.fall-enter-active {
+  animation: fall 0.3s;
+}
+
+.fall-leave-active {
+  animation: fall 0.3s reverse;
+}
+.dropdown-menu {
+  animation: fall 0.3s;
+}
+
+@keyframes fall {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(100%);
+  }
+}
+
+
 </style>
+

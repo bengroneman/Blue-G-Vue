@@ -1,13 +1,13 @@
 <template>
 <div class="container-fluid">
   <div class="col">
-    <!-- animation starts here -->
     <button id="b-btn" href="https://github.com/strangenectar" type="button" class="btn btn-outline-primary">My Github</button>
 
     <button id="b-btn" href="https://www.linkedin.com/in/ben-groneman-62174370/" type="button" class="btn btn-outline-primary">My Linkedin</button>
 
     <button id="b-btn" href="mailto:bluegroneman10@gmail.com" type="button" class="btn btn-outline-primary">Email Me</button>
-    <!-- animation ends here -->
+
+    <button id="b-btn" href="contact" type="button" class="btn btn-outline-primary">Contact Me</button>
   </div>
 </div>
 </template>

@@ -116,7 +116,14 @@
   background-color: #151f29;
   color: white;
 }
+.form-group > input:focus {
+  background-color: #151f29;
+}
+.form-group > textarea:focus {
+  background-color: #151f29;
+}
 .form-group > textarea {
+  
   background-color: #151f29;
   color: white;
 }

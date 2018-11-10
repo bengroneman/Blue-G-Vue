@@ -21,6 +21,16 @@ pre {
  background-color: transparent;
  border: none;
 }
+a {
+  color: #54d0ba!important;
+}
+.dropdown-menu > a {
+  color: black!important;
+}
+.b-divider {
+  width: 100%;
+  border: 2px solid rgba(84, 208, 186, 0.24);
+}
 .full-view-height {
   height: 100vh;
 }
@@ -33,11 +43,8 @@ pre {
 .full-column-height {
   height: 100%;
 }
-.b-brand-dark {
-  color: !important;
-}
 #particle-js {
-    background-image: url('public/img/CodenStuff.PNG');
+  background-image: url('public/img/CodenStuff.PNG');
 }
 #nav a {
   font-weight: bold;

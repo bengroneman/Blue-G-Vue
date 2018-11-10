@@ -14,7 +14,7 @@
             <span>Leave me a message, and I will get right back to you!</span>
           </p>
         </div>
-        <form id="b-contact--form">
+        <form action="/contact-submission" method="POST" role="form" aria-label="contact form" id="b-contact--form">
 
           <!-- Name Input -->
           <div class="form-group b-form-name">
@@ -28,8 +28,8 @@
           </div>
           <!-- Textarea input -->
           <div class="form-group b-form-comment">
-            <label for="comment">Lets chat!</label>
-            <textarea class="form-control" id="comment" rows="3"></textarea>
+            <label for="message">Lets chat!</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
           </div>
           <!-- Submit Button -->
           <button type="submit" class="btn">Submit</button>

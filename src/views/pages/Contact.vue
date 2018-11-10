@@ -31,6 +31,8 @@
             <label for="comment">Lets chat!</label>
             <textarea class="form-control" id="comment" rows="3"></textarea>
           </div>
+          <!-- Submit Button -->
+          <button type="submit" class="btn">Submit</button>
 
         </form>
       </div>
@@ -72,10 +74,11 @@
 }
 .b-contact--container {
   margin: auto;
-  background-color: #1a2127;
+  background-color: transparent;
   border-radius: 5px;
-  border: 2px solid #54d0ba;
+  border: 2px solid rgba(84, 208, 186, 0.24); 
   display: flex;
+  box-shadow: 0px 2px 5px 2px #000000;
 }
 
 .b-contact--wrapper {
@@ -83,12 +86,14 @@
   color: white;
 }
 .b-contact--content {
-  padding: 20px;
+  padding: 35px;
 }
 .b-contact--info {
   padding: 20px;
   text-align: right;
   margin: auto;
+  background: #1c252d;
+  border-radius: 10px;
 }
 .b-contact-intro--content {
   text-align: left;

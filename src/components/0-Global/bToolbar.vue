@@ -59,7 +59,7 @@
   margin: auto;
 }
 .active {
-  background-color: black;
+  background-color: rgba(43 43, 43, 0.6);
   border-bottom: 2px solid #54d0ba;
   color: white!important; 
   border-radius: 5px;

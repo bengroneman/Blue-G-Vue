@@ -8,19 +8,17 @@
 					imgsrc="/img/ruggedwerx.png"
 					cardtitle="Ruggedwerx Project"
 					cardsubtitle="Welding/Fabrication company"
-					cardcontent="I built out the front end of this project under the regime of Wyoming inc"
+					cardcontent="I engineered the front end of this webiste, while working for a delightful web development/marketing company known as Wyoming Inc."
 					skillisWP
 					skillisPHP
 					skillisJS
 				></bcard>
-        
-
 				<!-- grid item 2 -->
 				<bcard
 					imgsrc="/img/bonnevillebuilders.png"
 					cardtitle="Bonneville Builders Project"
 					cardsubtitle="Contactors of many sorts"
-					cardcontent="This project was built for you!"
+					cardcontent="This site was engineered during my time as a Front End Developer at a compnay called Wyoming Inc."
 					skillisWP
 					skillisPHP
 					skillisJS
@@ -29,7 +27,7 @@
 				<bcard
 					cardtitle="Museum of the American West Project"
 					cardsubtitle="Museum based in Lander Wy"
-					cardcontent="This project was built soley by yours truley"
+					cardcontent="This is a freelance project that I built for a local Museum based in Lander Wyoming"
 					skillisWP
 					skillisPHP
 					skillisJS
@@ -37,7 +35,7 @@
         <bcard
 					cardtitle="Grow With Google Scholar"
 					cardsubtitle="Browse through the code I wrote for this program"
-					cardcontent="I was selected for the Grow With Google scholarship program through Udacity. With this in mind, I was able to tranform a non mobile friendly, unresponsive, website into a PWA, that will store restaurant data offline."
+					cardcontent="I was selected for the Grow With Google scholarship program through Udacity. With this in mind, I was able to tranform a non mobile friendly, unresponsive, website into a Progressive Web Application, that will store restaurant data offline."
 					skillisJS
           skillisCSS
 				></bcard>

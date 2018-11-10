@@ -2,6 +2,7 @@
 <section class="container-fluid b-skill__container">
   <!-- Section Header-->
   <h1 class="text-is-center">Skill Array</h1>
+  <h3 class="text-is-center">What I bring to the table</h3>
 
   <div class="row">
     <!-- Skill Icon Column -->
@@ -15,7 +16,7 @@
         skillisWP
         skillisPHP
         cardcontent="A project built during my time at Wyoming Inc (Lander). I was responsible for building out the front end of this website on the wordpress platform."
-        readMoreLink="ruggedwerx.com"
+        readMoreLink="projects/"
       ></bcard>
 
       <bcard 
@@ -24,7 +25,7 @@
         skillisJS
         skillisWP
         skillisPHP
-        readMoreLink="museumoftheamericanwest.com"
+        readMoreLink="projects/"
         cardcontent="A project built by yours truly. This project was a Wordpress redesign of a local Lander museums website."
       ></bcard>
 
@@ -43,10 +44,8 @@
 
     <div class="b-skill__content">
       <div>
-        <h2>Shown above is just a glimpse of what I have to offer as a web developer</h2>
-        <h5>If you are looking for a more indepth analysis, then feel free to browse my project page</h5>
-        <!--<bbutton externalLink="/projects" btnText="Projects"></bbutton> -->
-        <button id="b-btn" href="/projects" type="button" class="btn btn-outline-primary">Projects</button>
+        <h5>Programming and problem solving is my passion, if you would like to learn more feel free to contact me!</h5>
+        <button id="b-btn" href="/contact" type="button" class="btn btn-outline-primary">Contact me</button>
       </div>
     </div>
   </div>

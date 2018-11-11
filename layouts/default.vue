@@ -1,8 +1,22 @@
 <template>
   <div>
-    <nuxt/>
+    <btoolbar></btoolbar>
+      <nuxt/>
+    <bfooter></bfooter>
   </div>
 </template>
+
+<script>
+import btoolbar from '~/components/global/bToolbar.vue'
+import bfooter from '~/components/global/bFooter.vue'
+
+export default {
+  components: {
+    btoolbar,
+    bfooter
+  }
+}
+</script>
 
 <style>
 html {

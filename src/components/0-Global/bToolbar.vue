@@ -22,7 +22,7 @@
         <transition name="fall">
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <router-link class="dropdown-item" to="/blog">Blog</router-link>
-            <a class="dropdown-item" href="contact">Contact Me</a>
+            <a class="dropdown-item" href="/contact">Contact Me</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Processing Projects</a>
           </div>

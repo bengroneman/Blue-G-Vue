@@ -36,18 +36,6 @@ export default new Router({
       path: '/blog',
       name: 'blog',
       component: Blog
-    },
-    {
-      path: '/by/:author',
-      name: 'author',
-      props: true,
-      component: Blog
-    },
-    {
-      path: '/read/:post',
-      name: 'post',
-      props: true,
-      component: Blog
     }
   ]
 })

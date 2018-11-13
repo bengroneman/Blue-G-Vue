@@ -1,12 +1,25 @@
-# This is a project meant to be the beginnings of bluegdev.com
-Long term goals for this project will be to become a way to showcase my projects.
-## This website was built with the following resources
-Vuejs, bulma-css, vuetify and node.
-## To run
+# This is a VueJS project meant to represent my love for code
 
+This is a SPA that is currently hosted using Netlify, and can be found at this [link](http://bluegdev.netlify.com/)
+I built this site out of a love for code, and a fondness of VueJS. I enjoy writing clean code, and this repository will be a lifelong representation of that train of thought.
+
+## This website was built leveraging the following open source technologies
+
+[Vuejs](https://github.com/vuejs)
+[Bootstrap](https://github.com/twbs/bootstrap)
+[Vue-Particles](https://github.com/creotip/vue-particles)
+
+## If you would care to run this website locally then follow these steps
+
+> Clone this repository
+> cd Blue-G-Vue
+> npm install
 ```
-git clone https://github.com/StrangeNectar/Blue-G-Vue.git
-cd Blue-G-Vue/app
-npm install
-npm run serve
+For development
 ```
+> npm run serve
+```
+Build for production
+```
+> npm run build
+> npm run serve

@@ -15,17 +15,8 @@
 			<li class="nav-item">
         <router-link class="nav-link" to="/projects">Projects</router-link>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          More
-        </a>
-        <transition name="fall">
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <router-link class="dropdown-item" to="/blog">Blog</router-link>
-            <router-link class="dropdown-item" to="/contact">Contact Me</router-link>
-            <div class="dropdown-divider"></div>
-          </div>
-        </transition>
+      <li class="nav-item">
+        <router-link class="dropdown-item" to="/contact">Contact Me</router-link>
       </li>
     </ul>
   </div>
@@ -87,17 +78,6 @@
 }
 
 /*Animations yo!*/
-.fall-enter-active {
-  animation: fall 0.3s;
-}
-
-.fall-leave-active {
-  animation: fall 0.3s reverse;
-}
-.dropdown-menu {
-  animation: fall 0.3s;
-}
-
 @keyframes fall {
   from {
     transform: scaleY(0);

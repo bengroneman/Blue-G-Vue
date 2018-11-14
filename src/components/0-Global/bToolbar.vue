@@ -15,34 +15,40 @@
 			<li class="nav-item">
         <router-link class="nav-link" to="/projects">Projects</router-link>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          More
-        </a>
-        <transition name="fall">
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <router-link class="dropdown-item" to="/blog">Blog</router-link>
-            <router-link class="dropdown-item" to="/contact">Contact Me</router-link>
-            <div class="dropdown-divider"></div>
-          </div>
-        </transition>
+      <li class="nav-item">
+        <router-link class="nav-link" to="/contact">Contact Me</router-link>
       </li>
     </ul>
   </div>
 </nav>
 </template>
 <script>
-	export default {
-		name: 'btoolbar'
-	}
+export default {
+  name: 'btoolbar',
+
+  methods: {
+    handleScroll () {
+      // do something
+      let nav_bar = document.querySelector("nav");
+      console.log(nav_bar);
+    }
+  },
+  created () {
+    window.addEventListener('scoll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+}
 </script>
 <style>
 .b-toolbar {
   position: fixed!important;
   top: 0;
   z-index: 100;
-  font-weight: regular;
-  background-color: rgba(25, 37, 48, 0.85);
+  font-weight: 500;
+  /*background-color: rgba(25, 37, 48, 0.85);*/
+  background-color: transparent;
 }
 .navbar {
   letter-spacing: 0.025em;
@@ -56,12 +62,11 @@
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
   margin: auto;
-}
+	}
 .active {
   background-color: rgba(43 43, 43, 0.6);
   border-bottom: 2px solid #54d0ba;
   color: white!important; 
-  border-radius: 5px;
 }
 .nav-item > a {
   color: #54d0ba;
@@ -85,19 +90,12 @@
   background: white!important;
 
 }
+.navbar-nav {
+	background: #2b3e50;
+	border-radius: 20px;
+}
 
 /*Animations yo!*/
-.fall-enter-active {
-  animation: fall 0.3s;
-}
-
-.fall-leave-active {
-  animation: fall 0.3s reverse;
-}
-.dropdown-menu {
-  animation: fall 0.3s;
-}
-
 @keyframes fall {
   from {
     transform: scaleY(0);

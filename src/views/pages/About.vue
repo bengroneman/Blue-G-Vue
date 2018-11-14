@@ -11,8 +11,34 @@
             
             <p>I have become quite fond of developing the front end of websites with VueJS. When it comes to the backend, I find myself reaching for Express JS right of the shelf. Both of these technologies provide a solid foundation for developing a fantastic development environment.</p>
           </div>
-          <div class="b-bout-page__content col-4">
-            <p>Lorem ipsum</p>
+          <div class="b-about-page__content content-right col-4">
+            <div class="text-is-right about-category__row">
+
+              <h4>Interests</h4>
+              <ul class="content-right--ul">
+                <li>Skateboard</li>
+                <li>Programming</li>
+                <li>League of Legends</li>
+                <li>Reading</li>
+              </ul>
+
+              <h4>Skills</h4>
+              <ul class="content-right--ul">
+                <li>Javascript</li>
+                <li>Design</li>
+                <li>VueJS</li>
+                <li>Mobile Web Specialist</li>
+              </ul>
+
+              <h4>Social</h4>
+              <ul class="content-right--ul">
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="mailto:">Email</a></li>
+                <li><a href="twitter">twitter</a></li>
+              </ul>
+
+            </div>
           </div>
         <!-- END About me Content -->
       </div>
@@ -41,5 +67,27 @@ export default {
 }
 .b-about-page__content {
   padding: 45px;
+  text-align: left;
 }
+.content-right {
+  display: flex;
+  padding: 10px;
+  background-color: #1c252d;
+}
+
+.about-category__row {
+  margin: auto 10px auto auto;
+
+}
+.about-category__row > h4 {
+  color: #7BA3C6;
+  text-transform: uppercase;
+}
+
+.content-right--ul {
+  list-style: none;
+  border-right: 2px solid rgba(84, 208, 186, 0.24);
+  padding: 20px; 
+}
+
 </style>

@@ -14,7 +14,7 @@
             <span>Leave me a message, and I will get right back to you!</span>
           </p>
         </div>
-        <form action="/contact-submission" method="POST" role="form" aria-label="contact form" id="b-contact--form">
+        <form role="form" aria-label="contact form" id="b-contact--form">
 
           <!-- Name Input -->
           <div class="form-group b-form-name">
@@ -32,7 +32,7 @@
             <textarea class="form-control" id="message" rows="3"></textarea>
           </div>
           <!-- Submit Button -->
-          <button type="submit" class="btn">Submit</button>
+          <button @click="postFormBody(event)" type="submit" class="btn submit--btn" id="submit--btn">Submit</button>
 
         </form>
       </div>
@@ -58,9 +58,61 @@
 </div>
 </template>
 <script>
-  export default {
-    name: 'bcontact'
+export default {
+  name: 'bcontact',
+
+  created: () => {
+  },
+
+  computed: {
+    preparePostBody: () => {
+      
+      // lets gather the data
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // create post object
+      const formBody = {
+        date: new Date(),
+
+        user_name: name,
+
+        user_email: email,
+
+        user_message: message
+      };
+
+      return formBody;
+    }
+    
+  },
+
+  methods: {
+    postFormBody(event) {
+      // don't redirect lol
+      event.preventDefault();
+      let body = this.preparePostBody();
+      const url = 'localhost:3000/contact';
+
+      const options = {
+        method: "POST",
+        mode: "cors", // maybe change
+        cache: "no-cache",
+        headers: {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        body: JSON.stringify(body)
+      }
+
+      fetch(url, options).then(res => {
+        return res.json();
+      }).catch(e => {
+        console.error(e);
+      });
+    }
   }
+}
 </script>
 <style>
 .b-contact-master--wrap {

@@ -4,7 +4,7 @@
         <!-- About Me content column -->
         <div class="col text-left">
             <!-- B Info Header -->
-            <h1 class="b-about__header"><span class="content-shallom">Shallom</span> world</h1>
+            <h1 class="b-about__header"><span class="content-shallom">Hello</span> world</h1>
             <!-- B Info content -->
             <p class="b-about__content">
                 Hello my name is Ben Groneman I am a passionate developer based out of Lander Wyoming. I have a strong focus on human based design and application implementation.

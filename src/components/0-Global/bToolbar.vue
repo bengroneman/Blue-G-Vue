@@ -16,7 +16,7 @@
         <router-link class="nav-link" to="/projects">Projects</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="dropdown-item" to="/contact">Contact Me</router-link>
+        <router-link class="nav-link" to="/contact">Contact Me</router-link>
       </li>
     </ul>
   </div>
@@ -32,8 +32,9 @@
   position: fixed!important;
   top: 0;
   z-index: 100;
-  font-weight: regular;
-  background-color: rgba(25, 37, 48, 0.85);
+  font-weight: 500;
+  /*background-color: rgba(25, 37, 48, 0.85);*/
+  background-color: transparent;
 }
 .navbar {
   letter-spacing: 0.025em;
@@ -47,12 +48,11 @@
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
   margin: auto;
-}
+	}
 .active {
   background-color: rgba(43 43, 43, 0.6);
   border-bottom: 2px solid #54d0ba;
   color: white!important; 
-  border-radius: 5px;
 }
 .nav-item > a {
   color: #54d0ba;
@@ -75,6 +75,10 @@
 .navbar-slide {
   background: white!important;
 
+}
+.navbar-nav {
+	background: #2b3e50;
+	border-radius: 20px;
 }
 
 /*Animations yo!*/

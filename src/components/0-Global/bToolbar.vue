@@ -30,7 +30,7 @@ export default {
     handleScroll () {
       // do something
       let nav_bar = document.querySelector("nav");
-      console.log("testing");
+      console.log(nav_bar);
     }
   },
   created () {

@@ -40,6 +40,9 @@ a {
 .text-is-center {
   text-align: center;
 }
+.text-is-right {
+  text-align: right;
+}
 .full-column-height {
   height: 100%;
 }

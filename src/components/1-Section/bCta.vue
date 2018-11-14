@@ -45,11 +45,12 @@ export default {
     width: 100%;
     z-index: 2;
     background-size: cover;
-    background-image: url('/img/b-cta__background.PNG');
+    background-image: url('/img/b_cta_background.PNG');
+    background-color: black;
 }
 .b-dark--overlay {
   z-index: 3;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .b-cta__content {

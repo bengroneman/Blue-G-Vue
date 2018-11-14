@@ -23,9 +23,23 @@
 </nav>
 </template>
 <script>
-	export default {
-		name: 'btoolbar'
-	}
+export default {
+  name: 'btoolbar',
+
+  methods: {
+    handleScroll () {
+      // do something
+      let nav_bar = document.querySelector("nav");
+      console.log("testing");
+    }
+  },
+  created () {
+    window.addEventListener('scoll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+}
 </script>
 <style>
 .b-toolbar {

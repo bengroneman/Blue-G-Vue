@@ -16,7 +16,7 @@
     <p class="text-is-left card-text">{{ cardcontent }}</p>
     <a v-if="siteURL" :href="siteURL" class="btn btn-primary b-btn">Visit Site</a>
 
-    <a v-if="readMoreLink" :href="readMoreLink" class="btn btn-secondary b-btn">Read More</a>
+    <router-link v-if="readMoreLink" :to="readMoreLink" class="btn btn-secondary b-btn">Read More</router-link>
   </div>
 </div>
 </template>

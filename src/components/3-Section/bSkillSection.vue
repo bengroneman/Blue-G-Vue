@@ -16,7 +16,7 @@
         skillisWP
         skillisPHP
         cardcontent="A project built during my time at Wyoming Inc (Lander). I was responsible for building out the front end of this website on the wordpress platform."
-        readMoreLink="projects/"
+        readMoreLink="/projects"
       ></bcard>
 
       <bcard 
@@ -25,7 +25,7 @@
         skillisJS
         skillisWP
         skillisPHP
-        readMoreLink="projects/"
+        readMoreLink="/projects"
         cardcontent="A project built by yours truly. This project was a Wordpress redesign of a local Lander museums website."
       ></bcard>
 

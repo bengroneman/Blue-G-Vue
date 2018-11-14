@@ -43,17 +43,14 @@
           <p>Email Address:</p>
           <a href="mailto:ben_groneman@bluegdev.com">ben_groneman@bluegdev.com</a>
         </div>
-        </br>
         <div class="b-info--wrapper">
           <p>Twitter:</p>
           <a href="https://twitter.com/strangenctar">@strangenectar</a>
         </div>
-        </br>
         <div class="b-info--wrapper">
           <p>Github</p>
           <a href="https://github.com/strangenectar">strangenectar</a>
         </div>
-        </br>
       </div>
       <!-- END B Contact list info column --> 
     </div>

@@ -11,15 +11,15 @@ I built this site out of a love for code, and a fondness of VueJS. I enjoy writi
 
 ## If you would care to run this website locally then follow these steps
 
-> Clone this repository
-> cd Blue-G-Vue
-> npm install
+- Clone this repository (git clone https://github.com/strangenectar/Blue-G-Vue
+- cd Blue-G-Vue
+- npm install
 ```
 For development
 ```
-> npm run serve
+- npm run serve
 ```
 Build for production
 ```
-> npm run build
-> npm run serve
+- npm run build
+- npm run serve

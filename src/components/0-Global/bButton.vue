@@ -1,18 +1,35 @@
 <template>
 <div class="b-btn__container">
-  <a id="b-btn--a" :href="externalLink">
+  <a v-if="isExternalLink" id="b-btn--a" :href="linkTo">
     <span class="text"><i class="fas {!! btnIcon !!}"></i>{{btnText}}</span>
   </a>
+  <router-link v-else to="linkTo"></router-link>
 </div>
 </template>
 <script>
 // TODO: Validate our props -> this is a best practice
 export default {
   name: 'bbutton',
+  data: () => {
+    return {
+      isExternalLink: Boolean    
+    }
+  },
   props: {
     btnIcon: String,
-    externalLink: String,   // TODO: add regex validator here
-    btnText: String
+    btnText: String,
+    linkTo: {
+      validator: function (link) {
+        var expression = /[-a-zA-Z0-9@:%_+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_+.~#?&//=]*)?/gi;
+        var regex = new RegExp(expression);
+
+        if (link.match(regex)) {
+          this.isExternalLink = true;  						
+        } else {
+          this.isExternalLink = false;
+        }
+      }
+    }
   }
 }
 </script>

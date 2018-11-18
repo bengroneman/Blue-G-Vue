@@ -5,8 +5,7 @@
     <div class="b-project-content__wrapper child">
       <h2>I am a big advocate for open source</h2>
       <h3>Find me @strangenectar on github</h3>
-      <button id="b-btn" href="https://github.com/strangenectar/" type="button" class="btn btn-outline-primary">Projects</button>
-      <router-link to="/projects"><h2 class="see-my-work">See my work</h2></router-link>
+      <a id="b-btn" target="_blank" href="https://github.com/strangenectar/" type="button">Code</a>
     </div>
   </div>
 </section>
@@ -29,6 +28,12 @@ export default {
 <style>
 .see-my-work {
   color: white;
+}
+#b-btn {
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  border-radius: 5px;
 }
 .see-my-work:hover {
    text-decoration: underline; 

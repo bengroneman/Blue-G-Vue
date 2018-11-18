@@ -32,7 +32,7 @@
             <textarea class="form-control" id="message" rows="3"></textarea>
           </div>
           <!-- Submit Button -->
-          <button @click="postFormBody(event)" type="submit" class="btn submit--btn" id="submit--btn">Submit</button>
+          <button @click="postFormBody(event)" type="submit" class="btn submit--btn" id="b-btn">Submit</button>
 
         </form>
       </div>

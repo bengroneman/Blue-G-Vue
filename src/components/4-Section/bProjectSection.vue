@@ -3,9 +3,13 @@
   <div class="b-project__wrapper parent">
     <!-- Open Source Advocate Section  -->
     <div class="b-project-content__wrapper child">
-      <h2>I am a big advocate for open source</h2>
-      <h3>Find me @strangenectar on github</h3>
-      <a id="b-btn" target="_blank" href="https://github.com/strangenectar/" type="button">Code</a>
+      <h2>I love open source</h2>
+      <h3>Browse my github</h3>
+      <a href="https://github.com/strangenectar/" target="_blank">
+        <button id="b-btn" class="b-project-btn" type="button">
+          <i class="fas fa-laptop-code"></i>
+        </button>
+      </a>
     </div>
   </div>
 </section>
@@ -34,6 +38,9 @@ export default {
   font-weight: 600;
   letter-spacing: 0.025em;
   border-radius: 5px;
+}
+.b-project-btn {
+  width: 50%;
 }
 .see-my-work:hover {
   text-decoration: underline; 

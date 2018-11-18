@@ -8,7 +8,6 @@
 
     <div class="bbg-copyright">
       &copy;2018 — <em>Blue G Development</em>
-      <blogo></blogo>
     </div>
   </div>
 </div>

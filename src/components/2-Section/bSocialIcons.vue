@@ -1,13 +1,18 @@
 <template>
 <div class="container-fluid">
-  <div class="col">
-    <button id="b-btn" href="https://github.com/strangenectar" type="button" class="btn btn-outline-primary">My Github</button>
-
-    <button id="b-btn" href="https://www.linkedin.com/in/ben-groneman-62174370/" type="button" class="btn btn-outline-primary">My Linkedin</button>
-
-    <button id="b-btn" href="mailto:bluegroneman10@gmail.com" type="button" class="btn btn-outline-primary">Email Me</button>
-
-    <button id="b-btn" href="contact" type="button" class="btn btn-outline-primary">Contact Me</button>
+  <div class="col is-icon--grid">
+    <button id="b-btn" href="https://github.com/strangenectar" type="button" class="btn">
+      <i class="fab fa-github" aria-hidden="true"></i>
+    </button>
+    <button id="b-btn" href="https://www.linkedin.com/in/ben-groneman-62174370/" type="button" class="btn">
+      <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+    </button>
+    <button id="b-btn" href="mailto:bluegroneman10@gmail.com" type="button" class="btn">
+      <i class="far fa-envelope" aria-hidden="true"></i>
+    </button>
+    <button id="b-btn" href="contact" type="button" class="btn">
+      <i class="fas fa-phone" aria-hidden="true"></i>
+    </button>
   </div>
 </div>
 </template>
@@ -29,5 +34,11 @@ export default {
 }
 #b__btn {
   margin: 10px;
+  width: 45px;
+}
+.is-icon--grid {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
 }
 </style>

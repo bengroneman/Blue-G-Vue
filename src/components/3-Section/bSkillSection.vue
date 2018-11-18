@@ -6,7 +6,7 @@
 
   <div class="row">
     <!-- Skill Icon Column -->
-    <div class="col-8 b-skill-icon__column">
+    <div class="col b-skill-icon__column is-skill--grid">
       
       <!-- START B Skll -->
       <bcard 
@@ -72,16 +72,15 @@ export default {
 .b-skill__container > h1 {
   padding: 45px;
 }
-.b-skill-icon__column {
-    margin: auto;
-    padding-top: 45px;
-    padding-bottom: 45px;
-    display: grid;
-    grid-gap: 25px;
-    grid-template-columns: repeat(3, 1fr);
+.is-skill--grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
 }
-.b-skill-icon__column .b-skill__item:nth-child(even) {
-  background: black;
+.b-skill-icon__column {
+  margin: auto;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 .b-skill-icon__column > p {
   margin-bottom: 10px;

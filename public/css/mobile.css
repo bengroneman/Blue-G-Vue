@@ -1,0 +1,15 @@
+/* Tablet and smaller */
+@media only screen and (max-width: 768px) {
+  .b-cta__content-wrapper {
+    position: relative!important;
+  }
+  .curly-brackets {
+    display: none;
+  }
+  .is-skill--grid {
+    grid-template-columns: repeat(1, 1fr)!important;
+  }
+  .b-project-section {
+    font-size: 0.75em;
+  }
+} 

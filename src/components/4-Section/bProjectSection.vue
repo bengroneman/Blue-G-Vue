@@ -36,21 +36,21 @@ export default {
   border-radius: 5px;
 }
 .see-my-work:hover {
-   text-decoration: underline; 
+  text-decoration: underline; 
 }
 .b-project-content__wrapper {
   max-height: 550px;
   max-width: 550px;
   border: 5px solid white;
-  margin: auto;
+  margin: 65px auto 65px auto;
   text-align: center;
   padding: 25px;
 }
 .b-brand-black {
-    background-color: #01060f;
+  background-color: #01060f;
 }
 .b-project-section {
-  height: 100vh;
+  height: fit-content;
   color: white;
 }
 .b-project__wrapper {

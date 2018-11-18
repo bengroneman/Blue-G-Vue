@@ -64,10 +64,10 @@ a {
   border-bottom: 5px solid #6e7f80;
 }
 .parent {
-    display: flex;
+  display: flex;
 }
 .child {
-    margin: auto;
+  margin: auto;
 }
 .button-black .text {
   color: black!important;
@@ -81,8 +81,8 @@ a {
   border: 1px solid rgb(84, 208, 186);
 }
 #b-btn:hover {
-    box-shadow: -6px 7px 0px 0px #6e7f80;
-    transform: scaleX(1.025) scaleY(1.025);
+  box-shadow: -6px 7px 0px 0px #6e7f80;
+  transform: scaleX(1.025) scaleY(1.025);
 }
 h1, h2, h3, h4 {
   font-size: 3em;
@@ -102,10 +102,10 @@ h6 { font-family: 'Open Sans', sans-serif!important; }
 p { font-family: 'Open Sans', sans-serif!important; }
 
 .quote-blurb {
-    background: linear-gradient(#000000, #202f3e);
-    font-weight: 900;
-    height: 300px!important;
-    display: inline-block;
+  background: linear-gradient(#000000, #202f3e);
+  font-weight: 900;
+  height: auto;
+  display: inline-block;
 }
 .quote-blurb > h2 {
     font-size: 2em;
@@ -131,17 +131,3 @@ p { font-family: 'Open Sans', sans-serif!important; }
     width: 100%;
     height: 100%;
 }
-.section-one {
-    background: white;
-    margin: 75px;
-}
-i {
-  margin-right: 7px;
-}
-.navbar {
-  padding: 0;
-}
-.navbar > ul {
-  width: 100%;
-}
-

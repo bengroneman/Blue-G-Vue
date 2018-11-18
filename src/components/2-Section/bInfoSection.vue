@@ -50,9 +50,6 @@ export default {
 .b-about__header {
     font-size: 5em;
 }
-.b-about__container {
-  max-height: 100vh;
-}
 .b-about__row {
 	height: 100%;
   margin: 125px auto 125px auto;

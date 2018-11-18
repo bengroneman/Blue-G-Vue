@@ -28,34 +28,20 @@ export default {
 </script>
 <style>
 .page-slide-enter-active {
-  animation: bounceIn 0.3s;
+	animation: moveFromBottom .7s ease both;
 }
 .page-slide-leave-active {
-  animation: bounceIn 0.3s reverse;
+	animation: moveToBottom .7s ease both;
+}
+/* START Animations */
+@keyframes moveToBottom {
+	from { }
+	to { -webkit-transform: translateY(100%); transform: translateY(100%); }
 }
 
-@keyframes slideIn {
-  from {
-    transform: scaleX(0);
-    transform: scaleY(0);
-  }
-  to {
-    transform: scaleY(100%);
-    transform: scaleX(100%);
-  }
+@keyframes moveFromBottom {
+	from { -webkit-transform: translateY(100%); transform: translateY(100%); }
 }
-
-@keyframes bounceIn {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
+/* END Animations */
 </style>
 

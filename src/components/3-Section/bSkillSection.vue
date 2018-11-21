@@ -45,6 +45,7 @@
     <div class="b-skill__content">
       <div>
         <h5>Programming and problem solving is my passion, if you would like to learn more feel free to contact me!</h5>
+        <router-link to="contact"></router-link>
         <button id="b-btn" href="/contact" type="button" class="btn btn-outline-primary">Contact me</button>
       </div>
     </div>

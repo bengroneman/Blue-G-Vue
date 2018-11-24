@@ -12,9 +12,17 @@
       <li class="nav-item">
         <router-link class="nav-link" to="/about">About </router-link>
       </li>
-			<li class="nav-item">
-        <router-link class="nav-link" to="/projects">Projects</router-link>
-      </li>
+		  <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projects
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <router-link class="dropdown-item" to="/projects/ruggedwerx">Ruggedwerx</router-link>
+          <router-link class="dropdown-item" to="/projects/maw">MAW</router-link>
+          <div class="dropdown-divider"></div>
+          <router-link class="dropdown-item" to="/projects/gwg">GWG</router-link>
+        </div>
+			</div>
       <li class="nav-item">
         <router-link class="nav-link" to="/contact">Contact Me</router-link>
       </li>

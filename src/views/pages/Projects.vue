@@ -12,18 +12,10 @@
 					skillisWP
 					skillisPHP
 					skillisJS
+          readMoreLink="http://ruggedwerx.com"
+          siteURL="http://ruggedwerx.com"
 				></bcard>
 				<!-- grid item 2 -->
-				<bcard
-					imgsrc="/img/bonnevillebuilders.png"
-					cardtitle="Bonneville Builders Project"
-					cardsubtitle="Contactors of many sorts"
-					cardcontent="This site was engineered during my time as a Front End Developer at a compnay called Wyoming Inc."
-					skillisWP
-					skillisPHP
-					skillisJS
-				></bcard>
-				<!-- grid item 3 -->
 				<bcard
 					cardtitle="Museum of the American West Project"
 					cardsubtitle="Museum based in Lander Wy"
@@ -31,13 +23,16 @@
 					skillisWP
 					skillisPHP
 					skillisJS
+          siteURL="http://museumoftheamericanwest.com"
 				></bcard>
+
         <bcard
 					cardtitle="Grow With Google Scholar"
 					cardsubtitle="Browse through the code I wrote for this program"
 					cardcontent="I was selected for the Grow With Google scholarship program through Udacity. With this in mind, I was able to tranform a non mobile friendly, unresponsive, website into a Progressive Web Application, that will store restaurant data offline."
 					skillisJS
           skillisCSS
+          siteURL="https://github.com/strangenectar/mws-restaurant-stage-1"
 				></bcard>
       </div>
     </div>

@@ -1,36 +1,63 @@
-# This is a VueJS project meant to represent my love for code
+<p align="center"><img src="https://github.com/gobuffalo/buffalo/blob/master/logo.svg" width="360"></p>
 
-This is a SPA that is currently hosted using Netlify, and can be found at this [link](http://bluegdev.netlify.com/)
-I built this site out of a love for code, and a fondness of VueJS. I enjoy writing clean code, and this repository will be a lifelong representation of that train of thought.
+<p align="center">
+<a href="https://godoc.org/github.com/gobuffalo/buffalo"><img src="https://godoc.org/github.com/gobuffalo/buffalo?status.svg" alt="GoDoc" /></a>
+<a href="https://travis-ci.org/gobuffalo/buffalo"><img src="https://travis-ci.org/gobuffalo/buffalo.svg?branch=master" alt="Build Status" /></a>
+<a href="https://ci.appveyor.com/project/markbates/buffalo/branch/master"><img src="https://ci.appveyor.com/api/projects/status/fjv5u499p78uvbxa/branch/master?svg=true&passingText=Windows%20-%20OK&failingText=Windows%20-%20failed&pendingText=Windows%20-%20pending" alt="Windows Build status" /></a>
+<a href="https://codecov.io/gh/gobuffalo/buffalo"><img src="https://codecov.io/gh/gobuffalo/buffalo/branch/master/graph/badge.svg" alt="Code coverage status" /></a>
+<a href="https://goreportcard.com/report/github.com/gobuffalo/buffalo"><img src="https://goreportcard.com/badge/github.com/gobuffalo/buffalo" alt="Go Report Card" /></a>
+<a href="https://www.codetriage.com/gobuffalo/buffalo"><img src="https://www.codetriage.com/gobuffalo/buffalo/badges/users.svg" alt="Open Source Helpers" /></a>
+</p>
 
-## This website was built leveraging the following open source technologies
+# Buffalo
 
->[Vuejs](https://github.com/vuejs)
+A Go web development eco-system, designed to make your life easier.
 
->[Bootstrap](https://github.com/twbs/bootstrap)
+Buffalo helps you to generate a web project that already has everything from front-end (JavaScript, SCSS, etc.) to back-end (database, routing, etc.) already hooked up and ready to run. From there it provides easy APIs to build your web application quickly in Go.
 
->[Vue-Particles](https://github.com/creotip/vue-particles)
+Buffalo **isn't just a framework**, it's a holistic web development environment and project structure that **lets developers get straight to the business** of, well, building their business.
 
-## If you would care to run this website locally then follow these steps
+> I :heart: web dev in go again - Brian Ketelsen
 
-Clone this repository 
+## Documentation
 
->$ git clone https://github.com/strangenectar/Blue-G-Vue
+Please visit [http://gobuffalo.io](http://gobuffalo.io) for the latest documentation, examples, and more.
 
->$ cd Blue-G-Vue
+### Quick Start
+* [Installation](http://gobuffalo.io/docs/installation)
+* [Create a new project](http://gobuffalo.io/docs/new-project)
+* [Examples](http://gobuffalo.io/docs/examples)
 
->$ npm install
+## Shoulders of Giants
 
-```
-For development
-```
+Buffalo would not be possible if not for all of the great projects it depends on. Please see [SHOULDERS.md](SHOULDERS.md) to see a list of them.
 
->$ npm run serve
+### Templating
 
-```
-Build for production
-```
+[github.com/gobuffalo/plush](https://github.com/gobuffalo/plush) - This templating package was chosen over the standard Go `html/template` package for a variety of reasons. The biggest of which is that it is significantly more flexible and easy to work with.
 
->$ npm run build
+### Routing
 
->$ npm run serve
+[github.com/gorilla/mux](https://github.com/gorilla/mux) - This router was chosen because of its stability and flexibility. There might be faster routers out there, but this one is definitely the most powerful!
+
+### Task Runner (Optional)
+
+[github.com/markbates/grift](https://github.com/markbates/grift) - If you're familiar with Rake tasks from Ruby, you'll be right at home using Grift. This package was chosen to allow for the easy running of simple, and common, tasks that most web applications need. Think things like seeding a database or taking in a CSV file and generating database records. Buffalo ships with an example `routes` task that prints off the defined routes and the function that handles those requests.
+
+### Models/ORM (Optional)
+
+[github.com/gobuffalo/pop](https://github.com/gobuffalo/pop) - Accessing databases is nothing new in web applications. Pop, and its command line tool, Soda, were chosen because they strike a nice balance between simplifying common tasks, being idiomatic, and giving you the flexibility you need to built your app. Pop and Soda share the same core philosophies as Buffalo so they were a natural choice.
+
+### Sessions, Cookies, Websockets, and more...
+
+[github.com/gorilla](https://github.com/gorilla) - The Gorilla toolkit is a great set of packages designed to improve upon the standard library for a variety of web-related packages. With these high quality packages Buffalo is able to keep its "core" code to a minimum and focus on its goal of glueing them all together to make your life better.
+
+## Benchmarks
+
+Oh, yeah, everyone wants benchmarks! What would a web framework be without its benchmarks? Well, guess what? I'm not giving you any! That's right. This is Go! I assure you that it is plenty fast enough for you. If you want benchmarks you can either a) checkout any benchmarks that the [GIANTS](SHOULDERS.md) Buffalo is built upon have published, or b) run your own. I have no interest in playing the benchmark game, and neither should you.
+
+## Contributing
+
+First, thank you so much for wanting to contribute! It means so much that you care enough to want to contribute. We appreciate every PR from the smallest of typos to the be biggest of features.
+
+To contribute, please read the contribution guidelines: [CONTRIBUTING](.github/CONTRIBUTING.md)

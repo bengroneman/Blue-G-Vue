@@ -41,15 +41,15 @@
       <div class="b-contact--info col-4">
         <div class="b-info--wrapper">
           <p>Email Address:</p>
-          <a href="mailto:ben_groneman@bluegdev.com">ben_groneman@bluegdev.com</a>
+          <a href="mailto:bluegroneman10@gmail.com">bluegroneman10@gmail.com</a>
         </div>
         <div class="b-info--wrapper">
-          <p>Twitter:</p>
-          <a href="https://twitter.com/strangenctar">@strangenectar</a>
+          <p>Linkedin:</p>
+          <a href="https://linkedin.com/in/ben-groneman" target="_blank">Ben Groneman</a>
         </div>
         <div class="b-info--wrapper">
           <p>Github</p>
-          <a href="https://github.com/strangenectar">strangenectar</a>
+          <a href="https://github.com/bengroneman" target="_blank">Code</a>
         </div>
       </div>
       <!-- END B Contact list info column --> 
@@ -108,7 +108,7 @@ export default {
       fetch(url, options).then(res => {
         return res.json();
       }).catch(e => {
-        console.error(e);
+        console.log(e);
       });
     }
   }

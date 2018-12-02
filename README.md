@@ -23,15 +23,11 @@ Run the following commands on your command line of choice (these instructions as
 
 >$ npm install
 
-```
-For running in a development environment
-```
+## For running in a development environment
 
 >$ npm run serve
 
-```
-For running in a production environment
-```
+## For running in a production environment
 
 >$ npm run build
 

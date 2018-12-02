@@ -1,5 +1,5 @@
   <template>
-<section class="container-fluid b-skill__container">
+<section id="skill-section" class="container-fluid b-skill__container">
   <!-- Section Header-->
   <h1 class="text-is-center">Skill Array</h1>
   <h3 class="text-is-center">What I bring to the table</h3>

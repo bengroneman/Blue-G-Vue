@@ -7,6 +7,8 @@ I built this site out of a love for code, and a fondness for Vue (JavaScript). I
 
 >[Vue](https://github.com/vuejs)
 
+> [vue-cli](https://github.com/vuejs/vue-cli) -> **Note this is a dependency you should have, if you want to run this website locally**
+
 >[Bootstrap](https://github.com/twbs/bootstrap)
 
 >[Vue-Particles](https://github.com/creotip/vue-particles)

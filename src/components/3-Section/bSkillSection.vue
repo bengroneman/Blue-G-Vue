@@ -82,6 +82,7 @@ export default {
   margin: auto;
   padding-top: 45px;
   padding-bottom: 45px;
+  max-width: 1024px;
 }
 .b-skill-icon__column > p {
   margin-bottom: 10px;
@@ -99,7 +100,7 @@ export default {
   margin: 2px auto 2px 20px;
 }
 .b-skill__content {
-  margin: 45px;
+  margin: 10px;
   width: 100%;
   display: flex;
 }

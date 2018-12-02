@@ -32,21 +32,7 @@
 </template>
 <script>
 export default {
-  name: 'btoolbar',
-
-  methods: {
-    handleScroll () {
-      // do something
-      let nav_bar = document.querySelector("nav");
-      console.log(nav_bar);
-    }
-  },
-  created () {
-    window.addEventListener('scoll', this.handleScroll);
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
+  name: 'btoolbar'
 }
 </script>
 <style>

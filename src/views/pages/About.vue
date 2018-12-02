@@ -32,10 +32,9 @@
 
               <h4>Social</h4>
               <ul class="content-right--ul">
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Github</a></li>
-                <li><a href="mailto:">Email</a></li>
-                <li><a href="twitter">twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/ben-groneman/" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/bengroneman" target="_blank">Github</a></li>
+                <li><a href="mailto:bluegroneman10@gmail.com">bluegroneman10@gmail.com</a></li>
               </ul>
 
             </div>

@@ -31,4 +31,8 @@ export default {
   width: 100%;
   padding-top: 45px;
 }
+.social-icons__footer {
+  max-width: 600px;
+  margin: auto;
+}
 </style>

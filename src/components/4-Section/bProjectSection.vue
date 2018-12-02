@@ -5,9 +5,9 @@
     <div class="b-project-content__wrapper child">
       <h2>I love open source</h2>
       <h3>Browse my github</h3>
-      <a href="https://github.com/strangenectar/" target="_blank">
+      <a href="https://github.com/bengroneman/" target="_blank">
         <button id="b-btn" class="b-project-btn" type="button">
-          <i class="fas fa-laptop-code"></i>
+          <i class="fas fa-code"></i>
         </button>
       </a>
     </div>
@@ -40,7 +40,7 @@ export default {
   border-radius: 5px;
 }
 .b-project-btn {
-  width: 50%;
+  width: 25%;
 }
 .see-my-work:hover {
   text-decoration: underline; 

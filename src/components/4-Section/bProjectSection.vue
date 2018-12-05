@@ -57,7 +57,7 @@ export default {
   background-color: #01060f;
 }
 .b-project-section {
-  height: fit-content;
+  height: 100%;
   color: white;
 }
 .b-project__wrapper {

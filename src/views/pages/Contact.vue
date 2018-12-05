@@ -41,7 +41,7 @@
       <div class="b-contact--info col-4">
         <div class="b-info--wrapper">
           <p>Email Address:</p>
-          <a href="mailto:bluegroneman10@gmail.com">bluegroneman10@gmail.com</a>
+          <a href="mailto:info@bengroneman.tech">info@bengroneman.tech</a>
         </div>
         <div class="b-info--wrapper">
           <p>Linkedin:</p>

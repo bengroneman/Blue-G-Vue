@@ -6,7 +6,7 @@
     </h1>
     <h3>A Wyoming Inc. project</h3>
     <p>
-      Test test test test test test tes testeste testes
+This was a project built during my time with Wyoming Inc.; I was responsible for building out the front-end of a Wordpress website, based on a design mockup. I had a lot of fun building this website, I used Javascript (jQuery), CSS, and PHP, with a delightful team of experts.
     </p>
   </div>
 </projectpagelayout>

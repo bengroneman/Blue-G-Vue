@@ -7,7 +7,7 @@
     </div>
 
     <div class="bbg-copyright">
-      &copy;2018 — <em>Blue G Development</em>
+      &copy;2018 — <em>Ben Groneman Development; made with <i class="fas fa-heart"></i> from <a href="https://vuejs.org" target="_blank">Vue</a></em>
     </div>
   </div>
 </div>

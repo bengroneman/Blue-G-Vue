@@ -7,12 +7,16 @@
             <h1 class="b-about__header"><span class="content-shallom">Hello</span> world</h1>
             <!-- B Info content -->
             <p class="b-about__content">
-                Hello my name is Ben Groneman I am a passionate developer based out of Lander Wyoming. I have a strong focus on human based design and application implementation.
-                My journey with web development began in the wonderful world of Wordpress and PHP, since then I have branched out using Javascript frameworks.
-                I am quite fond of the Vuejs framework (which is what is what the site you are looking at now is built on). Have fun and enjoy the website.
+						My name is Ben Groneman. I am a progressive web developer with a demonstrated history of working in diverse development environments. I have skills including JavaScript, Hubspot, Python, and a heavy focus on mobile Web Development. I love the Linux kernel, and I am a heavy Vim user (you can find my vimrc file <a href="https://github.com/bengroneman/strangevimrc" target="_blank" alt="link to my vimrc file">here</a>), with that in mind, I still carry a heavy focus on accessibility and user-focused design. With an Associate’s Degree focused on Math and Computer Science from Central Wyoming College; I intend to assert myself into the Web Development workforce and develop elegant solutions to complex problems.
             </p>
             <!-- Accent Line -->
             <bline></bline>
+						<a href="#skill-section">
+							<button id="b-btn" type="button" class="btn my-code--btn">
+								<i class="fas fa-arrow-down" aria-hidden="true"></i>
+								My Code
+							</button>
+						</a>
         </div>
         <!-- About me Art // Brackets -->
         <div class="col">
@@ -48,18 +52,25 @@ export default {
   font-weight: 900;
 }
 .b-about__header {
-    font-size: 5em;
+	font-size: 5em;
 }
 .b-about__row {
 	height: 100%;
   margin: 125px auto 125px auto;
 }
 .curly-brackets {
-    font-size: 15em;
-    margin: 45px;
-    color: #54d0ba;
+	font-size: 15em;
+	margin: 45px;
+	color: #54d0ba;
 }
 .b-about__content {
-    font-size: 1.5em; 
+	font-size: 1.25em; 
+}
+.my-code--btn {
+	margin: 25px auto!important;
+}
+.my-code--btn > i {
+	color: white;
+	padding: 5px;
 }
 </style>

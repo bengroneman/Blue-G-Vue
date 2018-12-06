@@ -2,7 +2,7 @@
   <section class="project-ruggedwerx--container" aria-label="ruggedwerx project section">
     <div class="project-ruggedwerx--wrapper">
       <div class="project-image--wrapper">
-        <img src="/img/ruggedwerx.png" alt="project alt" id="project-image" />
+        <img src="/img/ruggedwerx.png" alt="project alt" id="project-image" width="1024" />
       </div>
       <div class="project-content--wrapper">
         <!-- slot in the content -->

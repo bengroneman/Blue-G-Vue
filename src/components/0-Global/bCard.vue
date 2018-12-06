@@ -1,5 +1,5 @@
 <template>
-<div class="card b-grid-child__item">
+<div class="card b-grid-child__item lifted-card-feel">
   <img class="card-img-top" :src="imgsrc" :alt="imgsrc"/>
   <div class="card-body">
   <div class="card-skills">

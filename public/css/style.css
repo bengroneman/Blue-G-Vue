@@ -1,3 +1,10 @@
+/*
+* Below is the main Cascading Style Sheet for bengroneman.tech.
+* @Author: Ben Groneman
+* @Date: 12-5-2018
+*/
+
+/* START Universal Styles */
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,30 +31,24 @@ pre {
 a {
   color: #54d0ba!important;
 }
+
+  /* START Global Font styles Styling! */
+h1 { font-family: 'Source Code Pro', monospace!important; }
+h2 { font-family: 'Source Code Pro', monospace!important; }
+h3 { font-family: 'Source Code Pro', monospace!important; }
+h4 { font-family: 'Source Code Pro', monospace!important; }
+h5 { font-family: 'Open Sans', sans-serif!important; }
+h6 { font-family: 'Open Sans', sans-serif!important; }
+p { font-family: 'Open Sans', sans-serif!important; }
+
+  /* END Global Font styles Styling! */
+
+/* START Universal Styles */
+
+/* START Global Navigation Styles */
+
 .dropdown-menu > a {
   color: black!important;
-}
-.b-divider {
-  width: 100%;
-  border: 2px solid rgba(84, 208, 186, 0.24);
-}
-.full-view-height {
-  height: 100vh;
-}
-.text-is-left {
-	text-align: left;
-}
-.text-is-center {
-  text-align: center;
-}
-.text-is-right {
-  text-align: right;
-}
-.full-column-height {
-  height: 100%;
-}
-#particle-js {
-  background-image: url('public/img/CodenStuff.PNG');
 }
 #nav a {
   font-weight: bold;
@@ -63,11 +64,70 @@ a {
   color: #6e7f80;
   border-bottom: 5px solid #6e7f80;
 }
+
+/* END Global Navigation Styles */
+
+/* START Re-Usable Styles */
+
+.b-divider {
+  width: 100%;
+  border: 2px solid rgba(84, 208, 186, 0.24);
+}
+.text-is-left {
+	text-align: left;
+}
+.text-is-center {
+  text-align: center;
+}
+.text-is-right {
+  text-align: right;
+}
+.full-column-height {
+  height: 100%;
+}
+.lifted-card-feel:before, .lifted-card-feel:after {
+	z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 100%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg); 
+}
+.lifted-card-feel:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
 .parent {
   display: flex;
 }
 .child {
   margin: auto;
+}
+.md-heading {
+  color: rgba(41, 46, 51, 0.31);
+}
+
+/* END Re-Usable Styles */
+
+/* START Targeted/Specific Styles */
+#particle-js {
+  background-image: url('public/img/CodenStuff.PNG');
 }
 .button-black .text {
   color: black!important;
@@ -84,23 +144,6 @@ a {
   box-shadow: -6px 7px 0px 0px #6e7f80;
   transform: scaleX(1.025) scaleY(1.025);
 }
-h1, h2, h3, h4 {
-  font-size: 3em;
-	font-weight: 100;
-	margin-bottom: 0.35em;
-}
-
-/**
- *  Font Styling!!!!!!!!!!!!!!!!!!!!!!!
- */
-h1 { font-family: 'Source Code Pro', monospace!important; }
-h2 { font-family: 'Source Code Pro', monospace!important; }
-h3 { font-family: 'Source Code Pro', monospace!important; }
-h4 { font-family: 'Source Code Pro', monospace!important; }
-h5 { font-family: 'Open Sans', sans-serif!important; }
-h6 { font-family: 'Open Sans', sans-serif!important; }
-p { font-family: 'Open Sans', sans-serif!important; }
-
 .quote-blurb {
   background: linear-gradient(#000000, #202f3e);
   font-weight: 900;
@@ -108,8 +151,8 @@ p { font-family: 'Open Sans', sans-serif!important; }
   display: inline-block;
 }
 .quote-blurb > h2 {
-    font-size: 2em;
-    margin: 75px auto 45px auto;
+  font-size: 2em;
+  margin: 75px auto 45px auto;
 }
 .quote-blurb > p {
   font-size: 1.5em;
@@ -117,8 +160,8 @@ p { font-family: 'Open Sans', sans-serif!important; }
   color: #54d0ba;
 }
 .skills-section {
-    background: #202f3e;
-    height: 100%!important;
+  background: #202f3e;
+  height: 100%!important;
 }
 .fluid__container {
     margin: 0;
@@ -131,3 +174,6 @@ p { font-family: 'Open Sans', sans-serif!important; }
     width: 100%;
     height: 100%;
 }
+
+/* END Targeted/Specific Styles */
+

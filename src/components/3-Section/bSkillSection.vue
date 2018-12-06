@@ -17,6 +17,7 @@
         skillisPHP
         cardcontent="A project built during my time at Wyoming Inc (Lander). I was responsible for building out the front end of this website on the wordpress platform."
         readMoreLink="/projects"
+        class="lifted-card-feel"
       ></bcard>
 
       <bcard 

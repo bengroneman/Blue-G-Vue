@@ -45,11 +45,14 @@ export default {
 .see-my-work:hover {
   text-decoration: underline; 
 }
+.b-project__wrapper {
+  display: flex;
+}
 .b-project-content__wrapper {
   max-height: 550px;
   max-width: 550px;
   border: 5px solid white;
-  margin: 65px auto 65px auto;
+  margin: auto;
   text-align: center;
   padding: 25px;
 }
@@ -64,7 +67,7 @@ export default {
   background: linear-gradient(217deg, rgba(84,208,186,.8), rgba(68,168,197,0) 70.71%),
               linear-gradient(127deg, rgba(16,90,146,.8), rgba(32,47,62,0) 70.71%),
               linear-gradient(336deg, rgba(1,6,15,.8), rgba(0,0,0,0) 70.71%);
-  height: 100%;
+  height: 750px;
   width: 100%;
 
 }

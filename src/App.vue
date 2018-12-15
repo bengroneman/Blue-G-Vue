@@ -3,7 +3,6 @@
     <!-- START B global toolbar -->
     <btoolbar></btoolbar>
     <!-- END B Global Toolbar -->
-   
     <!-- START B dynamic window content -->
     <transition name="page-slide" mode="out-in">
       <router-view></router-view> 

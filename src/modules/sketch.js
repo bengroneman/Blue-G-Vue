@@ -23,24 +23,23 @@ sketch.draw = function() {
     sketch.background(255);
     CI.draw();
     drawCircle(sketch.width/2, sketch.height/2, 200);
-
 };
 
 
 // ******************* canvas mouse events ********************************
 // mouse event
 sketch.mousePressed = function(mouseButton) {
-    CI.canvasClick(sketch.mouseX, sketch.mouseY);
+    //CI.canvasClick(sketch.mouseX, sketch.mouseY);
 }
 
 sketch.mouseDragged = function() {
-    CI.canvasDrag(sketch.mouseX, sketch.mouseY);
+    //CI.canvasDrag(sketch.mouseX, sketch.mouseY);
     // prevent default
-    return false;
+    //return false;
 }
 
 sketch.mouseReleased = function() {
-    CI.canvasReleased(sketch.mouseX, sketch.mouseY);
+    //CI.canvasReleased(sketch.mouseX, sketch.mouseY);
 }
 
 // ******************* my functions ********************************
@@ -60,9 +59,11 @@ const drawCircle = (x, y, radius) => {
     sketch.stroke(0);
     sketch.noFill();
     sketch.ellipse(x, y, radius, radius);
-    if (radius > 2) {
+    if (radius > 8) {
         drawCircle(x + radius/2, y, radius/2);
         drawCircle(x - radius/2, y, radius/2);
+        drawCircle(x, y + radius/2, radius/2);
+        drawCircle(x, y - radius/2, radius/2);
     }
 }
 

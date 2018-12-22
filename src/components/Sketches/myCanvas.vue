@@ -20,6 +20,5 @@ export default {
 <style scoped>
 #canvas_container{
     padding: 0;
-    scrollbars: both;
 }
 </style>

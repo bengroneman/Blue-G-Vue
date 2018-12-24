@@ -11,18 +11,22 @@ var CI = {}; // canvas interactions
 
 // ************************** setup **************************
 sketch.setup = function() {
-    var cnv = sketch.createCanvas(640, 360);
+    var cnv = sketch.createCanvas(600, 300);
     CI = new canvas_interactions(sketch);
 
     // set canvas
-    sketch.background(51); //color
+    sketch.background(0); //color
+    let lines = new sketch.ArrayList(KochLine)();
+
 };
 
 // ******************************* draw loop *****************
 sketch.draw = function() {
-    sketch.background(255);
+    sketch.background(0);
     CI.draw();
-    drawCircle(sketch.width/2, sketch.height/2, 200);
+
+    // Lets draw some cool things below here
+    cantor(10, 20, sketch.width-20);
 };
 
 
@@ -64,6 +68,41 @@ const drawCircle = (x, y, radius) => {
         drawCircle(x - radius/2, y, radius/2);
         drawCircle(x, y + radius/2, radius/2);
         drawCircle(x, y - radius/2, radius/2);
+    } 
+}
+
+// The infamous cantor set
+const cantor = (x, y, len) => {
+    // Our cantor color
+    if (len >= 1) {
+        
+        sketch.stroke(255);
+        sketch.noFill();
+
+        sketch.line(x, y, x + len, y);
+        y += 20;
+        cantor(x, y, len/3);
+        cantor(x + len * 2 / 3, y, len / 3);
+    }
+}
+
+// Lets get Classy
+class KochLine {
+    start = sketch.vector();
+    end = sketch.vector();
+
+    a = sketch.vector();
+    b = sketch.vector();
+
+    KochLine(a, b) {
+        start = a.sketch.get();
+        start = b.sketch.get();
+    }
+
+    // display method
+    display() {
+        sketch.stroke(0);
+        sketch.line(start.x, start.y, end.x, end.y);
     }
 }
 

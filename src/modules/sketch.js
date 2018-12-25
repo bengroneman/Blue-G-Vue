@@ -1,5 +1,3 @@
-import canvas_interactions from './canvas_interactions.js';
-
 var p5 = require("p5");
 var myp5 = new p5(function(sketch) {
 
@@ -9,14 +7,32 @@ window.store.objs = []; // list of all objects on canvas
 
 var CI = {}; // canvas interactions
 
+
+let lines = [];
+
 // ************************** setup **************************
 sketch.setup = function() {
-    var cnv = sketch.createCanvas(600, 300);
-    CI = new canvas_interactions(sketch);
-
-    // set canvas
+    // declaring our canvas size
+    sketch.createCanvas(600, 300);
     sketch.background(0); //color
-    let lines = new sketch.ArrayList(KochLine)();
+
+    let line = new KochLine();
+    lines.push(line);
+    
+    let canvas_width = sketch.width;
+
+    // Declare our vertices
+    let a = new sketch.createVector(0, 173);
+    let b = new sketch.createVector(canvas_width, 173);
+    let c = new sketch.createVector(canvas_width/2, 173+width*sketch.cos(sketch.radians(30)));
+    console.log(a, b, c);
+
+    let start = sketch.createVector(0, 200);
+    let end = sketch.createVector(sketch.width, 200);
+
+    console.log(lines);
+    lines.push(new KochLine(start, end));
+    console.log(lines);
 
 };
 
@@ -26,7 +42,10 @@ sketch.draw = function() {
     CI.draw();
 
     // Lets draw some cool things below here
-    cantor(10, 20, sketch.width-20);
+    for (line in lines) {
+        console.log(line);
+        line.display();
+    }
 };
 
 
@@ -87,23 +106,12 @@ const cantor = (x, y, len) => {
 }
 
 // Lets get Classy
-class KochLine {
-    start = sketch.vector();
-    end = sketch.vector();
-
-    a = sketch.vector();
-    b = sketch.vector();
-
-    KochLine(a, b) {
-        start = a.sketch.get();
-        start = b.sketch.get();
+const KochLine = {
+    constructor(start, end) {
+        this.start = start;
+        this.end = end;
     }
 
-    // display method
-    display() {
-        sketch.stroke(0);
-        sketch.line(start.x, start.y, end.x, end.y);
-    }
 }
 
 }, 'canvas_container');

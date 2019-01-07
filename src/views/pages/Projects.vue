@@ -42,14 +42,12 @@
 <script>
 import bcard from '@/components/0-Global/bCard'
 import bline from '@/components/0-Global/bLine'
-import bmodal from '@/components/0-Global/bModal'
 
 export default {
   name: 'projects',
 	components: {
 		bcard,
-    bline,
-    bmodal
+    bline
 	}
 }
 </script>

@@ -14,14 +14,12 @@
 </template>
 
 <script>
-import bsocialicons from '@/components/2-Section/bSocialIcons'
-import blogo from '@/components/0-Global/bLogo'
+import bsocialicons from '@/components/0-Global/bSocialIcons'
 
 export default {
   name: 'bfooter',
   components: {
-    bsocialicons,
-    blogo
+    bsocialicons
   }
 }
 </script>

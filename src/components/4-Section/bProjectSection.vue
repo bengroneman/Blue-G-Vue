@@ -3,8 +3,8 @@
   <div class="b-project__wrapper parent b-darkish--overlay">
     <!-- Open Source Advocate Section  -->
     <div class="b-project-content__wrapper child">
-      <h2>I love open source</h2>
-      <h3>Browse my github</h3>
+      <h2>I am passionate about open source</h2>
+      <h3>Peruse my github</h3>
       <a href="https://github.com/bengroneman/" target="_blank">
         <button id="b-btn" class="b-project-btn" type="button">
           <i class="fas fa-code"></i>
@@ -76,13 +76,11 @@ export default {
   background-color: rgba(0, 0, 0, .8);
 }
 
-
 .b-project__wrapper {
-  /* background: linear-gradient(217deg, rgba(84,208,186,.8), rgba(68,168,197,0) 70.71%),
+  background: linear-gradient(217deg, rgba(84,208,186,.8), rgba(68,168,197,0) 70.71%),
               linear-gradient(127deg, rgba(16,90,146,.8), rgba(32,47,62,0) 70.71%),
               linear-gradient(336deg, rgba(1,6,15,.8), rgba(0,0,0,0) 70.71%);
-              */
-  background: url("/img/hexels/open_source_background.PNG");
+  /*background: url("/img/hexels/open_source_background.PNG");*/
   position: relative;
   z-index: 1;
   height: 750px;

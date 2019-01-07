@@ -2,6 +2,7 @@
 <div class="card b-grid-child__item lifted-card-feel">
   <img v-if="imgsrc" class="card-img-top" :src="imgsrc" :alt="imgsrc"/>
   <div class="card-body">
+
 		<div class="card-skills">
 			<span v-if="skillisJS" class="b-skill b-skill-is-js">Javascript</span>
 			<span v-if="skillisVUE" class="b-skill b-skill-is-vue">VueJS</span>

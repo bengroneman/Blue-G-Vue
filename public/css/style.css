@@ -87,9 +87,19 @@ a {
 
 /* END Universal Styles */
 
+
+/* START Re-Usable Styles */
 .color-is--grey {
   color: #a9a9a9!important;
 }
+.is-standard--width {
+  max-width: 1080px;
+  margin: auto;
+}
+.margin-top-bottom {
+  margin: 45px auto 45px auto!important;
+}
+/* END Re-Usable Styles */
 
 /* START Global Navigation Styles */
 

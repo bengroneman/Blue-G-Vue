@@ -2,18 +2,35 @@
   <section class="project-ruggedwerx--container" aria-label="ruggedwerx project section">
     <div class="project-ruggedwerx--wrapper">
       <div class="project-image--wrapper">
-        <img src="/img/ruggedwerx.png" alt="project alt" id="project-image" width="1024" />
+        <img :src="hero_img_src" :alt="hero_img_alt" id="project-image" width="1024" />
       </div>
       <div class="project-content--wrapper">
+
+        <h1 class="dive">
+          <em class="md-heading-1 md-heading color-is--grey"> # </em> {{ project_header }}
+        </h1>
+        <h3 class="dive">
+          <em class="md-heading-3 md-heading color-is--grey">###</em> {{ project_sub_header }}
+        </h3>
+        <span class="md-date-author"><em>{{ job_title }}</em>{{ project_date }}</span>
         <!-- slot in the content -->
         <slot></slot>
+
       </div>
     </div>
   </section>
 </template>
 <script>
 export default {
-  name: 'projectpagelayout'
+  name: 'projectpagelayout',
+  props: {
+    hero_img_src: String,
+    hero_img_alt: String,
+    project_header: String,
+    project_sub_header: String,
+    job_title: String,
+    project_date: String
+  }
 }
 </script>
 <style>
@@ -33,6 +50,9 @@ export default {
 .project-content--wrapper {
   padding: 45px;
   text-align: left;
+}
+.project-content--wrapper .dive > em {
+  color: #a9a9a9;
 }
 .project-image--wrapper {
   width: 1024px;

@@ -21,21 +21,19 @@
         <!-- About me Art // Brackets -->
         <div class="col">
             <!-- Sketch Column -->
-            <mycanvas></mycanvas>
+            <!--<mycanvas></mycanvas> -->
         </div>
     </div>
 </div>
 </template>
 <script>
 import bline from '@/components/0-Global/bLine.vue'
-import mycanvas from '@/components/Sketches/myCanvas.vue'
 
 export default {
     name: 'binfosection',
 
     components: {
-        bline,
-        mycanvas
+        bline
     }
 }
 </script>

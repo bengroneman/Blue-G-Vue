@@ -25,7 +25,9 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="css">
+@import '../node_modules/bulma/css/bulma.css';
+
 .page-slide-enter-active {
 	animation: moveFromBottom .7s ease both;
 }

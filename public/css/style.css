@@ -72,9 +72,6 @@ body, html {
   width: 100%;
   overflow-x: hidden;
 }
-#nav {
-  padding: 30px 30px 0 30px;
-}
 code {
   box-shadow: none!important;
   -webkit-box-shadow: none!important;
@@ -85,7 +82,7 @@ pre {
   border: none;
 }
 a {
-  color: #54d0ba!important;
+  color: #54d0ba;
 }
 
 /* END Universal Styles */

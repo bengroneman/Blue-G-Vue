@@ -1,23 +1,23 @@
 <template>
 <div class="card b-grid-child__item lifted-card-feel">
-  <img class="card-img-top" :src="imgsrc" :alt="imgsrc"/>
+  <img v-if="imgsrc" class="card-img-top" :src="imgsrc" :alt="imgsrc"/>
   <div class="card-body">
-  <div class="card-skills">
-    <span v-if="skillisJS" class="b-skill b-skill-is-js">Javascript</span>
-    <span v-if="skillisVUE" class="b-skill b-skill-is-vue">VueJS</span>
-    <span v-if="skillisWP" class="b-skill b-skill-is-wp">Wordpress</span>
-		<span v-if="skillisHS" class="b-skill b-skill-is-hs">Hubspot</span>
-		<span v-if="skillisPY" class="b-skill b-skill-is-py">Python</span>
-		<span v-if="skillisPHP" class="b-skill b-skill-is-php">PHP</span>
-    <span v-if="skillisCSS" class="b-skill b-skill-is-css">CSS</span>
-  </div>
-    <h5 class="text-is-left card-title">{{ cardtitle }}</h5>
-    <h6 class="text-is-left card-sub-title">{{ cardsubtitle }}</h6>
-    <p class="text-is-left card-text">{{ cardcontent }}</p>
-    <a v-if="siteURL" :href="siteURL" target="_blank" class="btn btn-primary b-btn">Visit Site</a>
+		<div class="card-skills">
+			<span v-if="skillisJS" class="b-skill b-skill-is-js">Javascript</span>
+			<span v-if="skillisVUE" class="b-skill b-skill-is-vue">VueJS</span>
+			<span v-if="skillisWP" class="b-skill b-skill-is-wp">Wordpress</span>
+			<span v-if="skillisHS" class="b-skill b-skill-is-hs">Hubspot</span>
+			<span v-if="skillisPY" class="b-skill b-skill-is-py">Python</span>
+			<span v-if="skillisPHP" class="b-skill b-skill-is-php">PHP</span>
+			<span v-if="skillisCSS" class="b-skill b-skill-is-css">CSS</span>
+		</div>
 
-    <router-link v-if="readMoreLink" :to="readMoreLink" class="btn btn-secondary b-btn">Read More</router-link>
+		<h5 class="text-is-left card-title">{{ cardtitle }}</h5>
+		<h6 class="text-is-left card-sub-title"><em>{{ cardsubtitle }}</em></h6>
+		<p class="text-is-left card-text">{{ cardcontent }}</p>
+		<a v-if="siteURL" :href="siteURL" target="_blank" class="btn btn-primary b-btn">Visit Site</a>
   </div>
+	<router-link v-if="readMoreLink" :to="readMoreLink" class="button is-light read-more--btn">Read More</router-link>
 </div>
 </template>
 
@@ -55,6 +55,15 @@ export default {
 	background-color: #fff;
 	transition: box-shadow .25s;
 	border-radius: 2px;
+}
+.card {
+	height: auto;
+}
+.card-body {
+	padding: 25px;
+}
+.card-text {
+	margin: 15px auto 25px auto;
 }
 .card-skills {
 	font-size: .9rem;
@@ -98,6 +107,12 @@ export default {
 .b-skill-is-css {
   background: #264de4;
   color: #cee7f1;
+}
+.read-more--btn {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 </style>

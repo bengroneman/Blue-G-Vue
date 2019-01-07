@@ -47,9 +47,12 @@ h4 {
 }
 h5 {
   font-family: 'Open Sans Regular', sans-serif;
+  font-size: 1.2em!important;
+  font-weight: 700!important;
 }
 h6 {
   font-family: 'Open Sans Light', sans-serif;
+  font-size: small!important;
 }
 p {
   font-family: 'Open Sans Light', sans-serif;

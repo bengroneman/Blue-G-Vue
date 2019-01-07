@@ -41,12 +41,12 @@ export default {
 </script>
 <style scoped>
 .vue-particles-bb {
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    background-size: cover;
-    background-image: url('/img/b_cta_background.PNG');
-    background-color: black;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-size: cover;
+  background-image: url('/img/b_cta_background.PNG');
+  background-color: black;
 }
 .b-dark--overlay {
   z-index: 3;
@@ -54,16 +54,16 @@ export default {
 }
 
 .b-cta__content {
-   display: flex;
-   position: relative;
-   width: 100%;
-   z-index: 5;
+  display: flex;
+  position: relative;
+  width: 100%;
+  z-index: 5;
 }
 
 .b-cta__content-wrapper {
-    margin: 15% auto;
-    position: absolute;
-    width: 100%;
+  margin: 15% auto;
+  position: absolute;
+  width: 100%;
 }
 .b-cta__content-wrapper > h2 {
 	color: #54d0ba;
@@ -71,7 +71,7 @@ export default {
 
 .b-cta__content-wrapper > h1 {
 	color: white;
-	margin: 1.15em auto;
+	margin: 1.15em auto 0 auto;
 }
 </style>
 

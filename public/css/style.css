@@ -32,12 +32,15 @@
 
 h1 {
   font-family: 'Source Code Pro Bold', monospace;
+  font-size: 3em!important;
 }
 h2 {
   font-family: 'Source Code Pro Light', monospace;
+  font-size: 2em!important;
 }
 h3 {
   font-family: 'Source Code Pro Regular', monospace;
+  font-size: 1.5em!important;
 }
 h4 {
   font-family: 'Source Code Pro Light', monospace;

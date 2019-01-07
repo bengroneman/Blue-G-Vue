@@ -73,7 +73,7 @@ export default {
     background-color: #ccc;
 }
 .b-skill__container > h1 {
-  padding: 45px;
+  padding-top: 45px;
 }
 .is-skill--grid {
   display: grid;

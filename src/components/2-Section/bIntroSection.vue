@@ -5,7 +5,10 @@
     <h1 class="b-about__header text-is-left"><span class="content-shallom">Hello</span> world</h1>
     <!-- B Info content -->
     <p class="b-about__content">
-    My name is Ben Groneman. I am a progressive web developer with a demonstrated history of working in diverse development environments. I have skills including JavaScript, Hubspot, Python, and a heavy focus on mobile Web Development. I love the Linux kernel, and I am a heavy Vim user (you can find my vimrc file <a href="https://github.com/bengroneman/strangevimrc" target="_blank" alt="link to my vimrc file">here</a>), with that in mind, I still carry a heavy focus on accessibility and user-focused design. With an Associate’s Degree focused on Math and Computer Science from Central Wyoming College; I intend to assert myself into the Web Development workforce and develop elegant solutions to complex problems.
+    My name is Ben Groneman. I am an avid web developer with a demonstrated history of working in diverse development environments. I started working on the web as a PHP developer with a small team to build a website for a Welding/Fabrication company known as Ruggedwerx. I have since transitioned into the wonderful world of JavaScript, you can see some of my code right on Github! 
+    </p>
+    <p class="b-about__content">
+    I am quite fond of the Linux kernel, and I am a regular Vim user (you can find my .vimrc file here). During development I carry a heavy weight on accessibility, research, and user-focused design. With a Degree focused in Computer Science from Central Wyoming College, and a passion to learn, I intend to develop elegant solutions to complex problems.
     </p>
     <!-- Accent Line -->
     <bline></bline>
@@ -66,6 +69,7 @@ export default {
 .b-about__content {
   font-size: 1.25em; 
   text-align: left;
+  margin-top: 25px;
 }
 .my-code--btn {
   margin: 25px auto auto 0px!important;

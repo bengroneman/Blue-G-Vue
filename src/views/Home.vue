@@ -6,8 +6,8 @@
     <bintrosection></bintrosection>
     <!-- Small section // Quote blurb -->
     <div class="quote-blurb fluid__container">
-        <h2 class="text-xs-center"><em>" No valid plans for the future can be made by those who have no capacity for living now. "
-        </em></h2><p class="text-xs-center">-- Alan Watts</p>
+        <h2 class="text-xs-center"><em>"First, solve the problem. Then, write the code."
+        </em></h2><p class="text-xs-center">-- John Johnson</p>
     </div>
     <!-- Blue G Skill Section -->
     <bskillsection></bskillsection>

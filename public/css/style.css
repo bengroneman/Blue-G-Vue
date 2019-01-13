@@ -209,7 +209,7 @@ a {
 .quote-blurb {
   background: linear-gradient(#000000, #202f3e);
   font-weight: 900;
-  height: auto;
+  height: 300px;
   display: inline-block;
 }
 .quote-blurb > h2 {

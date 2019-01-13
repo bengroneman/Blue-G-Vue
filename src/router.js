@@ -5,6 +5,7 @@ import About from './views/pages/About.vue'
 import Contact from './views/pages/Contact.vue'
 import Projects from './views/pages/Projects.vue'
 import projectruggedwerx from './views/projects/projectRuggedwerx.vue'
+import projectmaw from './views/projects/projectMaw.vue'
 
 Vue.use(Router)
 
@@ -36,6 +37,11 @@ export default new Router({
       path: '/projects/ruggedwerx',
       name: 'ruggedwerx', 
       component: projectruggedwerx
+    },
+    {
+      path: '/projects/maw',
+      name: 'maw', 
+      component: projectmaw
     }
   ]
 })

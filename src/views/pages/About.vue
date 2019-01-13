@@ -1,44 +1,45 @@
 <template>
-  <section class="b-about-page__container">
-    <div class="b-about-page__wrapper container">
-      <div class="b-about-page__row row">
-        <!-- START About me Content -->
-          <div class="b-about-page__content col-8">
-            <h1>User Centered Design, skateboarding, coffee, and a love for programming</h1>
-            <p>You may be asking yourself, Ben Groneman? Who is that, well let me answer that for you, I am a developer who works primarily in the Javascript ecosystem. I carry a heavy focus on designing for the user, it becomes easy to get wrapped up in all the code, but this can lead to a complex mess, that may be fun to create and understand, but I find that this leaves a mess for the user to weed through.</p>
-           
-            <p>In the land of Javascript I began my journey within the Wordpress ecosystem, so naturally I began working with PHP, to develop shortcodes that could be leveraged by the popular Wordpress plugin known as VIsual Composer. From there I fostered a strong relationship with Javascript. Odd, right? Ha.</p> 
-            
-            <p>I have become quite fond of developing the front end of websites with VueJS. When it comes to the backend, I find myself reaching for Express JS right of the shelf. Both of these technologies provide a solid foundation for developing a fantastic development environment.</p>
-          </div>
-          <div class="b-about-page__content content-right col-4">
-            <div class="text-is-right about-category__row">
+  <section class="b-about-page__container container">
+    <div class="columns">
+      <!-- START About me Content -->
+      <div class="b-about-page__content column is-three-quarters">
+        <aside class="content--wrapper"> 
+          <h1>User Centered Design, skateboarding, coffee, and a love for programming</h1>
+          <p>You may be asking yourself, Ben Groneman? Who is that, well let me answer that for you, I am a developer who works primarily in the Javascript ecosystem. I carry a heavy focus on designing for the user, it becomes easy to get wrapped up in all the code, but this can lead to a complex mess, that may be fun to create and understand, but I find that this leaves a mess for the user to weed through.</p>
 
-              <h4>Interests</h4>
-              <ul class="content-right--ul">
-                <li>Skateboard</li>
-                <li>Programming</li>
-                <li>League of Legends</li>
-                <li>Reading</li>
-              </ul>
+          <p>In the land of Javascript I began my journey within the Wordpress ecosystem, so naturally I began working with PHP, to develop shortcodes that could be leveraged by the popular Wordpress plugin known as VIsual Composer. From there I fostered a strong relationship with Javascript. Odd, right? Ha.</p> 
+          
+          <p>I have become quite fond of developing the front end of websites with VueJS. When it comes to the backend, I find myself reaching for Express JS right of the shelf. Both of these technologies provide a solid foundation for developing a fantastic development environment.</p>
+        </aside>
+      </div>
 
-              <h4>Skills</h4>
-              <ul class="content-right--ul">
-                <li>Javascript</li>
-                <li>Design</li>
-                <li>VueJS</li>
-                <li>Mobile Web Specialist</li>
-              </ul>
+      <div class="b-about-page__content content-right is-one-quarter">
+        <div class="text-is-right about-category__row">
 
-              <h4>Social</h4>
-              <ul class="content-right--ul">
-                <li><a href="https://www.linkedin.com/in/ben-groneman/" target="_blank">Linkedin</a></li>
-                <li><a href="https://github.com/bengroneman" target="_blank">Github</a></li>
-                <li><a href="mailto:bluegroneman10@gmail.com">bluegroneman10@gmail.com</a></li>
-              </ul>
+          <h4>Interests</h4>
+          <ul class="content-right--ul">
+            <li>Skateboard</li>
+            <li>Programming</li>
+            <li>League of Legends</li>
+            <li>Reading</li>
+          </ul>
 
-            </div>
-          </div>
+          <h4>Skills</h4>
+          <ul class="content-right--ul">
+            <li>Javascript</li>
+            <li>Design</li>
+            <li>VueJS</li>
+            <li>Mobile Web Specialist</li>
+          </ul>
+
+          <h4>Social</h4>
+          <ul class="content-right--ul">
+            <li><a href="https://www.linkedin.com/in/ben-groneman/" target="_blank">Linkedin</a></li>
+            <li><a href="https://github.com/bengroneman" target="_blank">Github</a></li>
+            <li><a href="mailto:bluegroneman10@gmail.com">bluegroneman10@gmail.com</a></li>
+          </ul>
+
+        </div>
         <!-- END About me Content -->
       </div>
     </div>
@@ -52,17 +53,15 @@ export default {
 </script>
 <style>
 .b-about-page__container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #151f29;
   color: white;
   display: flex;
+  margin: 75px auto 75px auto;
 }
-.b-about-page__wrapper {
-  margin: auto;
-}
-.b-about-page__row {
-  border: 1px solid white;
+.b-about-page__container .columns {
+  padding: 45px;
 }
 .b-about-page__content {
   padding: 45px;

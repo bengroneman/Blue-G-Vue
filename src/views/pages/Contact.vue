@@ -1,61 +1,69 @@
 <template>
-<div class="b-contact-master--wrap">
-  <div class="b-contact--container container">
-    <div class="b-contact--wrapper row">
-      <!-- START B Contact Content Column -->
-      <div class="b-contact--content col-8">
-        <div class="b-contact-intro--content">
-          <h1>Contact Me</h1>
-          <p>
-            I am here to answer any and all questions or thoughts you may have.
-            Want to work on a project together?
-            Want to talk open source, and technologies?
-            Looking for a hard-working web developer for you next project?
-            <span>Leave me a message, and I will get right back to you!</span>
-          </p>
-        </div>
-        <form role="form" aria-label="contact form" id="b-contact--form">
+<section class="b-contact-master--wrap container">
+  <div class="columns">
+    <!-- START B Contact Content Column -->
+    <div class="b-contact--content column is-three-quarters">
+      <div class="content--wrapper text-is-left">
+        <h1>Contact Me</h1>
+        <p>
+          I am here to answer any and all questions or thoughts you may have.
+          Want to work on a project together?
+          Want to talk open source, and technologies?
+          Looking for a hard-working web developer for you next project?
+          <span>Leave me a message, and I will get right back to you!</span>
+        </p>
+      </div>
+      <form role="form" aria-label="contact form" class="content--wrapper" id="b-contact--form">
 
-          <!-- Name Input -->
-          <div class="form-group b-form-name">
+        <!-- Name Input -->
+        <div class="field b-form-name">
+          <div class="control">
             <label for="name">Your Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Tim Tam">
+            <input class="input is-primary" id="name" type="text" placeholder="Name">
           </div>
-          <!-- Email Input -->
-          <div class="form-group b-form-email">
-            <label for="email">Your Email Address</label> 
-            <input type="email" class="form-control" id="email" placeholder="timtam@example.com">
+        </div>
+        <!-- Email Input -->
+        <div class="field b-form-email">
+          <div class="control">
+            <label for="email">Your desired email address</label>
+            <input class="input is-primary" id="email" type="text" placeholder="Email Address">
           </div>
-          <!-- Textarea input -->
-          <div class="form-group b-form-comment">
-            <label for="message">Lets chat!</label>
-            <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <!-- Textarea input --> 
+        <div class="field b-form-comment">
+          <div class="control">
+            <label for="message">Comments</label>
+            <textarea class="textarea is-primary" id="message" placeholder="Whats on your mind?"></textarea>
           </div>
-          <!-- Submit Button -->
-          <button @click="postFormBody(event)" type="submit" class="btn submit--btn" id="b-btn">Submit</button>
+        </div>
+        <!-- Submit Button -->
+        <div class="field b-form-submit">
+          <div class="control">
+            <button @click="postFormBody(event)" type="submit" class="button is-link" id="b-btn">Submit</button>
+          </div>
+        </div>
 
-        </form>
-      </div>
-      <!-- END B Contact Content Column -->
-      <!-- START B Contact list info column --> 
-      <div class="b-contact--info col-4">
-        <div class="b-info--wrapper">
-          <p>Email Address:</p>
-          <a href="mailto:info@bengroneman.tech">info@bengroneman.tech</a>
-        </div>
-        <div class="b-info--wrapper">
-          <p>Linkedin:</p>
-          <a href="https://linkedin.com/in/ben-groneman" target="_blank">Ben Groneman</a>
-        </div>
-        <div class="b-info--wrapper">
-          <p>Github</p>
-          <a href="https://github.com/bengroneman" target="_blank">Code</a>
-        </div>
-      </div>
-      <!-- END B Contact list info column --> 
+      </form>
     </div>
+    <!-- END B Contact Content Column -->
+    <!-- START B Contact list info column --> 
+    <div class="b-contact--info column is-one-quarter">
+      <div class="b-info--wrapper">
+        <p>Email Address:</p>
+        <a href="mailto:info@bengroneman.tech">info@bengroneman.tech</a>
+      </div>
+      <div class="b-info--wrapper">
+        <p>Linkedin:</p>
+        <a href="https://linkedin.com/in/ben-groneman" target="_blank">Ben Groneman</a>
+      </div>
+      <div class="b-info--wrapper">
+        <p>Github</p>
+        <a href="https://github.com/bengroneman" target="_blank">Code</a>
+      </div>
+    </div>
+    <!-- END B Contact list info column --> 
   </div>
-</div>
+</section>
 </template>
 <script>
 export default {
@@ -116,10 +124,15 @@ export default {
 </script>
 <style>
 .b-contact-master--wrap {
+  height: 100%;
   width: 100%;
-  height: 100vh;
-  display: flex;
   background-color: #151f29;
+  color: white;
+  display: flex;
+  margin: 75px auto 75px auto;
+}
+.b-contact-master--wrap .columns {
+  padding: 45px;
 }
 .b-contact--container {
   margin: auto;
@@ -130,12 +143,11 @@ export default {
   box-shadow: 0px 2px 5px 2px #000000;
 }
 
-.b-contact--wrapper {
-  margin: auto;
-  color: white;
-}
 .b-contact--content {
   padding: 35px;
+}
+.b-contact--content form {
+  margin: 45px auto;
 }
 .b-contact--info {
   padding: 20px;
@@ -144,8 +156,8 @@ export default {
   background: #1c252d;
   border-radius: 10px;
 }
-.b-contact-intro--content {
-  text-align: left;
+.b-form-submit div > .button {
+  margin: 0!important;
 }
 .b-contact-intro--content h1 {
   text-transform: uppercase;

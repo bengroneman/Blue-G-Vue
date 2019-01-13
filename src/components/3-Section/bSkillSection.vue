@@ -1,5 +1,5 @@
   <template>
-<section id="skill-section" class="container-fluid b-skill__container">
+<section id="skill-section" class="container is-widescreen b-skill__container">
   <!-- Section Header-->
   <h1 class="text-is-center">Skill Array</h1>
   <h3 class="text-is-center">What I bring to the table</h3>
@@ -15,8 +15,8 @@
         skillisJS
         skillisWP
         skillisPHP
-        cardcontent="A project built during my time at Wyoming Inc (Lander). I was responsible for building out the front end of this website on the wordpress platform."
-        readMoreLink="/projects"
+        cardcontent="A project built during my time as a Font-End Developer with Wyoming Inc., Built with a custom Wordpress Theme, for a welding/fabrication company based in Kinnear Wyoming."
+        readMoreLink="/projects/ruggedwerx"
         class="lifted-card-feel"
       ></bcard>
 
@@ -26,17 +26,17 @@
         skillisJS
         skillisWP
         skillisPHP
-        readMoreLink="/projects"
-        cardcontent="A project built by yours truly. This project was a Wordpress redesign of a local Lander museums website."
+        readMoreLink="/projects/maw"
+        cardcontent="A project built by yours truly. This project was a redesign; built with a custom Wordpress theme, for the Museum of the American West."
       ></bcard>
 
       <bcard 
         cardtitle="Github Repositories"
-        cardsubtitle="Code"
+        cardsubtitle="My Code"
         skillisJS
         skillisVUE
         skillisPY
-        readMoreLink="https://github.com/strangenectar/"
+        readMoreLink="https://github.com/bengroneman/"
         cardcontent="Browse through open source code that I have written, during my time as an avid developer."
       ></bcard>
 

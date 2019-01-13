@@ -47,9 +47,9 @@
             Ruggedwerx
           </router-link>
 
-          <a class="navbar-item">
+          <router-link to="/projects/maw" class="navbar-item">
             MAW
-          </a>
+          </router-link>
           <a class="navbar-item">
             NOLS
           </a>

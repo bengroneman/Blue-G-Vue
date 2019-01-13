@@ -4,7 +4,10 @@
     <btoolbar></btoolbar>
     <!-- END B Global Toolbar -->
     <!-- START B dynamic window content -->
-    <transition name="page-slide" mode="out-in">
+    <transition 
+      name="custom-animation"
+      enter-active-class="animated slideInUp"
+    >
       <router-view></router-view> 
     </transition>
     <!-- END B dynamic window content -->
@@ -27,6 +30,7 @@ export default {
 </script>
 <style lang="css">
 @import '../node_modules/bulma/css/bulma.css';
+@import '../node_modules/animate.css/animate.css';
 
 .page-slide-enter-active {
 	animation: moveFromBottom .7s ease both;

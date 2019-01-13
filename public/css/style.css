@@ -184,6 +184,10 @@ a {
 .md-heading {
   color: rgba(41, 46, 51, 0.31);
 }
+.clip-side-margin {
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
 
 /* END Re-Usable Styles */
 

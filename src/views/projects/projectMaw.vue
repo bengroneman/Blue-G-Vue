@@ -5,11 +5,11 @@
     project_header="MAW"
     project_sub_header="A Blue G. Development Project"
     job_title="Volunteer Development "
-    project_date="05-01-2018 => 07-01-2018"
+    project_date="@2018"
   >
 
     <!-- Slotted content -->
-    <div id="ruggedwerx">
+    <div id="maw">
       <p>
 
       </p>

@@ -4,7 +4,7 @@
       <!-- START About me Content -->
       <div class="b-about-page__content column is-three-quarters">
         <aside class="content--wrapper"> 
-          <h1>User Centered Design, skateboarding, coffee, and a love for programming</h1>
+          <h2>User Centered Design, skateboarding, coffee, and a love for programming</h2>
           <p>I am an avid developer with a background in Java, PHP, and mathematics. I have an Associates Degree in Computer Science, and an odd fascination with the Linux kernel. I have moved from the PHP, and Java world to the wonderful world of JavaScript. With a soft spot for Functional programming, and clean code, you can find me typing away on a variety of side projects, in coffee shops, and on the go.</p>
           <br/>
           <p>I began working on the web, back in 2015. I was an intern at Wyoming Inc., a marketing/web development company focused on building user friendly, and responsive websites for business around Wyoming. Shortly after my internship with Wyoming Inc., I graduated from Central Wyoming College. I promptly began a Web Internship with the National Outdoor Leadership School, a school focused on teaching a tolerance for adversity and uncertainty, and leadership in the outdoors. I am currently working on the NOLS web team as the Digital Campaign Coordinator. I work primarily in the Hubspot COS.</p> 
@@ -69,6 +69,11 @@ export default {
 .b-about-page__content {
   padding: 45px;
   text-align: left;
+}
+.b-about-page__content .content--wrapper > h2 {
+  font-weight: bold;
+  margin: auto auto 45px auto;
+  color: #7BA3C6; 
 }
 .content-right {
   display: flex;

@@ -94,7 +94,7 @@ export default {
   color: white;
   text-transform: uppercase;
 }
-.active {
+.navbar .active {
   background-color: rgba(43 43, 43, 0.6);
   border-bottom: 2px solid #54d0ba;
   color: white!important; 

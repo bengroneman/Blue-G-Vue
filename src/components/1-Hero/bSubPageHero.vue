@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-dark">
+  <section class="hero is-info b-sub-page--hero is-bold is-medium">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
@@ -15,12 +15,14 @@
 <script>
 export default {
   name: 'bsubpagehero',
-  prop: {
+  props: {
     hero_title: String,
     hero_sub_title: String
   }
 }
 </script>
 <style>
-
+.b-sub-page--hero {
+  margin-top: 50px;
+}
 </style>

@@ -50,14 +50,11 @@
           <router-link to="/projects/maw" class="navbar-item">
             MAW
           </router-link>
-          <a class="navbar-item">
-            NOLS
-          </a>
           <hr class="navbar-divider">
           <!-- Set this up for website issues -->
-          <a class="navbar-item">
+          <router-link to="/contact" class="navbar-item">
             Report an issue
-          </a>
+          </router-link>
         </div>
       </div>
     </div>

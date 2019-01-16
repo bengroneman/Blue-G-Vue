@@ -127,6 +127,10 @@ a {
   border-bottom: 5px solid #6e7f80;
 }
 
+
+.navbar-dropdown a.navbar-item {
+  color: black!important;
+}
 /* END Global Navigation Styles */
 
 /* START Re-Usable Styles */

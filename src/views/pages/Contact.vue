@@ -1,53 +1,20 @@
 <template>
-<section class="b-contact-master--wrap container">
-  <div class="columns">
-    <!-- START B Contact Content Column -->
-    <div class="b-contact--content column is-three-quarters">
-      <div class="content--wrapper text-is-left">
-        <h1>Contact Me</h1>
-        <p>
-          I am here to answer any and all questions or thoughts you may have.
-          Want to work on a project together?
-          Want to talk open source, and technologies?
-          Looking for a hard-working web developer for you next project?
-          <span>Leave me a message, and I will get right back to you!</span>
-        </p>
-      </div>
-      <form role="form" aria-label="contact form" class="content--wrapper" id="b-contact--form">
+<div class="b-contact--master">
+  <bthreequarterlayout>  
+    <template slot="left-column" class="has-text-left">
+      <h1>Contact Me</h1>
+      <p>
+      I am here to answer any and all questions or thoughts you may have.
+      Want to work on a project together?
+      Want to talk open source, and technologies?
+      Looking for a hard-working web developer for you next project?
+      <span>Leave me a message, and I will get right back to you!</span>
+      </p>
+    </template>
 
-        <!-- Name Input -->
-        <div class="field b-form-name">
-          <div class="control">
-            <label for="name">Your Name</label>
-            <input class="input is-primary" id="name" type="text" placeholder="Name">
-          </div>
-        </div>
-        <!-- Email Input -->
-        <div class="field b-form-email">
-          <div class="control">
-            <label for="email">Your desired email address</label>
-            <input class="input is-primary" id="email" type="text" placeholder="Email Address">
-          </div>
-        </div>
-        <!-- Textarea input --> 
-        <div class="field b-form-comment">
-          <div class="control">
-            <label for="message">Comments</label>
-            <textarea class="textarea is-primary" id="message" placeholder="Whats on your mind?"></textarea>
-          </div>
-        </div>
-        <!-- Submit Button -->
-        <div class="field b-form-submit">
-          <div class="control">
-            <button @click="postFormBody(event)" type="submit" class="button is-link" id="b-btn">Submit</button>
-          </div>
-        </div>
-
-      </form>
-    </div>
     <!-- END B Contact Content Column -->
     <!-- START B Contact list info column --> 
-    <div class="b-contact--info column is-one-quarter">
+    <template slot="right-column">
       <div class="b-info--wrapper">
         <p>Email Address:</p>
         <a href="mailto:info@bengroneman.tech">info@bengroneman.tech</a>
@@ -60,14 +27,52 @@
         <p>Github</p>
         <a href="https://github.com/bengroneman" target="_blank">Code</a>
       </div>
-    </div>
+    </template>
     <!-- END B Contact list info column --> 
-  </div>
-</section>
+  </bthreequarterlayout>
+
+  <section class="b-form--grid">
+    <div class="b-form-card--wrapper">
+      <bformcard>
+        <template slot="card-header-title">
+          <h4>
+            Submit an issue
+          </h4>
+        </template>
+        <template slot="content">
+          <p>
+            Notice something odd with this website? I'd love to hear about your experience. I am continually making changes to the site.
+          </p>
+        </template>
+
+        <div class="default-slot">
+          <bform></bform>
+        </div>
+      </bformcard>
+    </div>
+    <div class="b-form-card--wrapper">
+      <bformcard></bformcard>
+    </div>
+    <div class="b-form-card--wrapper">
+      <bformcard></bformcard>
+    </div>
+  </section>
+
+</div>
 </template>
 <script>
+import bthreequarterlayout from '@/components/Layouts/bThreeQuarterLayout'
+import bformcard from '@/components/Contact/bFormCard'
+import bform from '@/components/Contact/bForm'
+
 export default {
   name: 'bcontact',
+
+  components: {
+    bthreequarterlayout,
+    bformcard,
+    bform
+  },
 
   created: () => {
   },
@@ -123,6 +128,10 @@ export default {
 }
 </script>
 <style>
+.b-contact--master {
+  max-width: 1440px;
+  margin: auto;
+}
 .b-contact-master--wrap {
   height: 100%;
   width: 100%;
@@ -193,6 +202,12 @@ export default {
   background-color: #151f29;
   color: white;
 }
+.b-form--grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
 
 /* END Form Styles */
 </style>

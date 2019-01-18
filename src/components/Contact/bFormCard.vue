@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="card-footer">
-      <a @click="revealForm()" class="card-footer-item">{{}}</a>
+      <a @click="revealForm()" class="card-footer-item"></a>
     </div>
     <aside v-if="is_form_visible">
       <!-- Default Slot -->

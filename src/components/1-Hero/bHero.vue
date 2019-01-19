@@ -3,7 +3,7 @@
   <div class="b-dark--overlay">
     <div class="b-cta__content">
       <div class="b-cta__content-wrapper">
-        <h1>Ben Groneman</h1>
+        <h1>{{ main_header }}</h1>
         <h2>Avid Developer</h2>
       </div>
     </div>
@@ -36,6 +36,22 @@ export default {
   name: 'bhero',
   components: {
     bbutton
+  },
+  data: function () {
+    return {
+      main_header: String
+    }
+  },
+  mounted: function () {
+    fetch('')
+      .then(collection => collection.json())
+      .then((collection) => {
+        console.log(collection.fields.name)
+        this.main_header = collection.fields.name
+      })
+      .catch((error) => {
+        console.error(error)
+      })
   }
 }
 </script>

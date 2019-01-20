@@ -6,15 +6,23 @@
       </div>
       <div class="project-content--wrapper">
 
+        <div class="under-construction">
         <h1 class="dive">
           <em class="md-heading-1 md-heading color-is--grey"> # </em> {{ project_header }}
         </h1>
-        <h3 class="dive">
+        </div>
+        <div class="under-construction">
+        <h3 class="dive under-construction">
           <em class="md-heading-3 md-heading color-is--grey">###</em> {{ project_sub_header }}
         </h3>
-        <span class="md-date-author"><em>{{ job_title }}</em>{{ project_date }}</span>
+        </div>
+        <div class="under-construction">
+        <span class="md-date-author under-construction"><em>{{ job_title }}</em>{{ project_date }}</span>
+        </div>
         <!-- slot in the content -->
+        <div class="under-construction">
         <slot></slot>
+        </div>
 
       </div>
     </div>
@@ -60,5 +68,23 @@ export default {
 .project-image {
   height: 100%;
   width: 100%;
+}
+
+/*Under construction section -> comment out if testing content*/
+.under-construction {
+  width: 100%;
+  margin: 20px;
+  height: 100%;
+  z-index: 12;
+  background-color: #efefef;
+  border-radius: 12px;
+}
+/* .under-construction::after {
+  content: "Under Construction";  
+  display: flex;
+  margin: auto;
+} */
+.under-construction > * {
+  opacity: 0;
 }
 </style>

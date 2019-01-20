@@ -3,7 +3,7 @@
   <div class="b-dark--overlay">
     <div class="b-cta__content">
       <div class="b-cta__content-wrapper">
-        <h1>{{ main_header }}</h1>
+        <h1>Ben G.</h1>
         <h2>Avid Developer</h2>
       </div>
     </div>

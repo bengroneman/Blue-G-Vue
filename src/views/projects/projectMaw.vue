@@ -12,6 +12,8 @@
     project_sub_header="A Blue G. Development Project"
     job_title="Volunteer Development "
     project_date="@2018"
+    site_href="http://museumoftheamericanwest.com"
+    repo_href="https://github.com/bengroneman/blue_maw.git"
   >
 
     <!-- Slotted content -->

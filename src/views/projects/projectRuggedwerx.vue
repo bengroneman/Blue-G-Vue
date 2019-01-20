@@ -11,6 +11,7 @@
     project_sub_header="A Wyoming Inc. Project"
     job_title="Front-End Development @ Wyoming Inc."
     project_date="05-01-2018 => 07-01-2018"
+    site_href="http://ruggedwerx.com"
   >
 
     <!-- Slotted content -->

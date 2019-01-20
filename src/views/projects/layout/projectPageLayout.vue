@@ -24,6 +24,10 @@
         <slot></slot>
         </div>
 
+        <aside class="project-button--wrapper">
+          <a id="b-btn" :href="site_href" class="b-btn" target="_blank">Visit Site</a>
+          <a v-if="repo_href" id="b-btn" :href="repo_href" class="b-btn" target="_blank">See Code</a>
+        </aside>
       </div>
     </div>
   </section>
@@ -37,7 +41,9 @@ export default {
     project_header: String,
     project_sub_header: String,
     job_title: String,
-    project_date: String
+    project_date: String,
+    site_href: String,
+    repo_href: String
   }
 }
 </script>

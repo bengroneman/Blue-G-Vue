@@ -1,35 +1,13 @@
 <template>
 <div class="b-contact--master">
-  <bthreequarterlayout>  
-    <template slot="left-column" class="has-text-left">
-      <h1>Contact Me</h1>
-      <p>
-      I am here to answer any and all questions or thoughts you may have.
-      Want to work on a project together?
-      Want to talk open source, and technologies?
-      Looking for a hard-working web developer for you next project?
-      <span>Leave me a message, and I will get right back to you!</span>
-      </p>
-    </template>
 
-    <!-- END B Contact Content Column -->
-    <!-- START B Contact list info column --> 
-    <template slot="right-column">
-      <div class="b-info--wrapper">
-        <p>Email Address:</p>
-        <a href="mailto:info@bengroneman.tech">info@bengroneman.tech</a>
-      </div>
-      <div class="b-info--wrapper">
-        <p>Linkedin:</p>
-        <a href="https://linkedin.com/in/ben-groneman" target="_blank">Ben Groneman</a>
-      </div>
-      <div class="b-info--wrapper">
-        <p>Github</p>
-        <a href="https://github.com/bengroneman" target="_blank">Code</a>
-      </div>
-    </template>
-    <!-- END B Contact list info column --> 
-  </bthreequarterlayout>
+  <bsubpagehero hero_title="Contact Me" hero_sub_title="Get in touch with me">
+
+    <a class="has-some-margin has-hover--effect" href="https://github.com/bengroneman" target="_blank"><i class="fab fa-github-alt fa-3x"></i></a>
+    <a class="has-some-margin has-hover--effect" href="https://twitter.com/StrangeNectar" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+    <a class="has-some-margin has-hover--effect" href="https://join.slack.com/t/bluegdevelopment/shared_invite/enQtNTI5NTM1NzYwMDU1LWU1ZTg0OGVlMmI0M2IzZTE3NTI3N2I5ZjMzZWVmODJiZDEzZmFhMTcyMjkwMmMzNDk4ODE0MGExNzdiODk3Yzg" target="_blank"><i class="fab fa-slack fa-3x"></i></a>
+
+  </bsubpagehero>
 
   <section class="b-form--grid">
     <div class="b-form-card--wrapper">
@@ -61,7 +39,7 @@
 </div>
 </template>
 <script>
-import bthreequarterlayout from '@/components/Layouts/bThreeQuarterLayout'
+import bsubpagehero from '@/components/1-Hero/bSubPageHero'
 import bformcard from '@/components/Contact/bFormCard'
 import bform from '@/components/Contact/bForm'
 
@@ -69,7 +47,7 @@ export default {
   name: 'bcontact',
 
   components: {
-    bthreequarterlayout,
+    bsubpagehero,
     bformcard,
     bform
   },
@@ -128,10 +106,6 @@ export default {
 }
 </script>
 <style>
-.b-contact--master {
-  max-width: 1440px;
-  margin: auto;
-}
 .b-contact-master--wrap {
   height: 100%;
   width: 100%;
@@ -206,8 +180,19 @@ export default {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 25px;
+  max-width: 1440px;
+  margin: 45px auto 45px auto;
 }
 
+.has-hover--effect > i {
+  transition: 0.3s all ease-in-out;
+  color: black;
+}
+.has-hover--effect > i:hover {
+  cursor: pointer;
+  transform: rotate(25deg);
+  color: white;
+}
 
 /* END Form Styles */
 </style>

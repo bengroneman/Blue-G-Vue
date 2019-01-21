@@ -105,6 +105,9 @@ a {
 .margin-top-bottom {
   margin: 45px auto 45px auto!important;
 }
+.has-some-margin {
+  margin: 2em;
+}
 /* END Re-Usable Styles */
 
 /* START Global Navigation Styles */

@@ -8,6 +8,9 @@
         <h2 class="subtitle">
           {{ hero_sub_title }}
         </h2>
+        <div class="slotted-content--wrapper">
+          <slot></slot>
+        </div>
       </div>
     </div>
   </section>
@@ -25,4 +28,11 @@ export default {
 .b-sub-page--hero {
   margin-top: 50px;
 }
+.slotted-content--wrapper {
+  margin: 35px auto;
+}
+.slotted-content--wrapper > a {
+  margin: 10xp;
+}
+
 </style>

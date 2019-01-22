@@ -9,30 +9,33 @@
 
   </bsubpagehero>
 
+
+  <div class="tabs--wrapper">
+    <div class="tabs is-centered is-boxed is-medium">
+      <ul class="tabs--ul">
+
+        <li class="is-active" :v-for="tab in tabs" :key="tab.title">
+          <a>
+            <span>
+              {{ tab.title }}
+            </span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
   <section class="b-form--grid">
     <div class="b-form-card--wrapper">
-      <bformcard>
-        <template slot="card-header-title">
-          <h4>
-            Submit an issue
-          </h4>
-        </template>
-        <template slot="content">
-          <p>
-            Notice something odd with this website? I'd love to hear about your experience. I am continually making changes to the site.
-          </p>
-        </template>
-
-        <div class="default-slot">
-          <bform></bform>
-        </div>
-      </bformcard>
+      <!-- <bformcard>
+      </bformcard> -->
     </div>
     <div class="b-form-card--wrapper">
-      <bformcard></bformcard>
+      <!-- <bformcard></bformcard> -->
     </div>
     <div class="b-form-card--wrapper">
-      <bformcard></bformcard>
+      <!-- <bformcard></bformcard> -->
     </div>
   </section>
 
@@ -42,6 +45,8 @@
 import bsubpagehero from '@/components/1-Hero/bSubPageHero'
 import bformcard from '@/components/Contact/bFormCard'
 import bform from '@/components/Contact/bForm'
+import btabs from '@/components/0-Global/bTabs'
+import btab from '@/components/0-Global/bTab'
 
 export default {
   name: 'bcontact',
@@ -49,7 +54,20 @@ export default {
   components: {
     bsubpagehero,
     bformcard,
-    bform
+    bform,
+    btabs,
+    btab
+  },
+
+  data: () => { 
+
+    return {
+      tabs: [
+        { title: 'Submit an Issue' },
+        { title: 'Contact Me' }
+      ]
+    }
+
   },
 
   created: () => {
@@ -80,6 +98,7 @@ export default {
   },
 
   methods: {
+
     postFormBody(event) {
       // don't redirect lol
       event.preventDefault();
@@ -179,9 +198,7 @@ export default {
 .b-form--grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px;
-  max-width: 1440px;
-  margin: 45px auto 45px auto;
+  padding: 45px;
 }
 
 .has-hover--effect > i {
@@ -193,6 +210,9 @@ export default {
   transform: rotate(25deg);
   color: white;
 }
-
+.tabs--wrapper {
+  height: 10em;
+  margin-top: 45px;
+}
 /* END Form Styles */
 </style>

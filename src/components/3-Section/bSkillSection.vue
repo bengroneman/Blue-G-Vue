@@ -54,13 +54,11 @@
 
 </template>
 <script>
-import bbutton from '@/components/0-Global/bButton'
 import bcard from '@/components/0-Global/bCard'
 
 export default {
 	name: 'bskillsection',
   components: {
-    bbutton,
     bcard
   }
   }

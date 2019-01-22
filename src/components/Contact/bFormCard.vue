@@ -1,33 +1,33 @@
 <template>
-  <div class="card">
-    <header class="card-header">
-      <p class="card-header-title has-text-centered">
-
-        <slot name="card-header-title"></slot>
-
-      </p>
-      <a href="#" class="card-header-icon" aria-label="more options">
-        <span class="icon">
-          <i @click="revealForm()" class="fas fa-angle-down" aria-hidden="true"></i>
-        </span>
-      </a>
-    </header>
-    <div class="card-content">
-      <div class="content">
-
-        <slot name="content"></slot>
-
-        <br>
-      </div>
+  <div class="card--wrapper">
+    <div class="tabs is-centered is-boxed is-medium">
+      <ul>
+        <li class="is-active">
+          <a>
+            <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+            <span>Pictures</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+            <span>Music</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+            <span>Videos</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+            <span>Documents</span>
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="card-footer">
-      <a @click="revealForm()" class="card-footer-item"></a>
-    </div>
-    <aside v-if="is_form_visible">
-      <!-- Default Slot -->
-
-      <slot></slot>
-    </aside>
   </div>
 </template>
 
@@ -36,21 +36,18 @@ export default {
   name: 'bformcard',
   data () {
     return {
-      is_form_visible: false
+
     }
   },
   methods: {
-    revealForm: function() {
-      if (!this.is_form_visible) {
-        this.is_form_visible = true
-      } else {
-        this.is_form_visible = false
-      }
-    }
+
   }
 }
 </script>
 
 <style scoped>
-
+.card--wrapper {
+  width: 100%;
+  background-color: black;
+}
 </style>

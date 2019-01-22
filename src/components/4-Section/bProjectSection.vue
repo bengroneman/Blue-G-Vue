@@ -16,16 +16,11 @@
 </template>
 
 <script>
-import bbutton from '@/components/0-Global/bButton'
 // Should implement some data for reactivity
 // If we could have an imgsrc attribute for this, and then multiple slots
 // Then we could reuse this component in the future for more and more projects
 export default {
-    name: 'bproject',
-
-    components: {
-      bbutton
-    }
+    name: 'bproject'
 }
 </script>
 

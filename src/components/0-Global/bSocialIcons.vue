@@ -31,13 +31,9 @@
 </div>
 </template>
 <script>
-import bbutton from '@/components/0-Global/bButton'
 
 export default {
-    name: 'b-social-icons',
-    components: {
-      bbutton
-    }
+    name: 'b-social-icons'
 }
 </script>
 <style>

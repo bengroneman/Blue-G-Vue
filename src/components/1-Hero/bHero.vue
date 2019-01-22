@@ -30,20 +30,16 @@
 </section>
 </template>
 <script>
-import bbutton from '@/components/0-Global/bButton'
 
 export default {
   name: 'bhero',
-  components: {
-    bbutton
-  },
   data: function () {
     return {
       main_header: String
     }
   },
   mounted: function () {
-    fetch('')
+    fetch('http://localhost/cockpit-master/api/collections/collection/front_page_content?token=aa4454269b8b5840189731bfbea295')
       .then(collection => collection.json())
       .then((collection) => {
         console.log(collection.fields.name)

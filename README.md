@@ -5,15 +5,15 @@ I built this site out of a love for code, and a fondness for Vue (JavaScript). I
 
 ## This website was built leveraging the following open source technologies
 
-> Vue](https://github.com/vuejs)
+> [Vue](https://github.com/vuejs)
 
-> [vue-cli](https://github.com/vuejs/vue-cli) -> **Note this is a dependency you should have, if you want to run this website locally**
+> [vue-cli](https://github.com/vuejs/vue-cli) ->
 
-> [Bootstrap](https://github.com/twbs/bootstrap)
+> [Bulma](https://bulma.io/)
 
 > [Vue-Particles](https://github.com/creotip/vue-particles)
 
-> [express](https://github.com/expressjs/express)
+> [ExpressJS](https://github.com/expressjs/express)
 
 ## Interest in running this website locally?
 

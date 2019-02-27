@@ -9,41 +9,14 @@
 
   </bsubpagehero>
 
-
-  <div class="tabs--wrapper">
-    <div class="tabs is-centered is-boxed is-medium">
-      <ul class="tabs--ul">
-
-        <li class="is-active" :v-for="tab in tabs" :key="tab.title">
-          <a>
-            <span>
-              {{ tab.title }}
-            </span>
-          </a>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-
   <section class="b-form--grid">
-    <div class="b-form-card--wrapper">
-      <!-- <bformcard>
-      </bformcard> -->
-    </div>
-    <div class="b-form-card--wrapper">
-      <!-- <bformcard></bformcard> -->
-    </div>
-    <div class="b-form-card--wrapper">
-      <!-- <bformcard></bformcard> -->
-    </div>
+      <bform></bform>
   </section>
 
 </div>
 </template>
 <script>
 import bsubpagehero from '@/components/1-Hero/bSubPageHero'
-import bformcard from '@/components/Contact/bFormCard'
 import bform from '@/components/Contact/bForm'
 import btabs from '@/components/0-Global/bTabs'
 import btab from '@/components/0-Global/bTab'
@@ -53,7 +26,6 @@ export default {
 
   components: {
     bsubpagehero,
-    bformcard,
     bform,
     btabs,
     btab
@@ -62,15 +34,8 @@ export default {
   data: () => { 
 
     return {
-      tabs: [
-        { title: 'Submit an Issue' },
-        { title: 'Contact Me' }
-      ]
     }
 
-  },
-
-  created: () => {
   },
 
   computed: {
@@ -125,38 +90,11 @@ export default {
 }
 </script>
 <style>
-.b-contact-master--wrap {
-  height: 100%;
-  width: 100%;
-  background-color: #151f29;
-  color: white;
-  display: flex;
-  margin: 75px auto 75px auto;
-}
 .b-contact-master--wrap .columns {
   padding: 45px;
 }
-.b-contact--container {
-  margin: auto;
-  background-color: transparent;
-  border-radius: 5px;
-  border: 2px solid rgba(84, 208, 186, 0.24); 
-  display: flex;
-  box-shadow: 0px 2px 5px 2px #000000;
-}
-
-.b-contact--content {
-  padding: 35px;
-}
 .b-contact--content form {
   margin: 45px auto;
-}
-.b-contact--info {
-  padding: 20px;
-  text-align: right;
-  margin: auto;
-  background: #1c252d;
-  border-radius: 10px;
 }
 .b-form-submit div > .button {
   margin: 0!important;
@@ -168,37 +106,20 @@ export default {
 .b-contact-intro--content span {
   border-bottom: 2px solid #54d0ba;
 }
-.b-info--wrapper {
-  padding: 10px;
-  width: 100%;
-  height: fit-content;
-  border-right: 2px solid rgba(84, 208, 186, 0.24);
-}
 /* START Form Styles */
-
 #b-contact--form label {
   text-align: left; 
   display: block;
 }
-.form-group > input {
-  background-color: #151f29;
-  color: white;
-}
-.form-group > input:focus {
-  background-color: #151f29;
-}
-.form-group > textarea:focus {
-  background-color: #151f29;
-}
-.form-group > textarea {
-  
-  background-color: #151f29;
-  color: white;
-}
 .b-form--grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  grid-template-columns: repeat(1, auto);
+  max-width: 550px; /*Maybe use vw*/
   padding: 45px;
+  margin: auto;
+}
+.b-form--grid div {
+  margin: auto;
 }
 
 .has-hover--effect > i {

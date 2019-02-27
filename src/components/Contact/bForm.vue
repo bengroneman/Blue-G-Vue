@@ -1,41 +1,18 @@
 <template>
-  <form role="form" aria-label="contact form" class="content--wrapper" id="b-contact--form">
+  <div class="hubspot-form--wrapper">
 
-    <!-- Name Input -->
-    <div class="field b-form-name">
-      <div class="control">
-        <label for="name">Your Name</label>
-        <input class="input is-primary" id="name" type="text" placeholder="Name">
-      </div>
-    </div>
-    <!-- Email Input -->
-    <div class="field b-form-email">
-      <div class="control">
-        <label for="email">Your desired email address</label>
-        <input class="input is-primary" id="email" type="text" placeholder="Email Address">
-      </div>
-    </div>
-    <!-- Textarea input --> 
-    <div class="field b-form-comment">
-      <div class="control">
-        <label for="message">Comments</label>
-        <textarea class="textarea is-primary" id="message" placeholder="Whats on your mind?"></textarea>
-      </div>
-    </div>
-    <!-- Submit Button -->
-    <div class="field b-form-submit">
-      <div class="control">
-        <button @click="postFormBody(event)" type="submit" class="button is-link" id="b-btn">Submit</button>
-      </div>
-    </div>
-
-  </form>
-
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'bform'
+  name: 'bform',
+  mounted() {
+    // hbspt.forms.create({
+    //     portalId: "5502967",
+    //     formId: "428a8670-bd27-4282-a479-e34bda6cf269"
+    // });
+  }
 }
 </script>
 

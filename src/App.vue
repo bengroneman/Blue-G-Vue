@@ -31,6 +31,8 @@ export default {
 <style lang="css">
 @import '../node_modules/bulma/css/bulma.css';
 @import '../node_modules/animate.css/animate.css';
+@import '../node_modules/slick-carousel/slick/slick.css';
+
 
 .page-slide-enter-active {
 	animation: moveFromBottom .7s ease both;

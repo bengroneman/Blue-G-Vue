@@ -3,6 +3,7 @@
     <bsubpagehero
       hero_title="Topline General Store"
       hero_sub_title="A Blue G. Development Project"
+      class="has-pink-orange--gradient"
     ></bsubpagehero>
 
     <projectpagelayout 
@@ -17,7 +18,7 @@
     >
 
       <!-- Slotted content -->
-      <div id="maw">
+      <div id="topline">
         <p>
 
         </p>
@@ -38,3 +39,8 @@ export default {
   }
 }
 </script>
+<style>
+.has-pink-orange--gradient {
+  background-image: linear-gradient(180deg, #CEBBAE 18%, #419082 84%, #B55C30 75%);
+}
+</style>

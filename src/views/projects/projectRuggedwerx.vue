@@ -3,6 +3,7 @@
   <bsubpagehero
       hero_title="Ruggedwerx"
       hero_sub_title="A Wyoming Inc. Development Project"
+      class="has-purple--gradient"
     ></bsubpagehero>
   <projectpagelayout 
     hero_img_src="/img/ruggedwerx.png"
@@ -35,3 +36,8 @@ export default {
   }
 }
 </script>
+<style>
+.has-purple--gradient {
+  background-image: linear-gradient(141deg, #1fa5e2 0%, #7c7cbb 71%, #153969 100%)!important;
+}
+</style>

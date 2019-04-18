@@ -3,6 +3,7 @@
     <bsubpagehero
       hero_title="The Museum of the American West"
       hero_sub_title="A Blue G. Development Project"
+      class="has-tan--gradient"
     ></bsubpagehero>
 
     <projectpagelayout 
@@ -37,7 +38,9 @@ export default {
 }
 </script>
 <style>
-
+.has-tan--gradient {
+  backround-image: linear-gradient(141deg, #dcd3ae 0%, #a95d5d 71%, #dcd3ae 100%);
+}
 </style>
 
 

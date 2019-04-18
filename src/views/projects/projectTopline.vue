@@ -1,19 +1,19 @@
 <template>
   <div class="project-maw--wrapper">
     <bsubpagehero
-      hero_title="The Museum of the American West"
+      hero_title="Topline General Store"
       hero_sub_title="A Blue G. Development Project"
     ></bsubpagehero>
 
     <projectpagelayout 
-      hero_img_src="/img/projects/maw.PNG"
-      hero_img_alt="maw above fold view"
-      project_header="MAW"
+      hero_img_src
+      hero_img_alt="topline general store"
+      project_header="Topline"
       project_sub_header="A Blue G. Development Project"
-      job_title="Volunteer Development "
-      project_date="@2018"
-      site_href="http://museumoftheamericanwest.com"
-      repo_href="https://github.com/bengroneman/blue_maw.git"
+      job_title="Website Architect"
+      project_date="@2019"
+      site_href="https://toplinestore.netlify.com"
+      repo_href="https://github.com/bengroneman/topline_store"
     >
 
       <!-- Slotted content -->
@@ -24,21 +24,17 @@
       </div>
     </projectpagelayout>
   </div>
+
 </template>
 <script>
 import projectpagelayout from '@/views/projects/layout/projectPageLayout.vue' 
 import bsubpagehero from '@/components/1-Hero/bSubPageHero.vue'
 
 export default {
+  name: 'projecttopline',
   components: {
     projectpagelayout,
-    bsubpagehero
+    bsubpagehero,
   }
 }
 </script>
-<style>
-
-</style>
-
-
-

@@ -6,6 +6,7 @@ import Contact from './views/pages/Contact.vue'
 import Projects from './views/pages/Projects.vue'
 import projectruggedwerx from './views/projects/projectRuggedwerx.vue'
 import projectmaw from './views/projects/projectMaw.vue'
+import projecttopline from './views/projects/projectTopline.vue'
 
 Vue.use(Router)
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/projects/maw',
       name: 'maw', 
       component: projectmaw
+    },
+    {
+      path: '/projects/topline',
+      name: 'topline', 
+      component: projecttopline
     }
   ]
 })

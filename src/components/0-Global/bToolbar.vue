@@ -50,6 +50,9 @@
           <router-link to="/projects/maw" class="navbar-item">
             MAW
           </router-link>
+          <router-link to="/projects/topline" class="navbar-item">
+            Topline
+          </router-link>
           <hr class="navbar-divider">
           <!-- Set this up for website issues -->
           <router-link to="/contact" class="navbar-item">

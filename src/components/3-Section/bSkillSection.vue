@@ -21,7 +21,7 @@
 
     <bcard 
       cardtitle="Museum of the American West"
-      cardsubtitle="Lander WY Museum"
+      cardsubtitle="Lander WY - Pioneer Museum"
       skillisJS
       skillisWP
       skillisPHP
@@ -37,6 +37,15 @@
       skillisPY
       readMoreLink="https://github.com/bengroneman/"
       cardcontent="Browse through open source code that I have written, during my time as an avid developer."
+    ></bcard>
+    <bcard 
+      cardtitle="Topline General Store"
+      cardsubtitle="Lander Wyoming - General Store"
+      skillisJS
+      skillisVUE
+      skillisPY
+      readMoreLink="/projects/topline"
+      cardcontent="A small SPA for a local General Store. This website is built with VueJS and, leverages a Python API for the contact form."
     ></bcard>
 
     <!-- END B Skills -->
@@ -60,8 +69,8 @@ export default {
 	name: 'bskillsection',
   components: {
     bcard
-  }
-  }
+  },
+}
 </script>
 <style>
 .b-skill__container {

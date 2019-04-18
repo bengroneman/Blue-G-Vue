@@ -1,7 +1,7 @@
 /*
 * Below is the main Cascading Style Sheet for bengroneman.tech.
 * @Author: Ben Groneman
-* @Date: 01-06-2019
+* @Date: 04-17-2019
 */
 @font-face {
   font-family: "Open Sans Regular";
@@ -107,6 +107,10 @@ a {
 }
 .has-some-margin {
   margin: 2em;
+}
+.is-special--keyword {
+  border-bottom: 3px solid rgba(79, 192, 140, 0.52);
+  font-weight: 600;
 }
 /* END Re-Usable Styles */
 

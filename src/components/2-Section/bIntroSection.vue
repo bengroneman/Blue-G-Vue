@@ -5,10 +5,10 @@
     <h1 class="b-about__header text-is-left"><span class="content-shallom">Hello</span> world</h1>
     <!-- B Info content -->
     <p class="b-about__content">
-    My name is Ben Groneman. I am an avid web developer with a demonstrated history of working in diverse development environments. I started working on the web as a PHP developer with a small team to build a website for a Welding/Fabrication company known as Ruggedwerx. I have since transitioned into the wonderful world of JavaScript, you can see some of my code right on Github! 
+    My name is Ben Groneman. I am an avid web developer with a demonstrated history of working in diverse development environments. I started working on the web as a PHP developer with a small team to build a website for a Welding/Fabrication company known as <a href="https://ruggedwerx.com" alt="ruggedwerx website">Ruggedwerx</a>. I have since transitioned into <span class="is-special--keyword">Go</span>, and <span class="is-special--keyword">Python</span>. Browse through code I've <a href="https://github.com/bengroneman" alt="ben gronemans github profile">written</a>. 
     </p>
     <p class="b-about__content">
-    I am quite fond of the Linux kernel, and I am a regular Vim user (you can find my .vimrc file here). During development I carry a heavy weight on accessibility, research, and user-focused design. With a Degree focused in Computer Science from Central Wyoming College, and a passion to learn, I intend to develop elegant solutions to complex problems.
+    I am quite fond of the Linux kernel, and I am a regular <span class="is-special--keyword">Vim</span> user (you can find my .vimrc file <a href="https://github.com/bengroneman/strangevimrc" alt="ben gronemans vimrc repository">here</a>). During development I have a focus on accessibility, efficiency, and <span class="is-special--keyword">empathy</span> for the end-user. With a Degree in Computer Science from Central Wyoming College, and a passion to learn, I intend to develop <span class="is-special--keyword">elegant</span> solutions to complex problems.
     </p>
     <!-- Accent Line -->
     <bline></bline>

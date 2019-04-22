@@ -1,33 +1,33 @@
 <template>
-<section class="vue-particles-bb">
-  <div class="b-dark--overlay">
-    <div class="b-cta__content">
-      <div class="b-cta__content-wrapper">
-        <h1>Ben G.</h1>
-        <h2>Avid Developer</h2>
+  <section class="vue-particles-bb">
+    <div class="b-dark--overlay">
+      <div class="b-cta__content">
+        <div class="b-cta__content-wrapper">
+          <h1>Ben G.</h1>
+          <h2>Avid Developer</h2>
+        </div>
       </div>
-    </div>
 
-    <!-- Instantiate the particle system -->
-    <vue-particles
-      color="#54d0ba"
-      :particleOpacity="0.7"
-      :particlesNumber="80"
-      shapeType="circle"
-      :particleSize="4"
-      linesColor="#dedede"
-      :linesWidth="1"
-      :lineLinked="false"
-      :lineOpacity="0.4"
-      :linesDistance="150"
-      :moveSpeed="2"
-      :hoverEffect="true"
-      hoverMode="grab"
-      :clickEffect="true"
-      clickMode="push"
-    ></vue-particles>
-  </div>
-</section>
+      <!-- Instantiate the particle system -->
+      <vue-particles
+        color="#54d0ba"
+        :particleOpacity="0.7"
+        :particlesNumber="80"
+        shapeType="circle"
+        :particleSize="4"
+        linesColor="#dedede"
+        :linesWidth="1"
+        :lineLinked="false"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="2"
+        :hoverEffect="true"
+        hoverMode="grab"
+        :clickEffect="true"
+        clickMode="push"
+      ></vue-particles>
+    </div>
+  </section>
 </template>
 <script>
 
@@ -35,20 +35,11 @@ export default {
   name: 'bhero',
   data: function () {
     return {
-      main_header: String
+      main_header: String,
     }
   },
   mounted: function () {
-    fetch('http://localhost/cockpit-master/api/collections/collection/front_page_content?token=aa4454269b8b5840189731bfbea295')
-      .then(collection => collection.json())
-      .then((collection) => {
-        console.log(collection.fields.name)
-        this.main_header = collection.fields.name
-      })
-      .catch((error) => {
-        console.error(error)
-      })
-  }
+  },
 }
 </script>
 <style scoped>

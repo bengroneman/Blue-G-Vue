@@ -91,10 +91,16 @@ export default {
 </script>
 <style>
 .b-contact-master--wrap .columns {
-  padding: 45px;
+    padding: 45px;
 }
 .b-contact--content form {
-  margin: 45px auto;
+    margin: 45px auto;
+}
+.b-form--grid {
+    width: 600px!important;
+}
+.b-form--grid div {
+    width: 100%;
 }
 .b-form-submit div > .button {
   margin: 0!important;

@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-info b-sub-page--hero is-bold is-medium">
+  <section class="hero b-sub-page--hero is-bold is-medium has-blue--gradient">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">

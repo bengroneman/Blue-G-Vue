@@ -4,15 +4,8 @@
 </template>
 
 <script>
-import {myp5} from '../../modules/sketch.js';
 export default {
     name: 'mycanvas',
-
-    data () {
-        return {
-
-        }
-    }
 }
 </script>
 

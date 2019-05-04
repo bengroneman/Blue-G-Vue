@@ -29,7 +29,6 @@
         Coming Soon..
       </router-link>
 
-<!--
       <router-link to="/" class="navbar-item">
         Home
       </router-link>
@@ -55,9 +54,7 @@
             Topline
           </router-link>
           <hr class="navbar-divider">
-          -->
           <!-- Set this up for website issues -->
-          <!--
           <router-link to="/contact" class="navbar-item">
             Report an issue
           </router-link>
@@ -66,7 +63,7 @@
         -->
     </div>
 
-    <!--<div class="navbar-end">
+    <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
           <a class="button is-primary">
@@ -77,8 +74,7 @@
           </a>
         </div>
       </div>
-    </div>-->
-
+    </div>
   </div>
 </nav>
 

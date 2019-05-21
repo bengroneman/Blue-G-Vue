@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <!-- Main Header CTA -->
-    <bhero></bhero>
+    <bhero>
+      {{ home_page_content }}
+    </bhero>
     <!-- B Info/Bio Section -->
     <bintrosection></bintrosection>
     <!-- Small section // Quote blurb -->
@@ -14,6 +16,7 @@
 </template>
 
 <script>
+import firebase from 'firebase';
 
 // @ is an alias to /src
 import bprojectsection from '@/components/4-Section/bProjectSection.vue';
@@ -31,5 +34,25 @@ export default {
     bskillsection,
 		quoteblurb,
   },
+  data() {
+    return {
+      home_page_content: null
+    }
+  },
+  mounted: function() {
+      this.home_page_content = this.getContent();
+  },
+  computed: {
+    getContent: () => {
+        const database = firebase.database();
+        const content_reference = database.ref('flamelink/environments/production/content/homePageContent/en-US');
+        let content = null;
+        content_reference.on('value', function(data) {
+            content = data.val();
+        });
+        return content;
+      }
+    },
+
 }
 </script>

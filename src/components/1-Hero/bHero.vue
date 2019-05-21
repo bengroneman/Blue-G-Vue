@@ -3,8 +3,7 @@
     <div class="b-dark--overlay">
       <div class="b-cta__content">
         <div class="b-cta__content-wrapper">
-          <h1>Ben G.</h1>
-          <h2>Avid Developer</h2>
+          <slot></slot>
         </div>
       </div>
 
@@ -32,15 +31,8 @@
 <script>
 
 export default {
-  name: 'bhero',
-  data: function () {
-    return {
-      main_header: String,
-    }
-  },
-  mounted: function () {
-  },
-}
+    name: 'bhero',
+};
 </script>
 <style scoped>
 .vue-particles-bb {

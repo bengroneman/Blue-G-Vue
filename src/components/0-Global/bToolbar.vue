@@ -34,9 +34,9 @@
       </router-link>
 
       <div class="navbar-item has-dropdown is-hoverable">
-        <router-link to="/projects" class="navbar-link">
+        <a class="navbar-link">
           Projects
-        </router-link>
+        </a>
 
         <div class="navbar-dropdown">
           <router-link to="/projects/ruggedwerx" class="navbar-item">

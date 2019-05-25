@@ -6,24 +6,17 @@
       </div>
       <div class="project-content--wrapper">
 
-        <div class="under-construction">
         <h1 class="dive">
-          <em class="md-heading-1 md-heading color-is--grey"> # </em> {{ project_header }}
+          <slot name="project_header"></slot>
         </h1>
-        </div>
-        <div class="under-construction">
-        <h3 class="dive under-construction">
-          <em class="md-heading-3 md-heading color-is--grey">###</em> {{ project_sub_header }}
+        <h3>
+          <slot name="project_sub_header"></slot>
         </h3>
-        </div>
-        <div class="under-construction">
-        <span class="md-date-author under-construction"><em>{{ job_title }}</em>{{ project_date }}</span>
-        </div>
-        <!-- slot in the content -->
-        <div class="under-construction">
-        <slot></slot>
-        </div>
+        <slot name="project_details"></slot>
 
+        <!-- slot in the content -->
+        <slot></slot>
+        <br>
         <aside class="project-button--wrapper">
           <a id="b-btn" :href="site_href" class="b-btn" target="_blank">Visit Site</a>
           <a v-if="repo_href" id="b-btn" :href="repo_href" class="b-btn" target="_blank">See Code</a>
@@ -38,10 +31,6 @@ export default {
   props: {
     hero_img_src: String,
     hero_img_alt: String,
-    project_header: String,
-    project_sub_header: String,
-    job_title: String,
-    project_date: String,
     site_href: String,
     repo_href: String
   }

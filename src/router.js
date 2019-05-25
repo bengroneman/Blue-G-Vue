@@ -3,7 +3,6 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import About from './views/pages/About.vue';
 import Contact from './views/pages/Contact.vue';
-import Projects from './views/pages/Projects.vue';
 import projectruggedwerx from './views/projects/projectRuggedwerx.vue';
 import projectmaw from './views/projects/projectMaw.vue';
 import projecttopline from './views/projects/projectTopline.vue';
@@ -28,11 +27,6 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: About
-    },
-    {
-      path: '/projects',
-      name: 'projects',
-      component: Projects
     },
     {
       path: '/projects/ruggedwerx',

@@ -1,40 +1,40 @@
 <template>
-  <div class="project--ruggedwerx">
+  <div class="project--catalog-request">
     <bsubpagehero
-        :hero_title="ruggedwerx.projectHeader"
-        :hero_sub_title="ruggedwerx.subHeader"
+        :hero_title="catalogRequest.projectHeader"
+        :hero_sub_title="catalogRequest.subHeader"
         class="has-purple--gradient"
       ></bsubpagehero>
     <projectpagelayout 
-      hero_img_src="/img/ruggedwerx.png"
-      hero_img_alt="ruggedwerx above fold view"
-      :site_href="ruggedwerx.projectUrl"
+      hero_img_src="/img/projects/catalog-request.png"
+      hero_img_alt="catalogRequest above fold view"
+      :site_href="catalogRequest.projectUrl"
     >
       <template name="project_header">
         <h2>
           <em class="md-heading-1 md-heading color-is--grey"> # </em>
-          {{ ruggedwerx.projectHeader }}
+          {{ catalogRequest.projectHeader }}
         </h2>
       </template>
       <template name="project_sub_header">
         <h3>
           <em class="md-heading-3 md-heading color-is--grey">###</em>
-          {{ ruggedwerx.subHeader }}
+          {{ catalogRequest.subHeader }}
         </h3>
       </template>
       <template name="project_details">
         <h6 class="pb-2">
           <span class="md-date-author">
             <em>
-              {{ ruggedwerx.jobTitle }}
+              {{ catalogRequest.jobTitle }}
             </em>
-            {{ ruggedwerx.projectDate }}
+            {{ catalogRequest.projectDate }}
           </span>
         </h6>
       </template>
 
       <!-- this content will be slotted into projectpage layout -->
-      <div class="every-p--pb-2" id="ruggedwerx" v-html="this.ruggedwerx.projectContent"></div>
+      <div class="every-p--pb-2" id="ruggedwerx" v-html="this.catalogRequest.projectContent"></div>
     </projectpagelayout>
   </div>
 </template>
@@ -51,23 +51,22 @@ export default {
     },
     data() {
         return {
-            ruggedwerx: {},
+            catalogRequest: {},
             errored: false,
             loading: true
         }
     },
     mounted: function() {
         const database = firebase.database();
-        const content_reference = database.ref('flamelink/environments/production/content/projectCards/en-US/1558405201359');
+        const content_reference = database.ref('flamelink/environments/production/content/projectCards/en-US/1558896487216');
         
         content_reference.once('value').then((data) => {
-            this.ruggedwerx = data.val();
+            this.catalogRequest = data.val();
             console.log(data.val());
         }).catch((error) => {
             console.error(error);
             this.errored = true;
         }).finally(() => this.loading = false)
-        console.log(this.ruggedwerx);
     },
 
 }

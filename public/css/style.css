@@ -98,6 +98,9 @@ a {
 .color-is--grey {
   color: #a9a9a9!important;
 }
+.color-is--grey > h1 {
+  color: #a9a9a9!important;
+}
 .is-standard--width {
   max-width: 1080px;
   margin: auto;

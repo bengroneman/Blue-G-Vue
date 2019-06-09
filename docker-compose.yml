@@ -1,10 +1,11 @@
-version: '2'
+version: '3.7'
 services:
-  web:
-    build: .
-    command: npm run serve
-    volumes:
-      - .:/usr/app/
-      - /usr/app/node_modules
+  frontend:
+    build:
+      context: .
+      target: 'develop-stage'
     ports:
-      - "8080:8080"
+    - '8080:8080'
+    volumes:
+    - '.:/app'
+    command: /bin/sh -c "npm run serve"

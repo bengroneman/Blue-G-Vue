@@ -26,11 +26,6 @@
     <div class="navbar-start child">
 
       <router-link to="/" class="navbar-item">
-        Coming Soon..
-      </router-link>
-
-<!--
-      <router-link to="/" class="navbar-item">
         Home
       </router-link>
 
@@ -39,9 +34,9 @@
       </router-link>
 
       <div class="navbar-item has-dropdown is-hoverable">
-        <router-link to="/projects" class="navbar-link">
+        <a class="navbar-link">
           Projects
-        </router-link>
+        </a>
 
         <div class="navbar-dropdown">
           <router-link to="/projects/ruggedwerx" class="navbar-item">
@@ -54,31 +49,18 @@
           <router-link to="/projects/topline" class="navbar-item">
             Topline
           </router-link>
+          <router-link to="/projects/catalog-request" class="navbar-item">
+            NOLS | Catalog Request
+          </router-link>
+
           <hr class="navbar-divider">
-          -->
           <!-- Set this up for website issues -->
-          <!--
           <router-link to="/contact" class="navbar-item">
             Report an issue
           </router-link>
         </div>
       </div>
-        -->
     </div>
-
-    <!--<div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">
-            Log in
-          </a>
-        </div>
-      </div>
-    </div>-->
-
   </div>
 </nav>
 

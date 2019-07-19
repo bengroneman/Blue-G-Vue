@@ -16,7 +16,9 @@
 		<h5 class="text-is-left card-title">{{ cardtitle }}</h5>
 		<h6 class="text-is-left card-sub-title"><em>{{ cardsubtitle }}</em></h6>
 		<p class="text-is-left card-text">{{ cardcontent }}</p>
-		<a v-if="siteURL" :href="siteURL" target="_blank" class="btn btn-primary b-btn">Visit Site</a>
+    <span class="site-url--wrapper">
+      <a v-if="siteURL" :href="siteURL" target="_blank" class="btn btn-primary b-btn">See More</a>
+    </span>
   </div>
 	<router-link v-if="readMoreLink" :to="readMoreLink" class="button is-light read-more--btn">Read More</router-link>
 </div>
@@ -73,9 +75,17 @@ export default {
 	margin-right: 5px;
 	margin-bottom: 15px;
 }
+
+.site-url--wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
 .b-btn {
-  padding: 5px; 
-  margin: 10px;
+  margin: auto auto 0 auto;
 }
 .b-skill {
 	margin-right: 3px;

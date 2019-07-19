@@ -15,7 +15,7 @@
       skillisWP
       skillisPHP
       cardcontent="A project built during my time as a Font-End Developer with Wyoming Inc., Built with a custom Wordpress Theme, for a welding/fabrication company based in Kinnear Wyoming."
-      readMoreLink="/projects/ruggedwerx"
+      siteURL="https://ruggedwerx.com"
       class="lifted-card-feel"
     ></bcard>
 
@@ -25,7 +25,7 @@
       skillisJS
       skillisWP
       skillisPHP
-      readMoreLink="/projects/maw"
+      siteURL="https://museumoftheamericanwest.com"
       cardcontent="A project built by yours truly. This project was a redesign; built with a custom Wordpress theme, for the Museum of the American West."
     ></bcard>
 
@@ -35,17 +35,17 @@
       skillisJS
       skillisVUE
       skillisPY
-      readMoreLink="https://github.com/bengroneman/"
+      siteURL="https://github.com/bengroneman/"
       cardcontent="Browse through open source code that I have written, during my time as an avid developer."
     ></bcard>
     <bcard 
-      cardtitle="Topline General Store"
-      cardsubtitle="Lander Wyoming - General Store"
+      cardtitle="Bonneville Builders"
+      cardsubtitle="Lander Wyoming, Custom Contracting"
       skillisJS
-      skillisVUE
-      skillisPY
-      readMoreLink="/projects/topline"
-      cardcontent="A small SPA for a local General Store. This website is built with VueJS and, leverages a Python API for the contact form."
+      skillisWP
+      skillisPHP
+      siteURL="https://buildbonneville.com"
+      cardcontent="A project built during my time as a Font-End Developer with Wyoming Inc., Built with a custom Wordpress Theme, for a welding/fabrication company based in Kinnear Wyoming."
     ></bcard>
 
     <!-- END B Skills -->
@@ -54,9 +54,9 @@
   <div class="b-skill__content">
     <div>
       <h5>Human-focused development, and problem solving are my passion; if you are looking to learn more, feel free to contact me!</h5>
-      <router-link to="/contact">
+      <!--<router-link to="/contact">
         <button id="b-btn" type="button" class="btn btn-outline-primary">Contact</button>
-      </router-link>
+      </router-link>-->
     </div>
   </div>
 </section>

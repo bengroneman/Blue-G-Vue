@@ -10,23 +10,22 @@
     <!-- START B Skll -->
     <bcard 
       cardtitle="Ruggedwerx"
-      cardsubtitle="Welding/Fabrication Company"
+      cardsubtitle="Welding/fabrication company"
       skillisJS
       skillisWP
       skillisPHP
-      cardcontent="A project built during my time as a Font-End Developer with Wyoming Inc., Built with a custom Wordpress Theme, for a welding/fabrication company based in Kinnear Wyoming."
+      cardcontent="A project built during my time as a front-end Developer for Wyoming Inc., built on Wordpress with CSS, JavaScript with jQuery, and custom PHP plugins." 
       siteURL="https://ruggedwerx.com"
       class="lifted-card-feel"
     ></bcard>
-
     <bcard 
       cardtitle="Museum of the American West"
-      cardsubtitle="Lander WY - Pioneer Museum"
+      cardsubtitle="Lander WY - non-profit historical museum"
       skillisJS
       skillisWP
       skillisPHP
       siteURL="https://museumoftheamericanwest.com"
-      cardcontent="A project built by yours truly. This project was a redesign; built with a custom Wordpress theme, for the Museum of the American West."
+      cardcontent="A volunteer website redesign for a local non-profit museum. This website was built with CSS, and vanilla JavaScript. This project involved a focus on the end User Experience"
     ></bcard>
 
     <bcard 
@@ -36,16 +35,16 @@
       skillisVUE
       skillisPY
       siteURL="https://github.com/bengroneman/"
-      cardcontent="Browse through open source code that I have written, during my time as an avid developer."
+      cardcontent="Browse through open source code that I have written, during my time as an independent software engineer"
     ></bcard>
     <bcard 
       cardtitle="Bonneville Builders"
-      cardsubtitle="Lander Wyoming, Custom Contracting"
+      cardsubtitle="Lander Wyoming, custom contracting"
       skillisJS
       skillisWP
       skillisPHP
       siteURL="https://buildbonneville.com"
-      cardcontent="A project built during my time as a Font-End Developer with Wyoming Inc., Built with a custom Wordpress Theme, for a welding/fabrication company based in Kinnear Wyoming."
+      cardcontent="A Wordpress website built with custom PHP plugins, and Wyoming Inc.'s custom PHP framework. The front-end was crafted with jQuery, vanilla JS, and CSS, based on high-fidelity mockups."
     ></bcard>
 
     <!-- END B Skills -->

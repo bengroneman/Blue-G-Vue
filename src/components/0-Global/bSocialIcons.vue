@@ -15,18 +15,11 @@
     </a>
   </div>
   <div class="column">
-    <a href="mailto:bluegroneman10@gmail.com">
+    <a href="mailto:info@bengroneman.tech">
       <button id="b-btn" href="mailto:bluegroneman10@gmail.com" type="button" class="btn">
         <i class="far fa-envelope" aria-hidden="true"></i>
       </button>
     </a>
-  </div>
-  <div class="column">
-    <router-link to="contact">
-      <button id="b-btn" href="contact" type="button" class="btn">
-        <i class="fas fa-phone" aria-hidden="true"></i>
-      </button>
-    </router-link>
   </div>
 </div>
 </template>

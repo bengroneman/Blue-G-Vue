@@ -25,10 +25,15 @@
   >
     <div class="navbar-start child">
 
-      <router-link to="/" class="navbar-item">
-        Coming Soon..
-      </router-link>
-
+      <a href="#about" class="navbar-item">
+        About
+      </a>
+      <a href="#projects" class="navbar-item">
+        Projects
+      </a>
+      <a href="#open-source" class="navbar-item">
+        Open Source
+      </a>
 <!--
       <router-link to="/" class="navbar-item">
         Home

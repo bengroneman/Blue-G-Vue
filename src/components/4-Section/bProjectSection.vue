@@ -1,5 +1,5 @@
 <template>
-<section class="b-project-section">
+<section id="open-source" class="b-project-section">
   <div class="b-project__wrapper parent b-darkish--overlay">
     <!-- Open Source Advocate Section  -->
     <div class="b-project-content__wrapper child">

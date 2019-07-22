@@ -1,5 +1,5 @@
   <template>
-<section id="skill-section" class="container is-fluid b-skill__container clip-side-margin">
+<section id="psectionrojects" class="container is-fluid b-skill__container clip-side-margin">
   <!-- Section Header-->
   <h1 class="text-is-center">Skill Array</h1>
   <h3 class="text-is-center">Projects I've worked on</h3>

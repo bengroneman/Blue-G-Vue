@@ -1,11 +1,9 @@
 <template>
 <div class="b-footer">
-  <div class="b__footer white--text text-xs-center">
-    <div class="social-icons__footer">
-      <bsocialicons></bsocialicons>
-    </div>
+  <div class="b__footer text-xs-center">
     <div class="bbg-copyright">
-      &copy;2018 — <em>Author: Ben G. made with <i class="fas fa-heart"></i> from <a href="https://vuejs.org" target="_blank">Vue</a></em>
+      <h5 class="color-is--grey">© 2019 | Ben Groneman | CC BY-NC 4.0</h5>
+      <h5 class="color-is--grey">Powered by Vue | Made with ❤ by <a href="https://github.com/bengroneman/" target="_blank" alt="github profile link">bengroneman</a></h5>
     </div>
   </div>
 </div>
@@ -23,12 +21,12 @@ export default {
 </script>
 <style>
 .b__footer {
-  background-color: rgb(167, 242, 233)!important;
-  width: 100%;
-  padding-top: 45px;
+    background: linear-gradient(#1f1f21, #252627);
+    width: 100%;
+    padding-top: 45px;
 }
 .social-icons__footer {
-  max-width: 600px;
-  margin: auto;
+    max-width: 600px;
+    margin: auto;
 }
 </style>

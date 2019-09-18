@@ -68,7 +68,6 @@ span, span, em, pre, a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 * {
   font-family: 'Source Code Pro Light', monospace;
@@ -89,7 +88,11 @@ pre {
   border: none;
 }
 a {
-  color: #54d0ba;
+    color: teal!important;
+    transition: 0.25s all ease;
+}
+a:hover {
+    color: white!important;
 }
 
 /* END Universal Styles */
@@ -131,6 +134,9 @@ a {
 }
 a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
     background-color: #1e1f21!important;
+}
+a.navbar-item.is-active {
+    background-color: rga(26, 24, 24, 0.6)!important;
 }
 
 .navbar-dropdown a.navbar-item {

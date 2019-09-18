@@ -56,91 +56,89 @@ export default {
 </script>
 <style>
 .b-grid-child__item {
-	  box-shadow:	0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);	
+  box-shadow:	0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);	
 }
 .b-grid-child__item:hover {
-	  transition: box-shadow .25s;
-	  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .b-grid-child__item > img {
-	  object-fit: cover;
-	  position: relative;
-	  background-color: #fff;
-	  transition: box-shadow .25s;
-	  border-radius: 2px;
+  object-fit: cover;
+  position: relative;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px;
 }
 .card {
-	  height: auto;
+  height: auto;
 }
 .card-body {
-	  padding: 25px;
+  padding: 25px;
 }
 .card-text {
-	  margin: 15px auto 25px auto;
+  margin: 15px auto 25px auto;
 }
 .card-skills {
-	  font-size: .9rem;
-	  display: inline-flex;
-	  border-radius: 3px;
-	  margin-right: 5px;
-	  margin-bottom: 15px;
+  font-size: .9rem;
+  display: inline-flex;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 15px;
 }
 
 .site-url--wrapper {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
 }
 .b-btn {
-    margin: auto auto 0 auto;
+  margin: auto auto 0 auto;
 }
 .b-skill {
-	  margin-right: 3px;
-	  margin-bottom: 15px;
-	  background: transparent;
+  margin-right: 3px;
+  margin-bottom: 15px;
+  background: transparent;
 }
 .card-skills span {
-	  border-radius: 5px;
-	  padding: 3px 5px;
+  border-radius: 5px;
+  padding: 3px 5px;
 }
 .b-skill-is-vue {
-	  background: #4fc08d;
+  background: #4fc08d;
 }
 .b-skill-is-js {
-	  background: #EADD86;
+  background: #EADD86;
 }
 .b-skill-is-wp {
-	  background: #00aadc;
+  background: #00aadc;
 }
 .b-skill-is-hs {
-	  background: #ff7a59;
+  background: #ff7a59;
 }
 .b-skill-is-py {
-	  background: #2b5b84;
-    color: #cee7f1;
+  background: #2b5b84;
+  color: #cee7f1;
 }
 .b-skill-is-php {
-	  background: #8892BF; 
+  background: #8892BF; 
 }
 .b-skill-is-css {
-    background: #264de4;
-    color: #cee7f1;
+  background: #264de4;
+  color: #cee7f1;
 }
 .read-more--btn {
-	  position: absolute;
-	  bottom: 0;
-	  left: 0;
-	right: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .card-20 {
-    height: 20%;
+  height: 20%;
 }
 .card-80 {
-    height: 80%;
+  height: 80%;
 }
-
-
 </style>

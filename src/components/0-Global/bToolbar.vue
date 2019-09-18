@@ -28,10 +28,6 @@
     </div>
 
       <div class="navbar-end">
-        <router-link to="/" class="navbar-item">
-          Home
-        </router-link>
-
         <router-link to="/about" class="navbar-item">
           About
         </router-link>
@@ -69,7 +65,6 @@ export default {
 }
 .navbar .active {
     background-color: rgba(43 43, 43, 0.6);
-    border-bottom: 2px solid #54d0ba;
     color: white!important; 
 }
 .navbar-start {
@@ -83,19 +78,31 @@ export default {
     color: #a9a9b3!important;
 }
 .blinking--cursor {
-    height: 100%;
+    height: 75%;
     width: 15px;
     background-color: teal;
     margin-left: 5px;
-    animation: blink 0.7s infinite;
+    margin-bottom: 0;
+    -webkit-animation: blink 1s 2s infinite; /* Safari 4+ */
+    -moz-animation:    blink 1s 2s infinite; /* Fx 5+ */
+    -o-animation:      blink 1s 2s infinite; /* Opera 12+ */
+    animation:         blink 1s 2s infinite; /* IE 10+, Fx 29+ */
+}
+@-webkit-keyframes blink {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes blink { 
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-o-keyframes blink { 
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
 }
 @keyframes blink {
-    from {
-        opacity: 100%;
-    }
-    to {
-        opacity: 0%;
-    }
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
 }
 </style>
 

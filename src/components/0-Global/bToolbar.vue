@@ -24,6 +24,7 @@
       <router-link to="/">
         <span class="console--line">$ cd /home/</span>
       </router-link>
+      <span class="blinking--cursor"></span>
     </div>
 
       <div class="navbar-end">
@@ -31,8 +32,8 @@
           Home
         </router-link>
 
-        <router-link to="/contact" class="navbar-item">
-          Contact
+        <router-link to="/about" class="navbar-item">
+          About
         </router-link>
 
         <router-link to="/projects" class="navbar-item">
@@ -81,6 +82,20 @@ export default {
     font-size: x-large;
     color: #a9a9b3!important;
 }
-
+.blinking--cursor {
+    height: 100%;
+    width: 15px;
+    background-color: teal;
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
 </style>
 

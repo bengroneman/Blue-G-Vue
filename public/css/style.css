@@ -129,12 +129,9 @@ a {
   position: relative;
   bottom: 15px;
 }
-
-#nav a.router-link-exact-active {
-  color: #6e7f80;
-  border-bottom: 5px solid #6e7f80;
+a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+    background-color: #1e1f21!important;
 }
-
 
 .navbar-dropdown a.navbar-item {
   color: black!important;

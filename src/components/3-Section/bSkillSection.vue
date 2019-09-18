@@ -52,7 +52,7 @@
 
   <div class="b-skill__content">
     <div>
-      <h5>Human-focused development, and problem solving are my passion; if you are looking to learn more, feel free to contact me!</h5>
+      <h5>When solving problems I take a human-focused approach, and carry an empathy for the end user.</h5>
     </div>
   </div>
 </section>

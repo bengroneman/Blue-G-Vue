@@ -5,6 +5,7 @@
         <div class="b-cta__content-wrapper">
           <h1>Ben G.</h1>
           <h2>Software Engineer</h2>
+          <bsocialicons></bsocialicons>
         </div>
       </div>
 
@@ -30,16 +31,18 @@
   </section>
 </template>
 <script>
+import bsocialicons from '@/components/0-Global/bSocialIcons.vue';
 
 export default {
-  name: 'bhero',
-  data: function () {
-    return {
-      main_header: String,
-    }
-  },
-  mounted: function () {
-  },
+    name: 'bhero',
+    data: function () {
+        return {
+            main_header: String,
+        }
+    },
+    components: {
+        bsocialicons
+    },
 }
 </script>
 <style scoped>

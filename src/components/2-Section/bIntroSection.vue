@@ -13,24 +13,18 @@
       </p>
       <!-- Accent Line -->
       <bline></bline>
-      <a href="#projects">
-        <button id="b-btn" type="button" class="btn my-code--btn">
-          <i class="fas fa-arrow-down" aria-hidden="true"></i>
-          My Code
-        </button>
-      </a>
     </template>
     <template slot="right-column">
       <div class="info-icon__section">
-        <span>{ }</span>
+        <span class="animated--brackets">{ }</span>
       </div>
     </template>
   </twocolumnlayout>
 </section>
 </template>
 <script>
-import bline from '@/components/0-Global/bLine.vue'
-import twocolumnlayout from '@/components/Layouts/twoColumnLayout'
+import bline from '@/components/0-Global/bLine.vue';
+import twocolumnlayout from '@/components/Layouts/twoColumnLayout.vue';
 
 export default {
     name: 'bintrosection',
@@ -38,47 +32,70 @@ export default {
     components: {
         bline,
         twocolumnlayout
-    }
+    },
 }
 </script>
 <style>
 .info-icon__section > span {
-  font-size: 10em;
-  color: #54d0ba;
-  text-align: right;
-  margin: auto;
+    font-size: 10em;
+    color: #54d0ba;
+    text-align: right;
+    margin: auto;
 }
 .b-content__wrapper {
-  text-align: left;
-  font-size: 1.25em;
-  font-weight: 100;
+    text-align: left;
+    font-size: 1.25em;
+    font-weight: 100;
 }
 .content-shallom {
-  font-weight: 900;
+    font-weight: 900;
 }
 .b-about__header {
-	font-size: 5em;
+	  font-size: 5em;
 }
 .b-about__row {
-	height: 100%;
-  margin: 125px auto 125px auto;
+	  height: 100%;
+    margin: 125px auto 125px auto;
 }
 .curly-brackets {
-	font-size: 15em;
-	margin: 45px;
-	color: #54d0ba;
+	  font-size: 15em;
+	  margin: 45px;
+	  color: #54d0ba;
 }
 .b-about__content {
-  font-size: 1.25em; 
-  text-align: left;
-  margin-top: 25px;
+    font-size: 1.25em; 
+    text-align: left;
+    margin-top: 25px;
 }
 .my-code--btn {
-  margin: 25px auto auto 0px!important;
-  left:0;
+    margin: 25px auto auto 0px!important;
+    left:0;
 }
 .my-code--btn > i {
-	color: white;
-	padding: 5px;
+	  color: white;
+	  padding: 5px;
 }
+.animated--brackets {
+    -webkit-animation: scale 1s 2s infinite; /* Safari 4+ */
+    -moz-animation:    scale 1s 2s infinite; /* Fx 5+ */
+    -o-animation:      scale 1s 2s infinite; /* Opera 12+ */
+    animation:         scale 1s 2s infinite; /* IE 10+, Fx 29+ */
+}
+@-webkit-keyframes scale {
+    0%   { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+@-moz-keyframes scale { 
+    0%   { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+@-o-keyframes scale { 
+    0%   { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+@keyframes scale {
+    0%   { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+
 </style>

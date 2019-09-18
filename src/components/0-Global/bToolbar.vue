@@ -64,13 +64,16 @@ export default {
     text-transform: uppercase;
 }
 .navbar .active {
-    background-color: rgba(43 43, 43, 0.6);
+    background-color: rgba(43, 43, 43, 0.6);
     color: white!important; 
 }
 .navbar-start {
     font-size: 18px;
     font-emphasis: 700;
     
+}
+.navbar-item { 
+    color: white!important;
 }
 .console--line {
     font-weight: 800;
@@ -79,7 +82,7 @@ export default {
 }
 .blinking--cursor {
     height: 75%;
-    width: 15px;
+    width: 10px;
     background-color: teal;
     margin-left: 5px;
     margin-bottom: 0;

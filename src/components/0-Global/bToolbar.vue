@@ -1,112 +1,111 @@
 <template>
-<nav id="b-navigation-bar" class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <router-link to="/" class="navbar-item">
-      Ben G.
-    </router-link>
+<nav id="b-navigation-bar" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
 
-    <a @click="is_mobile_menu_open = !is_mobile_menu_open"
-      role="button"
-      class="navbar-burger burger"
-      aria-label="menu"
-      aria-expanded="false"
-      data-target="blue-navbar"
-      v-bind:class="{ 'is-active': is_mobile_menu_open, '': !is_mobile_menu_open }"
-    >
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
+  <a @click="is_mobile_menu_open = !is_mobile_menu_open"
+    role="button"
+    class="navbar-burger burger"
+    aria-label="menu"
+    aria-expanded="false"
+    data-target="blue-navbar"
+    v-bind:class="{ 'is-active': is_mobile_menu_open, '': !is_mobile_menu_open }"
+  >
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
 
   <div
     id="blue-navigation"
     v-bind:class="{ 'is-active navbar-menu': is_mobile_menu_open, 'navbar-menu': !is_mobile_menu_open }"
+    class="navbar-menu"
   >
-    <div class="navbar-start child">
-
-      <a href="#about" class="navbar-item">
-        About
-      </a>
-      <a href="#projects" class="navbar-item">
-        Projects
-      </a>
-      <a href="#open-source" class="navbar-item">
-        Open Source
-      </a>
-<!--
-      <router-link to="/" class="navbar-item">
-        Home
+    <div class="text-is--light-grey navbar-start text-is-left">
+      <!--TODO: implement window.location.href -->
+      <router-link to="/">
+        <span class="console--line">$ cd /home/</span>
       </router-link>
-
-      <router-link to="/contact" class="navbar-item">
-        Contact
-      </router-link>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <router-link to="/projects" class="navbar-link">
-          Projects
-        </router-link>
-
-        <div class="navbar-dropdown">
-          <router-link to="/projects/ruggedwerx" class="navbar-item">
-            Ruggedwerx
-          </router-link>
-
-          <router-link to="/projects/maw" class="navbar-item">
-            MAW
-          </router-link>
-          <router-link to="/projects/topline" class="navbar-item">
-            Topline
-          </router-link>
-          <hr class="navbar-divider">
-          -->
-          <!-- Set this up for website issues -->
-          <!--
-          <router-link to="/contact" class="navbar-item">
-            Report an issue
-          </router-link>
-        </div>
-      </div>
-        -->
+      <span class="blinking--cursor"></span>
     </div>
 
-    <!--<div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">
-            Log in
-          </a>
-        </div>
-      </div>
-    </div>-->
+      <div class="navbar-end">
+        <router-link to="/about" class="navbar-item">
+          About
+        </router-link>
 
+        <router-link to="/projects" class="navbar-item">
+          Projects
+        </router-link>
+      </div>
   </div>
 </nav>
 
 </template>
 <script>
 export default {
-  name: 'btoolbar',
-  data: () => {
-    return {
-      is_mobile_menu_open: false
-    }
-  }
+    name: 'btoolbar',
+    data: () => {
+      return {
+          is_mobile_menu_open: false
+      }
+    },
 }
 </script>
 <style>
+.navbar {
+    background-color: #252627!important;
+}
+.navbar-menu {
+    max-width: 768px;
+    justify-content: center;
+    margin: auto;
+}
 .navbar > a {
-  color: white;
-  text-transform: uppercase;
+    color: white;
+    text-transform: uppercase;
 }
 .navbar .active {
-  background-color: rgba(43 43, 43, 0.6);
-  border-bottom: 2px solid #54d0ba;
-  color: white!important; 
+    background-color: rgba(43, 43, 43, 0.6);
+    color: white!important; 
+}
+.navbar-start {
+    font-size: 18px;
+    font-emphasis: 700;
+    
+}
+.navbar-item { 
+    color: white!important;
+}
+.console--line {
+    font-weight: 800;
+    font-size: x-large;
+    color: #a9a9b3!important;
+}
+.blinking--cursor {
+    height: 75%;
+    width: 10px;
+    background-color: teal;
+    margin-left: 5px;
+    margin-bottom: 0;
+    -webkit-animation: blink 1s 2s infinite; /* Safari 4+ */
+    -moz-animation:    blink 1s 2s infinite; /* Fx 5+ */
+    -o-animation:      blink 1s 2s infinite; /* Opera 12+ */
+    animation:         blink 1s 2s infinite; /* IE 10+, Fx 29+ */
+}
+@-webkit-keyframes blink {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes blink { 
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-o-keyframes blink { 
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes blink {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
 }
 </style>
 

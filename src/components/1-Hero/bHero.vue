@@ -5,12 +5,13 @@
         <div class="b-cta__content-wrapper">
           <h1>Ben G.</h1>
           <h2>Software Engineer</h2>
+          <bsocialicons></bsocialicons>
         </div>
       </div>
 
       <!-- Instantiate the particle system -->
       <vue-particles
-        color="#54d0ba"
+        color="#a9a9a9"
         :particleOpacity="0.7"
         :particlesNumber="80"
         shapeType="circle"
@@ -30,30 +31,32 @@
   </section>
 </template>
 <script>
+import bsocialicons from '@/components/0-Global/bSocialIcons.vue';
 
 export default {
-  name: 'bhero',
-  data: function () {
-    return {
-      main_header: String,
-    }
-  },
-  mounted: function () {
-  },
+    name: 'bhero',
+    data: function () {
+        return {
+            main_header: String,
+        }
+    },
+    components: {
+        bsocialicons
+    },
 }
 </script>
 <style scoped>
 .vue-particles-bb {
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  background-size: cover;
-  background-image: url('/img/b_cta_background.PNG');
-  background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-size: cover;
+    background-image: url('/img/b_cta_background.PNG');
+    background-color: black;
 }
 .b-dark--overlay {
-  z-index: 3;
-  background: rgba(0, 0, 0, 0.75);
+    z-index: 3;
+    background: rgba(41, 42, 45, .75);
 }
 
 .b-cta__content {

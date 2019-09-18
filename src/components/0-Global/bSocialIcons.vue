@@ -1,26 +1,22 @@
 <template>
-<div class="columns btn__container">
-  <div class="column">
-    <a href="https://github.com/bengroneman" target="_bank">
-      <button id="b-btn" type="button" class="btn">
+<div class="btn__container">
+  <ul>
+    <li class="social--li">
+      <a href="https://github.com/bengroneman" target="_bank">
         <i class="fab fa-github" aria-hidden="true"></i>
-      </button>
-    </a>
-  </div>
-  <div class="column">
-    <a href="https://linkedin.com/in/ben-groneman" target="_blank">
-      <button id="b-btn" href="https://www.linkedin.com/in/ben-groneman-62174370/" type="button" class="btn">
+      </a>
+    </li>
+    <li class="social--li">
+      <a href="https://linkedin.com/in/ben-groneman" target="_blank">
         <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-      </button>
-    </a>
-  </div>
-  <div class="column">
-    <a href="mailto:info@bengroneman.tech">
-      <button id="b-btn" href="mailto:bluegroneman10@gmail.com" type="button" class="btn">
+      </a>
+    </li>
+    <li class="social--li">
+      <a href="mailto:info@bengroneman.tech">
         <i class="far fa-envelope" aria-hidden="true"></i>
-      </button>
-    </a>
-  </div>
+      </a>
+    </li>
+  </ul>
 </div>
 </template>
 <script>
@@ -31,21 +27,27 @@ export default {
 </script>
 <style>
 .btn__container {
-  width: 100%;
-  display: flex;
+    width: 100%;
+    display: flex;
 }
-.btn__wrapper {
-  width: 300px;
-  height: auto;
-  margin: 25px;
+.btn__container ul {
+    margin: auto;
+    list-style: none;
+}
+.social--li {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.social--li a > i {
+    font-size: 1.5rem;
+    color: #a9a9b3!important;
 }
 #b__btn {
-  margin: 10px;
-  width: 45px;
+    width: 45px;
 }
 .is-icon--grid {
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 </style>

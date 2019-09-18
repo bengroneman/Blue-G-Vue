@@ -1,64 +1,22 @@
 <template>
   <section class="b-about-page__container container">
-    <div class="columns">
-      <!-- START About me Content -->
-      <div class="b-about-page__content column is-three-quarters">
-        <aside class="content--wrapper"> 
-          <h2>User Centered Design, skateboarding, coffee, and a love for programming</h2>
-          <p>I am an avid developer with a background in Java, PHP, and mathematics. I have an Associates Degree in Computer Science, and an odd fascination with the Linux kernel. I have moved from the PHP, and Java world to the wonderful world of JavaScript. With a soft spot for Functional programming, and clean code, you can find me typing away on a variety of side projects, in coffee shops, and on the go.</p>
-          <br/>
-          <p>I began working on the web, back in 2015. I was an intern at Wyoming Inc., a marketing/web development company focused on building user friendly, and responsive websites for business around Wyoming. Shortly after my internship with Wyoming Inc., I graduated from Central Wyoming College. I promptly began a Web Internship with the National Outdoor Leadership School, a school focused on teaching a tolerance for adversity and uncertainty, and leadership in the outdoors. I am currently working on the NOLS web team as the Digital Campaign Coordinator. I work primarily in the Hubspot COS.</p> 
-          <br/>
-          <p>When I am not working in the NOLS Creative Dept. you can find me tinkering with new and old technologies, or out on the road with my bike. I also love to skateboard, snowboard, and push myself to learn new things everyday.</p>
-        </aside>
-      </div>
-
-      <div class="b-about-page__content content-right is-one-quarter">
-        <div class="text-is-right about-category__row">
-
-          <ul class="content-right--ul">
-            <li><h5>Interests</h5></li>
-            <li>Skateboarding</li>
-            <li>Programming</li>
-            <li>League of Legends / Rocket League</li>
-            <li>Learning</li>
-            <li>Backpacking</li>
-            <li>Biking</li>
-          </ul>
-
-          <ul class="content-right--ul">
-            <li><h5>Skills</h5></li>
-            <li>JavaScript</li>
-            <li>Design</li>
-            <li>Marketing</li>
-            <li>Linux</li>
-            <li>Mobile Web Specialist</li>
-          </ul>
-
-          <ul class="content-right--ul">
-            <li><h5>Social</h5></li>
-            <li><a href="https://www.linkedin.com/in/ben-groneman/" target="_blank">Linkedin</a></li>
-            <li><a href="https://github.com/bengroneman" target="_blank">Github</a></li>
-            <li><a href="mailto:bluegroneman10@gmail.com">bluegroneman10@gmail.com</a></li>
-          </ul>
-
-        </div>
-        <!-- END About me Content -->
-      </div>
-    </div>
+    <bintrosection></bintrosection>
   </section>
 </template>
 <script>
+import bintrosection from '@/components/2-Section/bIntroSection.vue';
 
 export default {
-  name: 'about'
+    name: 'about',
+    components: {
+        bintrosection
+    },
 }
 </script>
 <style>
 .b-about-page__container {
   height: 100%;
   width: 100%;
-  background-color: #151f29;
   color: white;
   display: flex;
   margin: 75px auto 75px auto;

@@ -2,14 +2,14 @@
   <div class="home">
     <!-- Main Header CTA -->
     <bhero></bhero>
-    <!-- B Info/Bio Section -->
-    <bintrosection></bintrosection>
-    <!-- Small section // Quote blurb -->
-		<quoteblurb></quoteblurb>
-        <!-- Blue G Skill Section -->
-    <bskillsection></bskillsection>
-    <!-- Blue G Project Section -->
-    <bprojectsection></bprojectsection>
+    <!-- B Info/Bio Section 
+    <bintrosection></bintrosection> -->
+    <!-- Small section // Quote blurb 
+		<quoteblurb></quoteblurb> -->
+        <!-- Blue G Skill Section 
+    <bskillsection></bskillsection> -->
+    <!-- Blue G Project Section
+    <bprojectsection></bprojectsection> -->
   </div>
 </template>
 

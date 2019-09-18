@@ -1,8 +1,8 @@
   <template>
 <section id="psectionrojects" class="container is-fluid b-skill__container clip-side-margin">
   <!-- Section Header-->
-  <h1 class="text-is-center">Skill Array</h1>
-  <h3 class="text-is-center">Projects I've worked on</h3>
+  <h1 class="text-is-center">Projects</h1>
+  <h3 class="text-is-center">See my work</h3>
 
   <!-- Skill Icon Column -->
   <div class="b-skill-icon__column is-skill--grid">
@@ -53,9 +53,6 @@
   <div class="b-skill__content">
     <div>
       <h5>Human-focused development, and problem solving are my passion; if you are looking to learn more, feel free to contact me!</h5>
-      <!--<router-link to="/contact">
-        <button id="b-btn" type="button" class="btn btn-outline-primary">Contact</button>
-      </router-link>-->
     </div>
   </div>
 </section>
@@ -65,64 +62,70 @@
 import bcard from '@/components/0-Global/bCard'
 
 export default {
-	name: 'bskillsection',
-  components: {
-    bcard
-  },
+    name: 'bskillsection',
+    components: {
+        bcard
+    },
 }
 </script>
 <style>
 .b-skill__container {
     height: 100%;
-    background-color: #ccc;
 }
 .b-skill__container > h1 {
-  padding-top: 45px;
+    padding-top: 45px;
+    color: white;
+}
+.b-skill__container h3 {
+    color: white;
 }
 .is-skill--grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
 }
 .b-skill-icon__column {
-  margin: auto;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  max-width: 1024px;
+    margin: auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    max-width: 1024px;
 }
 .b-skill-icon__column > p {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .b-skill-icon__column h1 {
-  text-transform: uppercase;
-  margin-bottom: 45px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
 }
 .b-skill__item {
-  width: 100%;
-  height: 30px;
-  background-color: rgba(84,208,186,.8);
+    width: 100%;
+    height: 30px;
+    background-color: rgba(84,208,186,.8);
 }
 .b-skill__item > p {
-  margin: 2px auto 2px 20px;
+    margin: 2px auto 2px 20px;
 }
 .b-skill__content {
-  margin: 10px;
-  width: 100%;
-  display: flex;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+}
+.b-skill__content h5 {
+    color: white;
 }
 .b-skill__content > div {
-  margin: auto;
-  max-width: 768px;
+    margin: auto;
+    max-width: 768px;
 }
 .hover-text {
-  display: none;
+    display: none;
 }
 .b-skill__item:hover .hover-text {
-  display: inline; 
+    display: inline; 
 }
 
 .b-skill__content h5 {
-  margin: 45px auto;
+    margin: 45px auto;
 }
 
 </style>

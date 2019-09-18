@@ -48,7 +48,7 @@ h4 {
 h5 {
   font-family: 'Open Sans Regular', sans-serif;
   font-size: 1.2em!important;
-  font-weight: 700!important;
+  font-weight: 600!important;
 }
 h6 {
   font-family: 'Open Sans Light', sans-serif;
@@ -68,7 +68,6 @@ span, span, em, pre, a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 * {
   font-family: 'Source Code Pro Light', monospace;
@@ -77,6 +76,7 @@ body, html {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  background: linear-gradient(#1f1f21, #252627);
 }
 code {
   box-shadow: none!important;
@@ -88,7 +88,11 @@ pre {
   border: none;
 }
 a {
-  color: #54d0ba;
+    color: teal!important;
+    transition: 0.25s all ease;
+}
+a:hover {
+    color: white!important;
 }
 
 /* END Universal Styles */
@@ -128,12 +132,12 @@ a {
   position: relative;
   bottom: 15px;
 }
-
-#nav a.router-link-exact-active {
-  color: #6e7f80;
-  border-bottom: 5px solid #6e7f80;
+a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+    background-color: #1e1f21!important;
 }
-
+a.navbar-item.is-active {
+    background-color: rga(26, 24, 24, 0.6)!important;
+}
 
 .navbar-dropdown a.navbar-item {
   color: black!important;

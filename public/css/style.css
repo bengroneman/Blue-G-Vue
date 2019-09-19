@@ -92,7 +92,7 @@ a {
     transition: 0.25s all ease;
 }
 a:hover {
-    color: white!important;
+    color: black!important;
 }
 
 /* END Universal Styles */

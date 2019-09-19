@@ -27,16 +27,6 @@
       siteURL="https://museumoftheamericanwest.com"
       cardcontent="A volunteer website redesign for a local non-profit museum. This website was built with CSS, and vanilla JavaScript. This project involved a focus on the end User Experience"
     ></bcard>
-
-    <bcard 
-      cardtitle="Github Repositories"
-      cardsubtitle="My Code"
-      skillisJS
-      skillisVUE
-      skillisPY
-      siteURL="https://github.com/bengroneman/"
-      cardcontent="Browse through open source code that I have written, during my time as an independent software engineer"
-    ></bcard>
     <bcard 
       cardtitle="Bonneville Builders"
       cardsubtitle="Lander Wyoming, custom contracting"
@@ -46,13 +36,21 @@
       siteURL="https://buildbonneville.com"
       cardcontent="A Wordpress website built with custom PHP plugins, and Wyoming Inc.'s custom PHP framework. The front-end was crafted with jQuery, vanilla JS, and CSS, based on high-fidelity mockups."
     ></bcard>
-
+    <bcard 
+      cardtitle="Github Repositories"
+      cardsubtitle="My Code"
+      skillisJS
+      skillisVUE
+      skillisPY
+      siteURL="https://github.com/bengroneman/"
+      cardcontent="Browse through open source code that I have written, during my time as an independent software engineer"
+    ></bcard>
     <!-- END B Skills -->
   </div>
 
   <div class="b-skill__content">
     <div>
-      <h5>Human-focused development, and problem solving are my passion; if you are looking to learn more, feel free to contact me!</h5>
+      <h5>When solving problems I take a human-focused approach, and carry an empathy for the end user.</h5>
     </div>
   </div>
 </section>

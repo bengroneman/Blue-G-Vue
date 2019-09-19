@@ -20,14 +20,21 @@
     class="navbar-menu"
   >
     <div class="text-is--light-grey navbar-start text-is-left">
-      <!--TODO: implement window.location.href -->
-      <router-link to="/">
-        <span class="console--line">$ cd /home/</span>
-      </router-link>
-      <span class="blinking--cursor"></span>
+      <span class="console--line">$ cd&nbsp;</span>
+      <span v-for="(breadcrumb, id) in bread_crumb_list"
+            :key="id"
+            class="console--line"
+      >
+        {{ breadcrumb.name}}
+        </span>
+
     </div>
 
       <div class="navbar-end">
+        <router-link to="/" class="navbar-item">
+          Home
+        </router-link>
+
         <router-link to="/about" class="navbar-item">
           About
         </router-link>
@@ -45,8 +52,14 @@ export default {
     name: 'btoolbar',
     data: () => {
       return {
-          is_mobile_menu_open: false
+          is_mobile_menu_open: false,
+          bread_crumb_list: String,
       }
+    },
+    mounted: function () { this.updateBreadCrumbs(); },
+    watch: { '$route' () { this.updateBreadCrumbs(); } },
+    methods: {
+        updateBreadCrumbs() { this.bread_crumb_list = this.$route.meta.breadcrumb }
     },
 }
 </script>

@@ -1,6 +1,7 @@
 <template>
   <section class="container-fluid b-project__section">
       <bskillsection></bskillsection>
+      <!--<quoteblurb></quoteblurb>-->
   </section>
 </template>
 
@@ -8,6 +9,7 @@
 import bcard from '@/components/0-Global/bCard.vue';
 import bline from '@/components/0-Global/bLine.vue';
 import bskillsection from '@/components/3-Section/bSkillSection.vue';
+import quoteblurb from '@/components/2-Section/bQuoteBlurb.vue';
 
 export default {
     name: 'projects',
@@ -15,6 +17,7 @@ export default {
         bcard,
         bline,
         bskillsection,
+        quoteblurb,
     },
 }
 </script>

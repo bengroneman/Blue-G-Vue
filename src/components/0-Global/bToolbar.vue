@@ -20,21 +20,21 @@
     class="navbar-menu"
   >
     <div class="text-is--light-grey navbar-start text-is-left">
-      <!--TODO: implement window.location.href -->
-      <router-link to="/">
-        <span class="console--line">$ cd </span>
-        <span v-for="(breadcrumb, id) in bread_crumb_list"
-              :key="id"
-              class="console--line"
-        >
-          {{ breadcrumb.name}}
-          </span>
+      <span class="console--line">$ cd&nbsp;</span>
+      <span v-for="(breadcrumb, id) in bread_crumb_list"
+            :key="id"
+            class="console--line"
+      >
+        {{ breadcrumb.name}}
+        </span>
 
-      </router-link>
-      <span class="blinking--cursor"></span>
     </div>
 
       <div class="navbar-end">
+        <router-link to="/" class="navbar-item">
+          Home
+        </router-link>
+
         <router-link to="/about" class="navbar-item">
           About
         </router-link>

@@ -20,7 +20,7 @@ export default new Router({
         component: Home,
         meta: {
             breadcrumb: [
-                { name: '/' }
+                { name: '/home' }
             ]
         },
     },

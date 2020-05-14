@@ -19,9 +19,11 @@
       <p class="text-is-left card-text">{{ cardcontent }}</p>
 
     <div class="card-footer card-20">
-      <span id="b-btn" class="card-footer-item site-url--wrapper">
-        <a v-if="siteURL" :href="siteURL" target="_blank" class="btn btn-primary b-btn">See More</a>
-      </span>
+      <a v-if="siteURL" :href="siteURL" target="_blank" class="btn text-left btn-primary b-btn">
+        <span id="b-btn" class="card-footer-item site-url--wrapper">
+          See More
+        </span>
+      </a>
       <router-link
         v-if="readMoreLink"
         :to="readMoreLink"

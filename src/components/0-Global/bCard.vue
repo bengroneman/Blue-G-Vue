@@ -10,6 +10,8 @@
         <span v-if="skillisPY" class="b-skill b-skill-is-py">Python</span>
         <span v-if="skillisPHP" class="b-skill b-skill-is-php">PHP</span>
         <span v-if="skillisCSS" class="b-skill b-skill-is-css">CSS</span>
+        <span v-if="skillisCS" class="b-skill b-skill-is-cs">C#</span>
+        <span v-if="skillisPM" class="b-skill b-skill-is-pm">PM</span>
       </div>
 
       <h5 class="text-is-left card-title">{{ cardtitle }}</h5>
@@ -46,7 +48,9 @@ export default {
 		skillisWP: Boolean,
 		skillisHS: Boolean,
 		skillisPY: Boolean,
-		skillisPHP: Boolean,
+    skillisPHP: Boolean,
+    skillisCS: Boolean,
+    skillisPM: Boolean,
     readMoreLink: String,
     siteURL: String
 	}
@@ -121,6 +125,15 @@ export default {
   background: #264de4;
   color: #cee7f1;
 }
+.b-skill-is-cs {
+  background: #223068;
+  color: #cee7f1;
+}
+.b-skill-is-pm {
+  background: #b92905;
+  color: white;
+}
+
 .read-more--btn {
   position: absolute;
   bottom: 0;

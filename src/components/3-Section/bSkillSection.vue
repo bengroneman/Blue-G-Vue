@@ -9,14 +9,6 @@
     
     <!-- START B Skll -->
     <bcard 
-      cardtitle="Mythix"
-      cardsubtitle="A mythical game with loveable characters (WIP)"
-      skillisCS
-      skillisPM
-      siteURL="https://github.com/bengroneman/mythix"
-      cardcontent="A game that is in active development. The end product will be a mythical platformer with loveable characters, and engaging combat."
-    ></bcard>
-    <bcard 
       cardtitle="NOLS | Step Forward"
       cardsubtitle="NOLS Development Campagin Website"
       skillisJS

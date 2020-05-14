@@ -14,7 +14,7 @@
       skillisCS
       skillisPM
       siteURL="https://github.com/bengroneman/mythix"
-      cardcontent="A game that is in active development. The end product will be a mythical platformer with loveable characters, and engaging combat"
+      cardcontent="A game that is in active development. The end product will be a mythical platformer with loveable characters, and engaging combat."
     ></bcard>
     <bcard 
       cardtitle="NOLS | Step Forward"
@@ -23,16 +23,16 @@
       skillisHS
       skillisCSS
       siteURL="https://info.nols.edu/step-forward"
-      cardcontent="A website built to represent NOLS campaign goals, and status"
+      cardcontent="A website built to represent NOLS campaign goals, and status."
     ></bcard>
     <bcard 
       cardtitle="NOLS | Request a Brochure"
-      cardsubtitle="NOLS Request a brochrue page redesign"
+      cardsubtitle="UX focused redesign"
       skillisJS
       skillisHS
       skillisCSS
       siteURL="https://info.nols.edu/request-a-brochure"
-      cardcontent="A large UX driven page redsign focused on deliver a quality end product for the end user"
+      cardcontent="A large UX driven page redsign focused on delivering a quality end product for the end user."
     ></bcard>
     <bcard 
       cardtitle="NOLS | Semester and Year Courses"
@@ -41,16 +41,16 @@
       skillisHS
       skillisCSS
       siteURL="https://info.nols.edu/request-a-brochure"
-      cardcontent="A custom built page built to engage the user, and leverage Hubl tags to delight interal users of this page"
+      cardcontent="A custom built page built to engage the user, and leverage HubL tags to delight the internal user experience."
     ></bcard>
     <bcard 
       cardtitle="Ruggedwerx"
-      cardsubtitle="Welding/fabrication company"
+      cardsubtitle="A Wyoming inc. project"
       skillisJS
       skillisCSS
       skillisWP
       skillisPHP
-      cardcontent="A project built during my time as a front-end Developer for Wyoming Inc., built on Wordpress with CSS, JavaScript with jQuery, and custom PHP plugins." 
+      cardcontent="A project built during my time as a front end Developer for Wyoming Inc., built on Wordpress with CSS, JavaScript with jQuery, and custom PHP plugins." 
       siteURL="https://ruggedwerx.com"
       class="lifted-card-feel"
     ></bcard>
